@@ -1,0 +1,860 @@
+{
+  "images": [
+    {
+      "src": "/gallery/babocka_síťkovaná.jpg",
+      "captions": {
+        "cs": "babočka síťkovaná <em>Araschnia levana</em>",
+        "en": "Map (butterfly)",
+        "de": "Landkärtchen"
+      },
+      "order": 51
+    },
+    {
+      "src": "/gallery/babočka bilé C.jpg",
+      "captions": {
+        "cs": "babočka bílé C <em>Polygonia c-album</em>",
+        "en": "Comma butterfly",
+        "de": "Der C-Falter"
+      },
+      "order": 27
+    },
+    {
+      "src": "/gallery/Hřebek/puštík obecný.jpg",
+      "captions": {
+        "cs": "puštík obecný <em>Strix aluco</em>",
+        "en": "Tawny Owl",
+        "de": "Waldkauz"
+      },
+      "order": 84
+    },
+    {
+      "src": "/gallery/Janča/čolek horský.jpg",
+      "captions": {
+        "cs": "čolek horský <em>Ichthyosaura alpestris</em>",
+        "en": "Alpine Newt",
+        "de": "Bergmolch"
+      },
+      "order": 86
+    },
+    {
+      "src": "/gallery/Janča/horská smrčina.jpg",
+      "captions": {
+        "cs": "horská smrčina",
+        "en": "",
+        "de": ""
+      },
+      "order": 42
+    },
+    {
+      "src": "/gallery/Janča/kornatec velký.jpg",
+      "captions": {
+        "cs": "kornatec velký <em>Peltis grossa</em>",
+        "en": "Large bark-gnawing beetle",
+        "de": "Großer flachkäfer"
+      },
+      "order": 38
+    },
+    {
+      "src": "/gallery/Janča/lýkovec jedovatý.jpg",
+      "captions": {
+        "cs": "lýkovec jedovatý <em>Daphne mezereum</em>",
+        "en": "Mezereon",
+        "de": "Echter seidelbast"
+      },
+      "order": 92
+    },
+    {
+      "src": "/gallery/Janča/střevlík zlatolesklý.jpg",
+      "captions": {
+        "cs": "střevlík zlatolesklý <em>Carabus auronitens</em>",
+        "en": "Golden ground beetle",
+        "de": "Goldglänzender Laufkäfer"
+      },
+      "order": 70
+    },
+    {
+      "src": "/gallery/Janča/svižník polní.jpg",
+      "captions": {
+        "cs": "svižník polní <em>Cicindela campestris</em>",
+        "en": "Green Tiger Beetle",
+        "de": "Feld-Sandlaufkäfer"
+      },
+      "order": 65
+    },
+    {
+      "src": "/gallery/Janča/Třístoličník.jpg",
+      "captions": {
+        "cs": "Třístoličník",
+        "en": "",
+        "de": ""
+      },
+      "order": 81
+    },
+    {
+      "src": "/gallery/Janča/veverka obecná.jpg",
+      "captions": {
+        "cs": "veverka obecná <em>Sciurus vulgaris</em>",
+        "en": "Eurasian Red Squirrel",
+        "de": "Eurasisches Eichhörnchen"
+      },
+      "order": 11
+    },
+    {
+      "src": "/gallery/Janča/výr velký.jpg",
+      "captions": {
+        "cs": "výr velký <em>Bubo bubo</em>",
+        "en": "Eurasian Eagle-owl",
+        "de": "Uhu"
+      },
+      "order": 14
+    },
+    {
+      "src": "/gallery/Jiří Bohdal/budníček větší.jpg",
+      "captions": {
+        "cs": "budníček větší <em>Phylloscopus trochilus</em>",
+        "en": "Willow warbler",
+        "de": "Fitis"
+      },
+      "order": 12
+    },
+    {
+      "src": "/gallery/Jiří Bohdal/čečetka zimní.jpg",
+      "captions": {
+        "cs": "čečetka zimní <em>Acanthis flammea syn. Carduelis flammea</em>",
+        "en": "Redpoll",
+        "de": "Birkenzeisig"
+      },
+      "order": 96
+    },
+    {
+      "src": "/gallery/Jiří Bohdal/krahujec obecný.jpg",
+      "captions": {
+        "cs": "krahujec obecný <em>Accipiter nisus</em>",
+        "en": "Urasian sparrowhawk",
+        "de": "Sperber"
+      },
+      "order": 94
+    },
+    {
+      "src": "/gallery/Jiří Bohdal/ořesník kropenatý.jpg",
+      "captions": {
+        "cs": "ořešník kropenatý <em>Nucifraga caryocatactes</em>",
+        "en": "Northern nutcracker",
+        "de": "Tannenhäher"
+      },
+      "order": 90
+    },
+    {
+      "src": "/gallery/Jiří Bohdal/puštík bělavý.jpg",
+      "captions": {
+        "cs": "puštík bělavý <em>Strix uralensis</em>",
+        "en": "Ural Owl",
+        "de": "Habichtskauz"
+      },
+      "order": 32
+    },
+    {
+      "src": "/gallery/Jiří Bohdal/skorec vodni.jpg",
+      "captions": {
+        "cs": "skorec vodní <em>Cinclus cinclus</em>",
+        "en": "White-throated Dipper",
+        "de": "Wasseramsel"
+      },
+      "order": 89
+    },
+    {
+      "src": "/gallery/Jiří Bohdal/sojka obecná.jpg",
+      "captions": {
+        "cs": "sojka obecná <em>Garrulus glandarius</em>",
+        "en": "Eurasian Jay",
+        "de": "Eichelhäher"
+      },
+      "order": 77
+    },
+    {
+      "src": "/gallery/Jiří Bohdal/žluva hajní.jpg",
+      "captions": {
+        "cs": "žluva hajní <em>Oriolus oriolus</em>",
+        "en": "Eurasian golden oriole",
+        "de": "Pirol"
+      },
+      "order": 33
+    },
+    {
+      "src": "/gallery/kukla.jpg",
+      "captions": {
+        "cs": "kukla",
+        "en": "Chrysalis",
+        "de": "Kopfbedeckung"
+      },
+      "order": 97
+    },
+    {
+      "src": "/gallery/kukléřka_krtičníkova.jpg",
+      "captions": {
+        "cs": "kukléřka krtičníková <em>Shargacucullia scrophulariae</em>",
+        "en": "Water betony",
+        "de": "Braunwurz-wald-mönch"
+      },
+      "order": 7
+    },
+    {
+      "src": "/gallery/Marek Drha/bobr evropský.jpg",
+      "captions": {
+        "cs": "bobr evropský <em>Castor fiber</em>",
+        "en": "Eurasian Beaver",
+        "de": "Europäischer Biber"
+      },
+      "order": 37
+    },
+    {
+      "src": "/gallery/Marek Drha/jelen evropský.jpg",
+      "captions": {
+        "cs": "jelen evropský <em>Ervus elaphus</em>",
+        "en": "Red Deer",
+        "de": "Rothirsch"
+      },
+      "order": 60
+    },
+    {
+      "src": "/gallery/Marek Drha/jeřábek lesní.jpg",
+      "captions": {
+        "cs": "jeřábek lesní <em>Tetrastes bonasia</em>",
+        "en": "Hazel Grouse",
+        "de": "Haselhuhn"
+      },
+      "order": 52
+    },
+    {
+      "src": "/gallery/Marek Drha/kulíšek nejmenší.jpg",
+      "captions": {
+        "cs": "kulíšek nejmenší <em>Glaucidium passerinum</em>",
+        "en": "Eurasian Pygmy Owl",
+        "de": "Sperlingskauz"
+      },
+      "order": 6
+    },
+    {
+      "src": "/gallery/Marek Drha/kuna lesní.jpg",
+      "captions": {
+        "cs": "kuna lesní <em>Martes martes</em>",
+        "en": "European Pine Marten",
+        "de": "Baummarder"
+      },
+      "order": 95
+    },
+    {
+      "src": "/gallery/Marek Drha/liška obecná.jpg",
+      "captions": {
+        "cs": "liška obecná <em>Vulpes vulpes</em>",
+        "en": "Red Fox",
+        "de": "Rotfuchs"
+      },
+      "order": 2
+    },
+    {
+      "src": "/gallery/Marek Drha/puštík bělavý.jpg",
+      "captions": {
+        "cs": "puštík bělavý <em>Strix uralensis</em>",
+        "en": "Ural Owl",
+        "de": "Habichtskauz"
+      },
+      "order": 45
+    },
+    {
+      "src": "/gallery/Marek Drha/srnec obecný.jpg",
+      "captions": {
+        "cs": "srnec obecný <em>Capreolus capreolus</em>",
+        "en": "European Roe Deer",
+        "de": "Reh"
+      },
+      "order": 34
+    },
+    {
+      "src": "/gallery/Marek Drha/tetřev hlušec.jpg",
+      "captions": {
+        "cs": "tetřev hlušec <em>Tetrao urogallus</em>",
+        "en": "Western Capercaillie",
+        "de": "Auerhuhn"
+      },
+      "order": 55
+    },
+    {
+      "src": "/gallery/Marek Drha/tetřev hlušec1.jpg",
+      "captions": {
+        "cs": "tetřev hlušec <em>Tetrao urogallus</em>",
+        "en": "Western Capercaillie",
+        "de": "Auerhuhn"
+      },
+      "order": 72
+    },
+    {
+      "src": "/gallery/Marek Drha/tetřívek obecný.jpg",
+      "captions": {
+        "cs": "tetřívek obecný <em>Lyrurus tetrix</em>",
+        "en": "Black Grouse",
+        "de": "Birkhuhn"
+      },
+      "order": 46
+    },
+    {
+      "src": "/gallery/Marek Drha/vlk obecný.jpg",
+      "captions": {
+        "cs": "vlk obecný <em>Canis lupus</em>",
+        "en": "wolf",
+        "de": "Wolf"
+      },
+      "order": 19
+    },
+    {
+      "src": "/gallery/Marek Drha/zajíc obecný.jpg",
+      "captions": {
+        "cs": "zajíc obecný <em>Lepus europaeus</em>",
+        "en": "European hare",
+        "de": "Feldhase"
+      },
+      "order": 20
+    },
+    {
+      "src": "/gallery/Mecnarowski/datel_cerny_fin1_max.jpg",
+      "captions": {
+        "cs": "datel černý <em>Dryocopus martius</em>",
+        "en": "Black Woodpecker",
+        "de": "Schwarzspecht"
+      },
+      "order": 36
+    },
+    {
+      "src": "/gallery/Mecnarowski/Jeřábek lesní_sht_fin1.jpg",
+      "captions": {
+        "cs": "jeřábek lesní <em>Tetrastes bonasia</em>",
+        "en": "Hazel Grouse",
+        "de": "Haselhuhn"
+      },
+      "order": 71
+    },
+    {
+      "src": "/gallery/Mecnarowski/Penkava_obecna kopie.jpg",
+      "captions": {
+        "cs": "pěnkava obecná <em>Fringilla coelebs</em>",
+        "en": "Eurasian chaffinch",
+        "de": "Buchfink"
+      },
+      "order": 31
+    },
+    {
+      "src": "/gallery/Mecnarowski/vydra_ricni_fin11.jpg",
+      "captions": {
+        "cs": "vydra říční <em>Lutra lutra</em>",
+        "en": "Eurasian River Otter",
+        "de": "Eurasischer Fischotter"
+      },
+      "order": 56
+    },
+    {
+      "src": "/gallery/Mecnarowski/vyr_velky_fin11.jpg",
+      "captions": {
+        "cs": "výr velký <em>Bubo bubo</em>",
+        "en": "Eurasian Eagle-owl",
+        "de": "Uhu"
+      },
+      "order": 30
+    },
+    {
+      "src": "/gallery/Monika Surzinova/konipas_horský.jpg",
+      "captions": {
+        "cs": "konipas horský <em>Motacilla cinerea</em>",
+        "en": "Grey Wagtail",
+        "de": "Gebirgsstelze"
+      },
+      "order": 21
+    },
+    {
+      "src": "/gallery/Monika Surzinova/králíček_obecný.jpg",
+      "captions": {
+        "cs": "králíček obecný <em>Regulus regulus</em>",
+        "en": "Goldcrest",
+        "de": "Wintergoldhähnchen"
+      },
+      "order": 59
+    },
+    {
+      "src": "/gallery/Nagl/dlask tlustozobý.jpg",
+      "captions": {
+        "cs": "dlask tlustozobý <em>Coccothraustes coccothraustes</em>",
+        "en": "Hawfinch",
+        "de": "Kernbeißer"
+      },
+      "order": 26
+    },
+    {
+      "src": "/gallery/Nagl/ledňáček říční.jpg",
+      "captions": {
+        "cs": "ledňáček říční <em>Alcedo atthis</em>",
+        "en": "Common Kingfisher",
+        "de": "Eisvogel"
+      },
+      "order": 63
+    },
+    {
+      "src": "/gallery/Nagl/sýkora modřinka.jpg",
+      "captions": {
+        "cs": "sýkora modřinka <em>Cyanistes caeruleus</em>",
+        "en": "Eurasian blue tit",
+        "de": "Blaumeise"
+      },
+      "order": 82
+    },
+    {
+      "src": "/gallery/Pavla Čížková/Boubín.jpg",
+      "captions": {
+        "cs": "Boubín",
+        "en": "Boubín",
+        "de": "Kubany"
+      },
+      "order": 74
+    },
+    {
+      "src": "/gallery/Pavla Čížková/jirnice_modrá.jpg",
+      "captions": {
+        "cs": "jirnice modrá <em>Polemonium caeruleum</em>",
+        "en": "Jacob's-ladder",
+        "de": "Blaue himmelsleiter"
+      },
+      "order": 49
+    },
+    {
+      "src": "/gallery/Pavla Čížková/kukléřka lociková.jpg",
+      "captions": {
+        "cs": "kukléřka lociková <em>Cucullia lactucae</em>",
+        "en": "Ettuce shark",
+        "de": "Attich-mönch"
+      },
+      "order": 24
+    },
+    {
+      "src": "/gallery/Pavla Čížková/lišaj borový, housenka.jpg",
+      "captions": {
+        "cs": "lišaj borový, housenka <em>Sphinx pinastr</em>",
+        "en": "Pine hawk-moth, caterpillar",
+        "de": "Kleiner weinschwärmer, raupe"
+      },
+      "order": 91
+    },
+    {
+      "src": "/gallery/Pavla Čížková/lišaj kyprejový, housenka.jpg",
+      "captions": {
+        "cs": "lišaj kyprejový, housenka <em>Deilephila porcellus</em>",
+        "en": "Small elephant hawk-moth, caterpillar",
+        "de": "Wolfsmilchschwärmer Raupe"
+      },
+      "order": 10
+    },
+    {
+      "src": "/gallery/Pavla Čížková/lišejníkovec žlutý, housenka.jpg",
+      "captions": {
+        "cs": "lišejníkovec žlutý, housenka <em>Wittia sororcula</em>",
+        "en": "Orange footman",
+        "de": "Dottergelbes flechtenbärchen"
+      },
+      "order": 75
+    },
+    {
+      "src": "/gallery/Pavla Čížková/okáč_bojínkový.jpg",
+      "captions": {
+        "cs": "okáč bojínkový <em>Melanargia galathea</em>",
+        "en": "Marbled white",
+        "de": "Schachbrett"
+      },
+      "order": 83
+    },
+    {
+      "src": "/gallery/Pavla Čížková/přástevník medvědí, housenka.jpg",
+      "captions": {
+        "cs": "přástevník medvědí, housenka <em>Arctia caja</em>",
+        "en": "Garden Tigerr",
+        "de": "Brauner Bär"
+      },
+      "order": 87
+    },
+    {
+      "src": "/gallery/Pavla Čížková/rosnatka_anglická.jpg",
+      "captions": {
+        "cs": "rosnatka anglická <em>Drosera anglica</em>",
+        "en": "English sundew",
+        "de": "Langblättrige sonnentau"
+      },
+      "order": 67
+    },
+    {
+      "src": "/gallery/Pavla Čížková/vraní_oko_čtyřlisté.jpg",
+      "captions": {
+        "cs": "vraní oko čtyřlisté <em>Paris quadrifolia</em>",
+        "en": "Herb-paris",
+        "de": "Vierblättrige Einbeere"
+      },
+      "order": 62
+    },
+    {
+      "src": "/gallery/Pepík Pecka/kosatec_sibiřský.jpg",
+      "captions": {
+        "cs": "kosatec sibiřský <em>Iris sibirica</em>",
+        "en": "Siberian Iris",
+        "de": "Sibirische Schwertlilie"
+      },
+      "order": 13
+    },
+    {
+      "src": "/gallery/perleťovec_mokřadní.jpg",
+      "captions": {
+        "cs": "perleťovec mokřadní <em>Proclossiana eunomia</em>",
+        "en": "Bog Fritillary",
+        "de": "Randring-perlmuttfalter"
+      },
+      "order": 18
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Černohorský močál.jpg",
+      "captions": {
+        "cs": "Černohorský močál",
+        "en": "",
+        "de": ""
+      },
+      "order": 53
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Černý kříž.jpg",
+      "captions": {
+        "cs": "Černý Kříž",
+        "en": "",
+        "de": ""
+      },
+      "order": 23
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Dobrá.jpg",
+      "captions": {
+        "cs": "Dobrá",
+        "en": "",
+        "de": ""
+      },
+      "order": 68
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Kvilda.jpg",
+      "captions": {
+        "cs": "Kvilda",
+        "en": "",
+        "de": ""
+      },
+      "order": 40
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Lenora.jpg",
+      "captions": {
+        "cs": "Lenora",
+        "en": "",
+        "de": ""
+      },
+      "order": 29
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/les u Nové Pece.jpg",
+      "captions": {
+        "cs": "les u Nové Pece",
+        "en": "",
+        "de": ""
+      },
+      "order": 44
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Malý Bor.jpg",
+      "captions": {
+        "cs": "Malý Bor",
+        "en": "",
+        "de": ""
+      },
+      "order": 88
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Mrtvý luh.jpg",
+      "captions": {
+        "cs": "Mrtvý luh",
+        "en": "",
+        "de": ""
+      },
+      "order": 22
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/NC_Kvilda.jpg",
+      "captions": {
+        "cs": "NC Kvilda",
+        "en": "",
+        "de": ""
+      },
+      "order": 80
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Nová Hůrka.jpg",
+      "captions": {
+        "cs": "Nová Hůrka",
+        "en": "",
+        "de": ""
+      },
+      "order": 3
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Novohůrecká slať.jpg",
+      "captions": {
+        "cs": "Novohůrecká slať",
+        "en": "",
+        "de": ""
+      },
+      "order": 43
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Skelná (kopie).jpg",
+      "captions": {
+        "cs": "Skelná",
+        "en": "",
+        "de": ""
+      },
+      "order": 39
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Soumarské_rašeliniště.jpg",
+      "captions": {
+        "cs": "Soumarské rašeliniště",
+        "en": "",
+        "de": ""
+      },
+      "order": 78
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Tříjezerní_slať (kopie).jpg",
+      "captions": {
+        "cs": "Tříjezerní slať",
+        "en": "",
+        "de": ""
+      },
+      "order": 79
+    },
+    {
+      "src": "/gallery/Radek Plíhal dron/Vchynice-Tetov.jpg",
+      "captions": {
+        "cs": "Vchynice-Tetov",
+        "en": "",
+        "de": ""
+      },
+      "order": 57
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/1C2A5106_pavoučí kokon_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "pavoučí kokon",
+        "en": "Spider Cocoon",
+        "de": "Spinnenkokon"
+      },
+      "order": 66
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/1C2A6888_modrásek lesní_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "modrásek lesní <em>Cyaniris semiargus</em>",
+        "en": "Mazarine blue",
+        "de": "Rotklee-bläuling"
+      },
+      "order": 41
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/1C2A7000_ohniváček modrolesklý_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "ohniváček modrolesklý <em>Lycaena alciphron</em>",
+        "en": "Purple-shot copper",
+        "de": "Violetter feuerfalter"
+      },
+      "order": 28
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/1C2A7055_okáč ječmínkový_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "okáč ječmínkový <em>Lasiommata maera</em>",
+        "en": "Large wall brown",
+        "de": "Braunauge"
+      },
+      "order": 54
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/1C2A8204_perleťovec prostřední_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "perleťovec prostřední <em>Fabriciana adippe</em>",
+        "en": "High brown fritillary",
+        "de": "Feuriger perlmuttfalter"
+      },
+      "order": 16
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/1C2A8415_kropenáč vytrvalý_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "kropenáč vytrvalý <em>Swertia perennis</em>",
+        "en": "Felwort",
+        "de": "Sumpfenzian"
+      },
+      "order": 69
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/1C2A8521_rosnatka okrouhlolistá_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "rosnatka okrouhlolistá <em>Drosera rotundifolia</em>",
+        "en": "Round-leaved Sundew",
+        "de": "Rundblättriger Sonnentau"
+      },
+      "order": 58
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/1C2A8639_babočka paví oko_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "babočka paví oko <em>Inachis io</em>",
+        "en": "European peacock",
+        "de": "Tagpfauenauge"
+      },
+      "order": 9
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/1C2A8781_babočka bodláková_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "babočka bodláková <em>Vanessa cardui</em>",
+        "en": "Painted lady",
+        "de": "Distelfalter"
+      },
+      "order": 50
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/1C2A8979_tesařík pižmový_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "tesařík pižmový <em>Aromia moschata</em>",
+        "en": "Musk Beetle",
+        "de": "Moschusbock"
+      },
+      "order": 1
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/IMG_0152_bělopásek topolový_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "bělopásek topolový <em>Limenitis populi</em>",
+        "en": "Poplar Admiral",
+        "de": "Großer Eisvogel"
+      },
+      "order": 61
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/IMG_0183_Žluťásek čičorečkový_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "žluťásek čičorečkový <em>Colias hyale hyale</em>",
+        "en": "Pale clouded yellow",
+        "de": "Gemeiner heufalter"
+      },
+      "order": 93
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/IMG_0304__otakárek fenyklový_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "otakárek fenyklový <em>Papilio machaon</em>",
+        "en": "Old World Swallowtail",
+        "de": "Schwalbenschwanz"
+      },
+      "order": 5
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/IMG_2179_žluťásek borůvkový_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "žluťásek borůvkový <em>Colias palaeno</em>",
+        "en": "Moorland Clouded Yellow",
+        "de": "Hochmoorgelbling"
+      },
+      "order": 85
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/IMG_2245_modrásek ušlechtilý_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "modrásek ušlechtilý <em>Polyommatus amandus</em>",
+        "en": "Amandas Blue",
+        "de": "Prächtiger-Bläuling"
+      },
+      "order": 35
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/IMG_7994_perleťovec stříbropásek_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "perleťovec stříbropásek <em>Argynnis paphia</em>",
+        "en": "Silver-washed fritillary",
+        "de": "Kaisermantel"
+      },
+      "order": 25
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/IMG_9798_tesařík pižmový_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "tesařík pižmový <em>Aromia moschata</em>",
+        "en": "Musk Beetle",
+        "de": "Moschusbock"
+      },
+      "order": 76
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/IMG_9966_modrásek černoskvrnný arion_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "modrásek černoskvrnný <em>Phengaris arion</em>",
+        "en": "Large blue butterfly",
+        "de": "Quendel-ameisenbläuling"
+      },
+      "order": 8
+    },
+    {
+      "src": "/gallery/Zuzana Růžičková/IMG_9969_hnědásek rozrazilový_Zuzana Růžičková.jpg",
+      "captions": {
+        "cs": "hnědásek rozrazilový <em>Melitaea diamina</em>",
+        "en": "False Heath Fritillary",
+        "de": "Baldrian-Scheckenfalter"
+      },
+      "order": 47
+    },
+    {
+      "src": "/gallery/Prosický/kuna_skalní_DX_1216.jpg",
+      "captions": {
+        "cs": "kuna skalní <em>Martes foina</em>",
+        "en": "Stone marten",
+        "de": "Steinmarder"
+      },
+      "order": 64
+    },
+    {
+      "src": "/gallery/Prosický/liška_obecná_S9P6503.jpg",
+      "captions": {
+        "cs": "liška obecná <em>Vulpes vulpes</em>",
+        "en": "Red Fox",
+        "de": "Rotfuchs"
+      },
+      "order": 17
+    },
+    {
+      "src": "/gallery/Prosický/rys_ostrovid_lynx_8998.jpg",
+      "captions": {
+        "cs": "rys ostrovid <em>Lynx lynx</em>",
+        "en": "Eurasian Lynx",
+        "de": "Eurasischer Luchs"
+      },
+      "order": 15
+    },
+    {
+      "src": "/assets/images/bg-conteiner.jpg",
+      "captions": {
+        "cs": "<strong>Autoři fotografií:</strong><br />Pavel Hubený<br />Pavla Čížková<br />Zuzana Růžičková<br />Ondřej Prosický<br />Josef Pecka<br />Ondřej Nág<br />Monika Surzinová<br />Martin Mecnarowski<br />Marek Drha<br />Jiří Bohdal<br />Jana Zývalová<br />Václav Hřebek<br />Radek Plíhal",
+        "en": "<strong>Photo Authors:</strong><br />Pavel Hubený<br />Pavla Čížková<br />Zuzana Růžičková<br />Ondřej Prosický<br />Josef Pecka<br />Ondřej Nág<br />Monika Surzinová<br />Martin Mecnarowski<br />Marek Drha<br />Jiří Bohdal<br />Jana Zývalová<br />Václav Hřebek<br />Radek Plíhal",
+        "de": "<strong>Foto-Autoren:</strong><br />Pavel Hubený<br />Pavla Čížková<br />Zuzana Růžičková<br />Ondřej Prosický<br />Josef Pecka<br />Ondřej Nág<br />Monika Surzinová<br />Martin Mecnarowski<br />Marek Drha<br />Jiří Bohdal<br />Jana Zývalová<br />Václav Hřebek<br />Radek Plíhal"
+      },
+      "captionClass": "photo-authors",
+      "order": 999
+    }
+  ]
+}
