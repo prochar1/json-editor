@@ -110,7 +110,7 @@ function JsonEditorForm({
               onClick={() => setIsExpanded(!isExpanded)}
               className="flex items-center gap-2 flex-1 px-2 py-1.5 rounded-md hover:bg-blue-50 dark:hover:bg-gray-800/50 transition-colors text-left"
             >
-              <span className="text-blue-600 dark:text-blue-400 text-xs">
+              <span className="inline-flex items-center justify-center w-4 text-blue-600 dark:text-blue-400 text-xs flex-shrink-0">
                 {isExpanded ? "▼" : "▶"}
               </span>
               {label && (
@@ -122,7 +122,7 @@ function JsonEditorForm({
                 </span>
               )}
               <span className="text-xs text-blue-600 dark:text-blue-400">
-                📋 Seznam ({data.length} položek)
+                Seznam ({data.length} položek)
               </span>
             </button>
             {path.length > 0 && (
@@ -137,7 +137,7 @@ function JsonEditorForm({
             )}
           </div>
           {isExpanded && (
-            <div className="ml-4 mt-1 space-y-1 border-l-2 border-blue-200 dark:border-blue-900/50 pl-3">
+            <div className="ml-4 mt-1 space-y-1 border-l-2 border-blue-200 dark:border-blue-900/50 pl-2">
               {data.map((item, idx) => {
                 const labelData = getArrayItemLabel(item, idx);
                 return (
@@ -151,13 +151,32 @@ function JsonEditorForm({
                   />
                 );
               })}
-              <button
-                type="button"
-                onClick={() => onChange([...path, data.length], null)}
-                className="mt-2 px-2 py-1 text-xs rounded-md bg-blue-500 dark:bg-blue-600 text-white hover:bg-blue-600 dark:hover:bg-blue-700 transition-all"
-              >
-                + Přidat položku
-              </button>
+              <div className="mt-2 flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => onChange([...path, data.length], "")}
+                  className="px-3 py-1 text-xs rounded-md bg-blue-500 dark:bg-blue-600 text-white hover:bg-blue-600 dark:hover:bg-blue-700 transition-all"
+                  title="Přidat textovou hodnotu"
+                >
+                  + Hodnota
+                </button>
+                <button
+                  type="button"
+                  onClick={() => onChange([...path, data.length], [])}
+                  className="px-3 py-1 text-xs rounded-md bg-blue-500 dark:bg-blue-600 text-white hover:bg-blue-600 dark:hover:bg-blue-700 transition-all"
+                  title="Přidat seznam (pole)"
+                >
+                  + Seznam
+                </button>
+                <button
+                  type="button"
+                  onClick={() => onChange([...path, data.length], {})}
+                  className="px-3 py-1 text-xs rounded-md bg-blue-500 dark:bg-blue-600 text-white hover:bg-blue-600 dark:hover:bg-blue-700 transition-all"
+                  title="Přidat záznam (objekt)"
+                >
+                  + Záznam
+                </button>
+              </div>
             </div>
           )}
         </div>
@@ -171,7 +190,7 @@ function JsonEditorForm({
               onClick={() => setIsExpanded(!isExpanded)}
               className="flex items-center gap-2 flex-1 px-2 py-1.5 rounded-md hover:bg-purple-50 dark:hover:bg-gray-800/50 transition-colors text-left"
             >
-              <span className="text-purple-600 dark:text-purple-400 text-xs">
+              <span className="inline-flex items-center justify-center w-4 text-purple-600 dark:text-purple-400 text-xs flex-shrink-0">
                 {isExpanded ? "▼" : "▶"}
               </span>
               {label && (
@@ -183,7 +202,7 @@ function JsonEditorForm({
                 </span>
               )}
               <span className="text-xs text-purple-600 dark:text-purple-400">
-                📦 ({Object.keys(data).slice(0, 2).join(", ")}
+                ({Object.keys(data).slice(0, 2).join(", ")}
                 {Object.keys(data).length > 2 ? ", ..." : ""})
               </span>
             </button>
@@ -199,7 +218,7 @@ function JsonEditorForm({
             )}
           </div>
           {isExpanded && (
-            <div className="ml-4 mt-1 space-y-1 border-l-2 border-purple-200 dark:border-purple-900/50 pl-3">
+            <div className="ml-4 mt-1 space-y-1 border-l-2 border-purple-200 dark:border-purple-900/50 pl-2">
               {Object.entries(data).map(([key, value]) => (
                 <JsonEditorForm
                   key={key}
@@ -209,16 +228,73 @@ function JsonEditorForm({
                   label={key}
                 />
               ))}
-              <button
-                type="button"
-                onClick={() => {
-                  const newKey = prompt("Zadejte název nového pole:");
-                  if (newKey) onChange([...path, newKey], null);
-                }}
-                className="mt-2 px-2 py-1 text-xs rounded-md bg-purple-500 dark:bg-purple-600 text-white hover:bg-purple-600 dark:hover:bg-purple-700 transition-all"
-              >
-                + Přidat pole
-              </button>
+              <div className="mt-2 space-y-2">
+                <input
+                  type="text"
+                  placeholder="Název nové vlastnosti..."
+                  className="w-full px-2 py-1 text-xs rounded-md border border-gray-200 dark:border-gray-800/50 bg-white dark:bg-slate-900 text-gray-900 dark:text-gray-100"
+                  id={`new-key-${path.join("-")}`}
+                />
+                <div className="flex gap-2">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const input = document.getElementById(
+                        `new-key-${path.join("-")}`
+                      ) as HTMLInputElement;
+                      const newKey = input?.value.trim();
+                      if (newKey) {
+                        onChange([...path, newKey], "");
+                        input.value = "";
+                      } else {
+                        alert("Zadejte název vlastnosti");
+                      }
+                    }}
+                    className="px-3 py-1 text-xs rounded-md bg-purple-500 dark:bg-purple-600 text-white hover:bg-purple-600 dark:hover:bg-purple-700 transition-all"
+                    title="Přidat textovou hodnotu"
+                  >
+                    + Hodnota
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const input = document.getElementById(
+                        `new-key-${path.join("-")}`
+                      ) as HTMLInputElement;
+                      const newKey = input?.value.trim();
+                      if (newKey) {
+                        onChange([...path, newKey], []);
+                        input.value = "";
+                      } else {
+                        alert("Zadejte název vlastnosti");
+                      }
+                    }}
+                    className="px-3 py-1 text-xs rounded-md bg-purple-500 dark:bg-purple-600 text-white hover:bg-purple-600 dark:hover:bg-purple-700 transition-all"
+                    title="Přidat seznam (pole)"
+                  >
+                    + Seznam
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const input = document.getElementById(
+                        `new-key-${path.join("-")}`
+                      ) as HTMLInputElement;
+                      const newKey = input?.value.trim();
+                      if (newKey) {
+                        onChange([...path, newKey], {});
+                        input.value = "";
+                      } else {
+                        alert("Zadejte název vlastnosti");
+                      }
+                    }}
+                    className="px-3 py-1 text-xs rounded-md bg-purple-500 dark:bg-purple-600 text-white hover:bg-purple-600 dark:hover:bg-purple-700 transition-all"
+                    title="Přidat záznam (objekt)"
+                  >
+                    + Záznam
+                  </button>
+                </div>
+              </div>
             </div>
           )}
         </div>
@@ -228,6 +304,8 @@ function JsonEditorForm({
     // Primitive value - inline editing
     return (
       <div className="flex items-center gap-2 group mb-1">
+        {/* Empty space for alignment with arrow */}
+        <span className="inline-flex items-center justify-center w-4 flex-shrink-0"></span>
         <div className="flex items-center gap-2 flex-1">
           {label && (
             <span
@@ -271,7 +349,9 @@ export default function JsonEditor() {
       .then(async (res) => {
         const contentType = res.headers.get("content-type");
         if (!res.ok) {
-          throw new Error(`Chyba načítání: ${res.status} ${res.statusText}`);
+          // If file doesn't exist, start with empty object
+          setJson({});
+          return null;
         }
         if (!contentType || !contentType.includes("application/json")) {
           const text = await res.text();
@@ -279,8 +359,16 @@ export default function JsonEditor() {
         }
         return res.json();
       })
-      .then((data) => setJson(data))
-      .catch((err) => setError(err.message))
+      .then((data) => {
+        if (data !== null) {
+          setJson(data);
+        }
+      })
+      .catch((err) => {
+        // On error, start with empty object
+        setJson({});
+        setError(null); // Don't show error, just start fresh
+      })
       .finally(() => setLoading(false));
   }, []);
 
@@ -295,16 +383,44 @@ export default function JsonEditor() {
     setJson((prev: any) => updateJson(prev, path, value));
   }
 
+  // Function to start new project
+  function startNew(type: "object" | "array") {
+    setJson(type === "array" ? [] : {});
+    setError(null);
+  }
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-slate-950 p-6">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-4">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1">
-            Editor dat
-          </h1>
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            Upravte data a uložte změny
-          </p>
+        <div className="mb-4 flex items-center justify-between">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1">
+              Editor dat
+            </h1>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Upravte data a uložte změny
+            </p>
+          </div>
+          {json && (
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={() => startNew("object")}
+                className="px-3 py-1.5 text-xs rounded-md bg-gray-500 dark:bg-gray-600 text-white hover:bg-gray-600 dark:hover:bg-gray-700 transition-all"
+                title="Začít znovu s prázdným záznamem"
+              >
+                + Nový záznam
+              </button>
+              <button
+                type="button"
+                onClick={() => startNew("array")}
+                className="px-3 py-1.5 text-xs rounded-md bg-gray-500 dark:bg-gray-600 text-white hover:bg-gray-600 dark:hover:bg-gray-700 transition-all"
+                title="Začít znovu s prázdným seznamem"
+              >
+                + Nový seznam
+              </button>
+            </div>
+          )}
         </div>
 
         {loading && (
@@ -346,12 +462,12 @@ export default function JsonEditor() {
               <JsonEditorForm data={json} onChange={handleChange} />
             </div>
 
-            <div className="sticky bottom-4 bg-white dark:bg-slate-900 rounded-lg shadow-xl p-3 border border-gray-100 dark:border-gray-800/50">
+            <div className="sticky bottom-4 bg-white dark:bg-slate-900 rounded-lg shadow-xl p-3 border border-gray-100 dark:border-gray-800/50 flex justify-end">
               <button
                 type="submit"
-                className="w-full px-4 py-2 bg-gradient-to-r from-emerald-500 to-green-500 dark:from-emerald-600 dark:to-green-600 text-white font-semibold text-sm rounded-lg hover:from-emerald-600 hover:to-green-600 dark:hover:from-emerald-700 dark:hover:to-green-700 transition-all shadow-md hover:shadow-lg"
+                className="px-6 py-2 bg-gradient-to-r from-emerald-500 to-green-500 dark:from-emerald-600 dark:to-green-600 text-white font-semibold text-sm rounded-lg hover:from-emerald-600 hover:to-green-600 dark:hover:from-emerald-700 dark:hover:to-green-700 transition-all shadow-md hover:shadow-lg"
               >
-                💾 Uložit změny
+                Uložit změny
               </button>
             </div>
           </form>
