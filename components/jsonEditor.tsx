@@ -10,119 +10,251 @@ function updateJson(obj: any, path: (string | number)[], value: any) {
   return clone;
 }
 
-// Recursive JSON editor
+// Recursive JSON editor with collapsible tree
 function JsonEditorForm({
   data,
   path = [],
   onChange,
+  label,
+  labelTitle,
 }: {
   data: any;
   path?: (string | number)[];
   onChange: (path: (string | number)[], value: any) => void;
+  label?: string;
+  labelTitle?: string;
 }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Helper to get preview of data
+  const getPreview = (value: any): string => {
+    if (value === null) return "null";
+    if (value === undefined) return "undefined";
+    if (typeof value === "string")
+      return `"${value.substring(0, 30)}${value.length > 30 ? "..." : ""}"`;
+    if (typeof value === "number" || typeof value === "boolean")
+      return String(value);
+    if (Array.isArray(value)) return `[${value.length} položek]`;
+    if (typeof value === "object")
+      return `{${Object.keys(value).length} vlastností}`;
+    return String(value);
+  };
+
+  // Helper to get descriptive label for array items
+  const getArrayItemLabel = (
+    item: any,
+    idx: number
+  ): { display: string; title: string } => {
+    if (typeof item === "object" && item !== null) {
+      if (Array.isArray(item)) {
+        const display = `${idx + 1}. 📋 Seznam (${item.length})`;
+        return { display, title: display };
+      } else {
+        // For objects, try to find a descriptive key
+        const keys = Object.keys(item);
+        const nameKeys = [
+          "name",
+          "title",
+          "label",
+          "id",
+          "key",
+          "nazev",
+          "jmeno",
+        ];
+        const foundKey = nameKeys.find((k) => keys.includes(k));
+        if (foundKey && item[foundKey]) {
+          const fullValue = String(item[foundKey]);
+          const value = fullValue.substring(0, 25);
+          return {
+            display: `${idx + 1}. ${value}${fullValue.length > 25 ? "..." : ""}`,
+            title: `${idx + 1}. ${fullValue}`,
+          };
+        }
+        // Otherwise show first key-value pair
+        if (keys.length > 0) {
+          const firstKey = keys[0];
+          const fullValue = String(item[firstKey]);
+          const firstValue = fullValue.substring(0, 20);
+          return {
+            display: `${idx + 1}. ${firstKey}: ${firstValue}${fullValue.length > 20 ? "..." : ""}`,
+            title: `${idx + 1}. ${firstKey}: ${fullValue}`,
+          };
+        }
+        const display = `${idx + 1}. 📦 Záznam`;
+        return { display, title: display };
+      }
+    } else if (typeof item === "string") {
+      const preview = item.substring(0, 30);
+      return {
+        display: `${idx + 1}. "${preview}${item.length > 30 ? "..." : ""}"`,
+        title: `${idx + 1}. "${item}"`,
+      };
+    } else if (typeof item === "number" || typeof item === "boolean") {
+      const display = `${idx + 1}. ${item}`;
+      return { display, title: display };
+    } else if (item === null) {
+      const display = `${idx + 1}. null`;
+      return { display, title: display };
+    }
+    const display = `${idx + 1}.`;
+    return { display, title: display };
+  };
+
   if (typeof data === "object" && data !== null) {
     if (Array.isArray(data)) {
       return (
-        <div className="ml-0 mb-3 p-3 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-950 dark:to-slate-900 border border-blue-100/50 dark:border-gray-800/50 shadow-sm">
-          <div className="flex items-center gap-2 mb-2 pb-1.5 border-b border-blue-100/30 dark:border-gray-800/30 text-sm">
-            <span className="text-xs font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wide">
-              Seznam položek
-            </span>
-            <span className="text-xs text-gray-500 dark:text-gray-400">
-              ({data.length})
-            </span>
-          </div>
-          <div className="space-y-3">
-            {data.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-white dark:bg-slate-950 rounded-md p-2 border border-gray-100 dark:border-gray-800/40"
+        <div className="mb-1">
+          <div className="flex items-center gap-2 group">
+            <button
+              type="button"
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="flex items-center gap-2 flex-1 px-2 py-1.5 rounded-md hover:bg-blue-50 dark:hover:bg-gray-800/50 transition-colors text-left"
+            >
+              <span className="text-blue-600 dark:text-blue-400 text-xs">
+                {isExpanded ? "▼" : "▶"}
+              </span>
+              {label && (
+                <span
+                  className="text-xs font-medium text-gray-600 dark:text-gray-400 min-w-[200px] flex-shrink-0"
+                  title={label}
+                >
+                  {label}:
+                </span>
+              )}
+              <span className="text-xs text-blue-600 dark:text-blue-400">
+                📋 Seznam ({data.length} položek)
+              </span>
+            </button>
+            {path.length > 0 && (
+              <button
+                type="button"
+                onClick={() => onChange(path, undefined)}
+                className="opacity-0 group-hover:opacity-100 px-2 py-1 text-xs rounded-md bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-900/50 transition-all"
+                title="Odstranit"
               >
-                <div className="flex items-start gap-2">
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 text-xs font-semibold">
-                    {idx + 1}
-                  </span>
-                  <div className="flex-1">
-                    <JsonEditorForm
-                      data={item}
-                      path={[...path, idx]}
-                      onChange={onChange}
-                    />
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => onChange([...path, idx], undefined)}
-                    className="px-2 py-1 text-xs rounded-md bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-900/50 transition-all border border-red-200 dark:border-red-800"
-                    title="Odebrat položku"
-                  >
-                    ✕
-                  </button>
-                </div>
-              </div>
-            ))}
+                ✕
+              </button>
+            )}
           </div>
-          <button
-            type="button"
-            onClick={() => onChange([...path, data.length], null)}
-            className="mt-2 w-full px-3 py-1.5 text-xs font-medium rounded-md bg-blue-500 dark:bg-blue-600 text-white hover:bg-blue-600 dark:hover:bg-blue-700 transition-all shadow-sm"
-          >
-            + Přidat novou položku
-          </button>
+          {isExpanded && (
+            <div className="ml-4 mt-1 space-y-1 border-l-2 border-blue-200 dark:border-blue-900/50 pl-3">
+              {data.map((item, idx) => {
+                const labelData = getArrayItemLabel(item, idx);
+                return (
+                  <JsonEditorForm
+                    key={idx}
+                    data={item}
+                    path={[...path, idx]}
+                    onChange={onChange}
+                    label={labelData.display}
+                    labelTitle={labelData.title}
+                  />
+                );
+              })}
+              <button
+                type="button"
+                onClick={() => onChange([...path, data.length], null)}
+                className="mt-2 px-2 py-1 text-xs rounded-md bg-blue-500 dark:bg-blue-600 text-white hover:bg-blue-600 dark:hover:bg-blue-700 transition-all"
+              >
+                + Přidat položku
+              </button>
+            </div>
+          )}
         </div>
       );
     } else {
       return (
-        <div className="ml-0 mb-3 p-3 rounded-lg bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-950 dark:to-slate-900 border border-dashed border-purple-100/50 dark:border-gray-800/50">
-          <div className="space-y-3">
-            {Object.entries(data).map(([key, value]) => (
-              <div
-                key={key}
-                className="bg-white dark:bg-slate-950 rounded-md p-2 border border-gray-100 dark:border-gray-800/40"
+        <div className="mb-1">
+          <div className="flex items-center gap-2 group">
+            <button
+              type="button"
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="flex items-center gap-2 flex-1 px-2 py-1.5 rounded-md hover:bg-purple-50 dark:hover:bg-gray-800/50 transition-colors text-left"
+            >
+              <span className="text-purple-600 dark:text-purple-400 text-xs">
+                {isExpanded ? "▼" : "▶"}
+              </span>
+              {label && (
+                <span
+                  className="text-xs font-medium text-gray-600 dark:text-gray-400 min-w-[200px] flex-shrink-0"
+                  title={labelTitle || label}
+                >
+                  {label}:
+                </span>
+              )}
+              <span className="text-xs text-purple-600 dark:text-purple-400">
+                📦 ({Object.keys(data).slice(0, 2).join(", ")}
+                {Object.keys(data).length > 2 ? ", ..." : ""})
+              </span>
+            </button>
+            {path.length > 0 && (
+              <button
+                type="button"
+                onClick={() => onChange(path, undefined)}
+                className="opacity-0 group-hover:opacity-100 px-2 py-1 text-xs rounded-md bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-900/50 transition-all"
+                title="Odstranit"
               >
-                <div className="flex items-start gap-3">
-                  <label className="text-xs font-medium text-gray-600 dark:text-gray-400 w-32 flex-shrink-0 text-right pt-1.5">
-                    {key}
-                  </label>
-                  <div className="flex-1">
-                    <JsonEditorForm
-                      data={value}
-                      path={[...path, key]}
-                      onChange={onChange}
-                    />
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => onChange([...path, key], undefined)}
-                    className="px-2 py-1 text-xs rounded-md bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-900/50 transition-all border border-red-200 dark:border-red-800"
-                    title="Odebrat pole"
-                  >
-                    ✕
-                  </button>
-                </div>
-              </div>
-            ))}
+                ✕
+              </button>
+            )}
           </div>
-          <button
-            type="button"
-            onClick={() => {
-              const newKey = prompt("Zadejte název nového pole:");
-              if (newKey) onChange([...path, newKey], null);
-            }}
-            className="mt-2 w-full px-3 py-1.5 text-xs font-medium rounded-md bg-purple-500 dark:bg-purple-600 text-white hover:bg-purple-600 dark:hover:bg-purple-700 transition-all shadow-sm"
-          >
-            + Přidat nové pole
-          </button>
+          {isExpanded && (
+            <div className="ml-4 mt-1 space-y-1 border-l-2 border-purple-200 dark:border-purple-900/50 pl-3">
+              {Object.entries(data).map(([key, value]) => (
+                <JsonEditorForm
+                  key={key}
+                  data={value}
+                  path={[...path, key]}
+                  onChange={onChange}
+                  label={key}
+                />
+              ))}
+              <button
+                type="button"
+                onClick={() => {
+                  const newKey = prompt("Zadejte název nového pole:");
+                  if (newKey) onChange([...path, newKey], null);
+                }}
+                className="mt-2 px-2 py-1 text-xs rounded-md bg-purple-500 dark:bg-purple-600 text-white hover:bg-purple-600 dark:hover:bg-purple-700 transition-all"
+              >
+                + Přidat pole
+              </button>
+            </div>
+          )}
         </div>
       );
     }
   } else {
+    // Primitive value - inline editing
     return (
-      <input
-        value={data === null || data === undefined ? "" : data}
-        onChange={(e) => onChange(path, e.target.value)}
-        className="w-full px-3 py-1.5 rounded-md border border-gray-200 dark:border-gray-800/50 text-sm bg-white dark:bg-slate-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:focus:ring-violet-500 focus:border-transparent transition-all"
-        placeholder="Zadejte hodnotu..."
-      />
+      <div className="flex items-center gap-2 group mb-1">
+        <div className="flex items-center gap-2 flex-1">
+          {label && (
+            <span
+              className="text-xs font-medium text-gray-600 dark:text-gray-400 min-w-[200px] flex-shrink-0"
+              title={labelTitle || label}
+            >
+              {label}:
+            </span>
+          )}
+          <input
+            value={data === null || data === undefined ? "" : data}
+            onChange={(e) => onChange(path, e.target.value)}
+            className="flex-1 px-2 py-1 rounded-md border border-gray-200 dark:border-gray-800/50 text-xs bg-white dark:bg-slate-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:focus:ring-violet-500 focus:border-transparent transition-all"
+            placeholder="Zadejte hodnotu..."
+          />
+        </div>
+        {path.length > 0 && (
+          <button
+            type="button"
+            onClick={() => onChange(path, undefined)}
+            className="opacity-0 group-hover:opacity-100 px-2 py-1 text-xs rounded-md bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 hover:bg-red-100 dark:hover:bg-red-900/50 transition-all"
+            title="Odstranit"
+          >
+            ✕
+          </button>
+        )}
+      </div>
     );
   }
 }
