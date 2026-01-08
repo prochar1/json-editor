@@ -1,0 +1,2213 @@
+{
+  "defaultScannedId": "01",
+  "infos": [
+    {
+      "scannedId": "03",
+      "title": {
+        "cs": "Horská smrčina",
+        "en": "Mountain spruce forest",
+        "de": "Bergfichtenwald"
+      },
+      "content": {
+        "cs": "<p>Horské smrčiny se vyskytují na hraničním hřebeni v nadmořských výškách 1 100 – 1 450 m. Nejcennější biotopy tak mají národní parky Šumava a Bavorský les společné a společně v nich také dávají přednost přírodě. Dynamiku tady neurčuje člověk, ale pouze vítr nebo kůrovec. Ve vysokých nadmořských výškách s drsným podnebím a v zimě s vysokou sněhovou pokrývkou je přirozeně dominantním stromem smrk, ke kterému se občas přidává jeřáb ptačí. Typická je tady přítomnost velkého množství tlejícího dřeva, které má obrovský význam nejen pro obnovu porostů, ale také pro biodiverzitu. Až třetina všech druhů přirozeného lesa je závislá na tlejícím dřevě, protože jej využívá přímo jako potravu nebo jako místo k hnízdění a úkrytu nebo se živí organismy žijícími v tlejícím dřevě. Proto tady nacházíme přírodní druhy, které v hospodářských lesích chybí, např. dřevožijnou houbu outkovečku citronovou nebo brouky trnoštítce horského a kornatce velkého. Ti jsou díky svým stanovištním nárokům označováni za pralesní relikty. Horské smrčiny jsou domovem i pravděpodobně nejznámějšího ptáka Bavorského lesa a Šumavy tetřeva hlušce. Kromě něj zde žijí i velké šelmy rys ostrovid a vlk obecný, stejně tak jako jeho hlavní zdroj potravy jelen evropský. Bylinné patro smrčin je chudé, tvoří ho především trávy třtina chloupkatá, metlička křivolaká, kapradiny papratka horská či žebrovice různolistá, bylina bika lesní a keřík brusnice borůvka. Přesto i tady můžeme občas vidět barevné květy dřípatky horské, podbělice alpské nebo sedmikvítku evropského, vzácně pak čípku objímavého.</p>",
+        "en": "<p>Mountain spruce forests grow along the border ridge at elevations between 1,100 and 1,450 metres. These are among the most valuable habitats shared by Šumava and the Bavarian Forest National Parks, where nature itself takes the lead. Forest dynamics here are shaped not by people, but by natural forces — mainly wind and bark beetles. At such high altitudes, with a harsh climate and deep winter snow, spruce naturally dominates, occasionally accompanied by mountain ash. A defining feature of these forests is the abundance of decaying wood, which plays a crucial role in forest regeneration and biodiversity. Up to a third of all species in natural forests depend on deadwood — feeding on it, nesting in it, or preying on the organisms that live there. As a result, we find here many species absent from managed forests, such as the shelf fungus <em>Antrodiella citrinella</em> and beetles like the bark-gnawing beetle <em>Peltis grossa</em> or the longhorn beetle <em>Tragosoma depsarium</em>. Because of their specialised habitat needs, these species are known as forest relicts. The mountain spruce forest is also home to one of the region’s most iconic birds — the capercaillie. Large carnivores such as the Eurasian lynx and grey wolf also occur here, along with their main prey, the red deer. The herb layer is rather poor, dominated by grasses such as hairy reed grass and wavy hair-grass, ferns like Alpine lady-fern and deer fern, herbs including greater wood-rush, and bilberry stands. Even so, splashes of colour occasionally appear — from mountain tassel and Alpine coltsfoot to chickweed wintergreen, and rarely, clasping twisted stalk.</p>",
+        "de": "<p>Bergfichtenwälder kommen auf dem Grenzkamm in Höhenlagen von 1.100 bis 1.450 Metern vor. Die wertvollsten Biotope haben die Nationalparks Šumava und Bayerischer Wald somit gemeinsam. Gemeinsam geben sie der Natur den Vorrang. Die Dynamik wird hier nicht durch den Menschen, sondern nur durch Wind oder Borkenkäfer bestimmt. In Höhenlagen mit rauem Klima und hoher Schneedecke im Winter ist die Fichte von Natur aus der vorherrschende Baum, zu dem sich gelegentlich die Vogelbeere gesellt. Typisch ist hier das Vorhandensein großer Mengen an Totholz, das für die Verjüngung des Waldes und die Artenvielfalt von großer Bedeutung ist. Bis zu einem Drittel aller Arten in natürlichen Wäldern sind auf Totholz angewiesen, indem sie es direkt als Nahrung oder als Nist- und Unterschlupfmöglichkeit nutzen oder sich von Organismen ernähren, die im Totholz leben. Deshalb finden sich hier natürlich vorkommende Arten, die in den Wirtschaftswäldern fehlen, wie der holzbewohnende Pilz Zitronengelbe Weißfäule-Tramete oder die Käfer Zottenbock und Rauer Flachkäfer. Aufgrund ihrer Lebensraumansprüche werden sie als Waldrelikte bezeichnet. Die Bergfichtenwälder sind auch das Zuhause des wohl berühmtesten Vogels des Böhmerwaldes: des Auerhahns. Neben dem Auerhahn leben hier auch große Raubtiere wie der Eurasische Luchs und der Wolf sowie die Hauptnahrungsquelle des Wolfes, der Rothirsch. Die Krautschicht der Bergfichtenwälder ist arm und besteht hauptsächlich aus Gräsern wie dem Wolligen Reitgras und der Gewöhnlichen Drahtschmiele, Farnen wie dem Gebirgs-Frauenfarn und dem Gewöhnlichen Rippenfarn, der krautigen Pflanze Wald-Hainsimse und dem Strauch Heidelbeere. Dennoch kann man hier gelegentlich auch die farbenfrohen Blüten des Berg-Alpenglöckchens, des Grünen Alpenlattichs oder des Europäischen Siebensterns sehen, seltener auch die des Stängelumfassenden Knotenfußes.</p>"
+      }
+    },
+    {
+      "scannedId": "08",
+      "title": {
+        "cs": "Horský smíšený les",
+        "en": "Mountain mixed forest",
+        "de": "Bergmischwald"
+      },
+      "content": {
+        "cs": "<p>Horský smíšený les najdeme v nadmořských výškách 750 – 1100 m. Je tady výrazně tepleji než v hřebenových polohách a stromové patro je tak pestřejší. Lesu vládnou buky, jedle a smrky, na kamenitých půdách se daří javoru klenu. V minulosti byl horský smíšený les na obou stranách hranice výrazně ovlivněn hospodářskou činností člověka. Ve prospěch smrku byly potlačeny ostatní dřeviny. Tam kde byly lesy vykáceny, jsou stejnověké kultury. Na ostatních, podstatně menších plochách se zachovaly pralesní zbytky. Dnes jsou na bavorské straně smíšené lesy plošně nejvýznamnějším biotopem, ve kterém dominuje buk a půdu pod nohama opět získává i jedle. Naproti tomu na české straně Šumavy posledních 9 000 let dominuje smrk. Bylinné patro horských smíšených lesů je velmi variabilní. V závislosti na množství a kvalitě humusu, na půdních poměrech i na orientaci svahů můžeme rozlišit acidofilní (kyselé) bučiny a květnaté bučiny. Jak už z názvu vyplývá, v květnatých bučinách najdeme řadu druhů bylin, například kyčelnici devítilistou, kyčelnici cibulkonosnou, samorostlík klasnatý, podbílek šupinatý, měsíčnici vytrvalou a další. Bylinné patro acidofilních bučin je znatelně chudší, někdy úplně chybí. Přírodní bohatství ale nejsou jen stromy a rostliny. Pod kůrou stromů i v tlejícím dřevě žije skrytým životem mnoho zástupců hmyzu.  Jejich počet druhů překonávají snad jen houby. Ve starých doupných stromech hnízdí šplhavci i sovy, včetně naší druhé největší sovy puštíka bělavého. </p>",
+        "en": "<p>Mountain mixed forests grow at elevations between 750 and 1,100 metres. Compared to the windswept ridge, the climate here is milder, and the forest canopy is more diverse. Beech, silver fir and spruce dominate, while sycamore maple thrives on rocky soils. In the past, forests on both sides of the border were heavily influenced by human activity. Other tree species were often suppressed in favour of spruce, and where forests were cleared, even-aged stands were planted. In a few places, however, remnants of the original primeval forest have survived. Today, on the Bavarian side, mixed forests cover the largest area and are dominated by beech, with fir gradually reclaiming its natural place. On the Czech side of Šumava, spruce has remained dominant for nearly 9,000 years. The herb layer of mountain mixed forests is highly variable. Depending on the amount and quality of humus, soil conditions and slope orientation, we can distinguish between acidophilous beech woodlands and flower-rich beech woods. As the name suggests, the latter host a variety of herb species such as nine-leaved toothwort, coral-root bittercress, red baneberry, toothwort, perennial honesty and many others. The ground vegetation of acidophilous beech forests is much poorer, sometimes almost absent. But the natural wealth of these forests goes far beyond trees and plants. Countless insects live hidden lives under the bark and in the decaying wood — a diversity rivalled perhaps only by fungi. Old hollow trees provide nesting sites for owls and woodpeckers, including the Ural owl, the country’s second-largest owl.</p>",
+        "de": "<p>Bergmischwälder findet man in Höhenlagen zwischen 750 und 1.100 Metern. Hier ist es deutlich wärmer als in den Kammlagen, weshalb die Baumschicht vielfältiger ist. Der Wald wird von Buchen, Tannen und Fichten dominiert, während der Bergahorn auf steinigen Böden gedeiht. In der Vergangenheit wurde der Gebirgsmischwald beiderseits der Grenze durch wirtschaftliche Aktivitäten des Menschen erheblich beeinflusst. Andere Baumarten wurden zugunsten der Fichte verdrängt. Wo Wälder gerodet wurden, gibt es heute gleichaltrige Kulturen. In anderen, viel kleineren Gebieten sind hingegen Urwaldreste erhalten geblieben. Heute sind die Mischwälder auf bayerischer Seite der flächenmäßig wichtigste Lebensraum, in dem die Buche dominiert und die Tanne wieder an Boden gewinnt. Auf der tschechischen Seite des Böhmerwaldes hingegen dominiert seit 9.000 Jahren die Fichte. Die Krautschicht der Bergmischwälder ist sehr variabel. Je nach Menge und Qualität des Humus, der Bodenbeschaffenheit und der Ausrichtung der Hänge unterscheidet man zwischen artenarmen, sauren Buchenwäldern und artenreichen Buchenwäldern. Wie der Name schon sagt, findet man in den artenreichen Buchenwäldern eine Vielzahl krautiger Pflanzen wie die Quirlblättrige Zahnwurz, die Zwiebel-Zahnwurz, das Schwarzfrüchtige Christophskraut, die Gewöhnliche Schuppenwurz, das Wilde Silberblatt und andere. Die Krautschicht der artenarmen Buchenwälder ist deutlich ärmer und manchmal fehlt sie sogar ganz. Der natürliche Reichtum besteht jedoch nicht nur aus Bäumen und Pflanzen. Viele Insekten leben im Verborgenen unter der Rinde von Bäumen und im Totholz.  Ihre Artenzahl wird vielleicht nur von der der Pilze übertroffen. In den alten Hohlbäumen nisten sowohl Spechtvögel als auch Eulen, darunter auch unsere zweitgrößte Eule, der Habichtskauz.    </p>"
+      }
+    },
+    {
+      "scannedId": "01",
+      "title": {
+        "cs": "Rašelinná smrčina",
+        "en": "Bog spruce forest",
+        "de": "Fichtenmoorwald"
+      },
+      "content": {
+        "cs": "<p>Rašelinné smrčiny rostou na extrémně zamokřených půdách v okolí pramenišť a rašelinišť. V Národním parku Bavorský les je najdeme ve studených údolích, do kterých sestupuje z horských svahů chladný vzduch v nadmořské výšce kolem 700 m. Naopak na Šumavě jsou nejčastější na šumavských pláních v nadmořské výšce okolo 1000 m. Vyskytují se ale i ve vrcholových smrkových partiích Šumavy, kde dobře odolávají větrům i kůrovci.   Dominantní dřevinou je chladnomilný smrk ztepilý, který se jako jeden z mála dokáže vyrovnat s nepříznivými podmínkami, a to díky širokému a mělkému kořenovému systému. Přesto i on v mnoha případech živoří a svým vzhledem nás klame. Zvlášť v okolí rašelinišť mohou být stromky o průměru 10 – 20 cm staré i přes sto let. Smrk doprovází i další dřeviny, všudypřítomný jeřáb ptačí a bříza pýřitá. V bylinném patře je častý suchopýr pochvatý, vlochyně bahenní, podbělice alpská, různé druhy ostřic, vzácně i bradáček srdčitý. Typické pro rašelinné lesy je velmi husté a druhově bohaté mechové patro s pokryvností až 70%. Tvoří ho především rašeliníky, játrovka rohozec trojlaločný a ploník obecný. Na některých místech není v převaze smrk, ale podle dominantní dřeviny rozlišujeme i rašelinné březiny nebo bory či podmáčené olšiny.</p>",
+        "en": "<p>Bog spruce forests develop on extremely waterlogged soils near springs and peat bogs. In the Bavarian Forest National Park, they are found in cold valleys where cold air descends from the surrounding slopes at elevations around 700 metres. In Šumava, they occur mainly on the high plateaus at about 1,000 metres, but they can also appear higher up, where spruces withstand strong winds and bark beetle outbreaks surprisingly well. The dominant tree species here is the cold-tolerant Norway spruce, one of the few trees able to survive in such challenging conditions thanks to its wide, shallow root system. Yet appearances can be deceiving — around peat bogs, slender spruces with trunks only 10–20 centimetres thick may be more than a hundred years old. The spruce is accompanied by other hardy species, notably mountain ash and downy birch. The herb layer is often dominated by hare’s-tail cottongrass, bog bilberry, Alpine coltsfoot and various sedges, with the rare heartleaf twayblade occasionally present. A characteristic feature of bog spruce forests is their dense, species-rich moss carpet, which can cover up to 70% of the ground. It is composed mainly of peat mosses, greater whipwort (a liverwort) and common haircap moss. In some areas, spruce does not dominate; depending on local conditions, peat-bog birch or pine stands may prevail, and in wetter places, even waterlogged alder woods can develop.</p>",
+        "de": "<p>Fichtenmoorwälder wachsen auf wassergesättigten Böden in der Nähe von Quellgebieten und Mooren. Im Nationalpark Bayerischer Wald findet man sie in kalten Tälern in einer Höhe von etwa 700 m, in die kühle Luft von den Berghängen herabströmt. In der Šumava hingegen sind sie vor allem auf der Böhmerwald-Ebene in einer Höhe von etwa 1.000 m anzutreffen. Sie kommen aber auch in den Fichtenwäldern der Hochlagen vor, wo sie Wind und Borkenkäfern gut widerstehen. Die vorherrschende Baumart ist die kälteliebende Gemeine Fichte. Sie ist eine der wenigen Gehölze, die dank ihres breiten und flachen Wurzelsystems auch mit widrigen Bedingungen zurechtkommt. Doch auch sie gedeiht in vielen Fällen eher schlecht und täuscht uns mit ihrem Aussehen. Besonders in der Nähe von Mooren können Bäume mit einem Durchmesser von nur 10–20 cm über hundert Jahre alt werden. Die Fichte wird von anderen Baumarten sowie der allgegenwärtigen Vogelbeere und Moor-Birke begleitet. In der Krautschicht wachsen häufig Scheiden-Wollgras, Rauschbeere, Grüner Alpenlattich, verschiedene Seggenarten und selten auch das Kleine Zweiblatt. Typisch für Moorwälder ist eine sehr dichte und artenreiche Moosschicht, die bis zu 70 Prozent der Vegetationsdecke ausmacht. Sie besteht hauptsächlich aus Torfmoosen, darunter dem Dreilappigen Peitschenmoos und dem Goldenen Frauenhaarmoos. An einigen Stellen ist die Fichte nicht vorherrschend. Je nach dominierender Baumart kann man dann Birkenmoorwälder, Bergkiefernmoorwälder oder nasse Erlenwälder finden.</p>"
+      }
+    },
+    {
+      "scannedId": "02",
+      "title": {
+        "cs": "Vodní toky",
+        "en": "Water streams",
+        "de": "Fließgewässer"
+      },
+      "content": {
+        "cs": "<p>V lesnatém pohoří Šumavy vyvěrá nespočet pramenů. Až na malé výjimky se pramenitá voda Národního parku Bavorský les spojuje v horských potocích a přes toky Ilz a Regen teče do Dunaje. V Národním parku Šumava pak Křemelná, Vydra a Vltava odvádějí své vody do Labe. Hraniční hřebeny jsou totiž důležitým evropským rozvodím. Svahy a údolími obou národních parků protéká 2260 km horských potoků. Jejich vody jsou mírně kyselé a mají obvykle černohnědou barvu. Je to důsledek vysokého obsahu huminových kyselin, které se vyplavují z rašeliny. Voda v potocích a řekách je plná života. Na Šumavě bylo zjištěno kromě ostatního vodního hmyzu kolem 60 druhů jepic a přes 150 druhů chrostíků. Žijí tady evropsky významné druhy rybovitých jako mihule potoční nebo vranka obecná. Správa Národního parku Šumava posiluje z umělého odchovu populaci lipana podhorního, mníka jednovousého a pstruha potočního. Přítomnost pstruha potočního je nezbytná pro reprodukci největšího vodního skvostu mlže perlorodky říční. Její malé zbytky se zachovaly v Teplé Vltavě a ochrana a obnova této populace má velkou prioritu. Perlorodka se živí tzv. detritem (rozloženými zbytky suchozemských i vodních rostlin). Těch najdeme ve vodních tocích celou řadu: hvězdoš háčkatý, lakušník vodní nebo stolístek střídavokvětý. Režim horských potoků v posledních letech čím dál víc ovlivňuje přítomnost bobra evropského. Stavbou svých hrází pomáhá přirozeně zadržovat tak potřebnou vodu v krajině.</p>",
+        "en": "<p>Countless springs rise in the forested mountains of Šumava. In the Bavarian Forest National Park, most of these waters join mountain streams that flow into the Danube via the Ilz and Regen rivers. In Šumava National Park, rivers such as the Křemelná, Vydra and Vltava drain northwards into the Elbe, as the border ridge forms part of a major European watershed. Altogether, more than 2,200 kilometres of mountain streams weave through the slopes and valleys of both national parks. Their waters are slightly acidic and often appear dark brown, coloured by humic acids leaching from peat soils. Yet beneath the surface, these streams are full of life. Šumava alone hosts around 60 species of mayflies and over 150 species of caddisflies, along with many other aquatic insects. Among the fish species found here are the brook lamprey and European bullhead. The Šumava National Park Authority actively supports populations of grayling, burbot and brown trout through breeding programmes. Brown trout are especially important for the reproduction of one of Šumava’s rarest aquatic treasures — the freshwater pearl mussel. Its last surviving population is found in the Teplá Vltava River, and its conservation and recovery are a top priority. The mussel feeds on detritus — decomposed remains of terrestrial and aquatic plants — which are abundant in the streams, together with plants such as intermediate water-starwort, common water-crowfoot and alternate water-milfoil. In recent years, the natural flow of mountain streams has been increasingly shaped by the return of the European beaver. By building its dams, the beaver helps to retain valuable water in the landscape and restore the natural rhythm of these waterways.</p>",
+        "de": "<p>In den bewaldeten Gebieten des Böhmerwaldes gibt es unzählige Wasserquellen. Das Quellwasser des Nationalparks Bayerischer Wald mündet, bis auf wenige Ausnahmen, über die Gebirgsbäche, die Ilz und den Regen in die Donau. Im Nationalpark Šumava münden die Flüsse Křemelná, Vydra und Vltava in die Elbe. Der Grenzkamm ist eine wichtige europäische Wasserscheide. Insgesamt fließen 2 260 km Bergbäche durch die Hänge und Täler der beiden Nationalparks. Ihr Wasser ist in der Regel leicht sauer und schwarz-braun gefärbt. Dies ist auf den hohen Gehalt an Huminsäuren zurückzuführen, die aus dem Torf ausgewaschen werden. In den Bächen und Flüssen ist das Wasser voller Leben. Neben anderen Wasserinsekten wurden im Böhmerwald etwa 60 Eintagsfliegenarten und über 150 Köcherfliegenarten nachgewiesen. Hier leben auch europaweit bedeutende Fischarten wie das Bachneunauge oder die Mühlkoppe. Die Nationalparkverwaltung Šumava stärkt die Populationen der Europäischen Äsche, der Rutte und der Bachforelle durch künstliche Aufzucht. Die Anwesenheit von Bachforellen ist für die Fortpflanzung des größten Wasserjuwels, der Flussperlmuschel, unerlässlich. Die Überreste ihrer Population sind in der Warmen Moldau erhalten. Der Schutz und die Wiederherstellung dieser Art haben hohe Priorität. Die Flussperlmuschel ernährt sich von Detritus, also zersetzten Resten von Land- und Wasserpflanzen. Von diesen gibt es in den Fließgewässern eine ganze Reihe: den Haken-Wasserstern, den Gewöhnlichen Wasserhahnenfuß oder das Wechselblütige Tausendblatt. In den letzten Jahren wurde die Entwicklung der Gebirgsbäche zunehmend durch die Anwesenheit des Europäischen Bibers beeinflusst. Durch den Bau seiner Dämme trägt er dazu bei, dass dringend benötigtes Wasser auf natürliche Weise in der Landschaft zurückgehalten wird.</p>"
+      }
+    },
+    {
+      "scannedId": "04",
+      "title": {
+        "cs": "Kamenné moře",
+        "en": "Boulder fields",
+        "de": "Blockfelder"
+      },
+      "content": {
+        "cs": "<p>Kamenná moře vznikala během milionů let v dobách ledových přirozeným zvětráváním skal na horských vrcholech. Voda, která pronikala do nejmenších skalních trhlin a štěrbin během silných mrazů, kameny doslova trhala. Rozštípané a uvolněné balvany se díky zemské přitažlivosti hromadily v místech s menším svahem, případně až na dně údolí. Nejpůsobivější kamenné moře v Národním parku Bavorský les je na vrcholu Luzného, který je přirozeně bezlesý. Na Šumavě leží podobná suťoviště na Velké Mokrůvce, v Povydří nebo kolem Obřího hradu. Kamenné bloky jsou nejčastěji pokryté zelenožlutým lišejníkem mapovníkem zeměpisným, ale rostou zde i jiné druhy lišejníků: dutohlávky, terčovky, pupkovky a na stinných místech také mechorosty. Na pozvolnějších místech najdeme i borůvky, brusinky a borovici kleč. Vnitřní prostory kamenitých sutí připomínají prostředí jeskyní. Vládne zde naprostá tma a chlad, prakticky nedochází k dennímu kolísání teploty, i v průběhu roku se teplota pohybuje jen v omezeném rozmezí, je zde vysoká vzdušná vlhkost a bezvětří. Díky tomu tady přežily od poslední doby ledové hmyzí druhy, tzv. glaciální relikty, které se dnes vyskytují pouze v Alpách a v chladných severských oblastech. Patří mezi ně zvláštní společenstva střevlíkovitých nebo pavouk slíďák ostnonohý. Z obratlovců můžeme pozorovat ještěrku živorodou, zmiji obecnou a vzácně i plcha zahradního. Za tmy zde s oblibou loví i netopýr severní.</p>",
+        "en": "<p>Boulder fields were formed over millions of years during the ice ages through the gradual weathering of rocks on mountain peaks. Water seeping into tiny cracks and fissures froze during periods of intense cold, expanding and splitting the rock apart. Under the pull of gravity, the loosened boulders accumulated on gentler slopes or settled in the valley bottoms. The most impressive border field in the Bavarian Forest National Park lies at the summit of Mt. Lusen — a naturally treeless, striking landscape of bare granite blocks. In Šumava, similar scree formations can be found at Velká Mokrůvka, in the Povydří area, or around Obří hrad. The boulder surfaces are most commonly covered with green-yellow map lichen, but many other lichen species grow here as well, including cup lichens, tube lichens, rock tripes and, in shaded places, various bryophytes. In less steep sections, bilberries, cowberries and mountain pines are able to take root. The inner spaces of these boulder fields resemble cave-like environments — dark, cold and extremely stable. Temperatures fluctuate only minimally throughout the year, humidity is high and wind is virtually absent. Thanks to these unique conditions, several insect species known as glacial relicts have survived here since the last ice age. These include specialised communities of ground beetles and the wolf spider <em>Acantholycosa norvegica</em>. Among vertebrates, the viviparous lizard and European viper occur here, and the garden dormouse can be seen on occasion. The northern bat also favours these dark rocky landscapes.</p>",
+        "de": "<p>Die Blockfelder sind im Laufe der Jahrmillionen während der Eiszeiten entstanden, und zwar durch die natürliche Verwitterung der Felsen auf den Berggipfeln. Das Wasser drang während der harten Fröste in die kleinsten Felsritzen und -spalten ein und riss die Steine buchstäblich auseinander. Aufgrund der Erdanziehungskraft sammelten sich die zersplitterten und losen Gesteinsbrocken an Stellen mit geringerem Gefälle oder sogar im Talboden. Das eindrucksvollste Blockmeer im Nationalpark Bayerischer Wald befindet sich auf dem baumlosen Gipfel des Lusen. Ähnliche Schutthalden gibt es auf der tschechischen Seite auf dem Moorberg (Velká Mokrůvka), im Vydra-Tal oder rund um das Riesenschloss (Obří hrad). Die Steinblöcke sind meist mit der grün-gelben Landkartenflechte bewachsen, aber es wachsen hier auch andere Flechtenarten der Gattungen Cladonia, Hypogymnia und Umbilicaria. An schattigen Stellen wachsen auch Moose. An den flacheren Stellen wachsen Heidel- und Preiselbeeren sowie Bergkiefern. Das Klima in den Innenräumen der Schutthalden ähnelt dem Höhlenklima. Es ist dort völlig dunkel und kalt. Es gibt praktisch keine täglichen Temperaturschwankungen und auch während des Jahres schwankt die Temperatur nur in einem begrenzten Bereich. Zudem herrscht eine hohe Luftfeuchtigkeit und es weht kein Wind. Dadurch konnten hier seit der letzten Eiszeit Insektenarten überleben, sogenannte Eiszeitrelikte. Diese kommen heute sonst nur noch in den Alpen und in den kalten nördlichen Regionen vor. Dazu gehören spezielle Laufkäfer-Gemeinschaften und die Blockfelder-Stachelwolfspinne. Unter den Wirbeltieren können wir die Waldeidechse, die Kreuzotter und gelegentlich den Gartenschläfer beobachten. Auch die Nordfledermaus jagt hier bevorzugt in der Dunkelheit.</p>"
+      }
+    },
+    {
+      "scannedId": "05",
+      "title": {
+        "cs": "Ledovcové jezero",
+        "en": "Glacial lake",
+        "de": "Gletschersee"
+      },
+      "content": {
+        "cs": "<p>Během poslední doby ledové byly šumavské vrcholy pokryty lokálními ledovci. Při jejich pohybu dolů vytvářela těžká masa ledu a sněhu obrovské kotle (kary) a tlačila před sebou tuny hlíny a kamení (morény). Když ledovce roztály, zanechaly po sobě změněnou krajinu. Morény zahradily spodní části vyhloubených pánví, kde vznikla ledovcová jezera. Nad nimi ční mnohdy několik set metrů vysoké skalní stěny – kary. Dnes můžeme na české straně Šumavy obdivovat jezero Laka, Plešné, Prášilské, Černé a Čertovo a v Bavorském lese Roklanské i Velké a Malé Javorské jezero. Vody jezer jsou přirozeně kyselé a chudé na živiny. Zdrojová oblast jezer je navíc velice malá, a proto je chemismus vody v ledovcových jezerech náchylný k jakýmkoliv změnám. To se ukázalo v minulém století, kdy kyselé deště z průmyslových emisí způsobily okyselení vod a okolních lesních půd natolik, že z nich byla do jezerních vod vyplavena toxická forma hliníku, která způsobila vyhynutí téměř všech živočichů. S postupným omezením imisí síry se život do jezer začal pomalu vracet a jejich kyselost se i přes stále trvající imise dusíku snižuje. Dnes najdeme v jezerních vodách početný plankton, reprezentovaný např. perloočkami a buchankami, ale i korýše, chrostíky, jepice, pošvatky, vážky a další vodní hmyz. Velmi zvláštními glaciálními relikty jsou dva druhy plavuní – šídlatka jezerní v Černém jezeře a šídlatka ostnovýtrusá v Plešném jezeře. Extrémní podmínky panují i v karech ledovcových jezer. Jejich strmé stěny mají ale i své výhody. Občas narušované půdy ve svazích umožňují např. přežití semenáčků hořce panonského. Na starých a odumírajících stromech roste i vzácný lišejník důlkatec plicní nebo dřevožijná houba troudnatec růžový. Ochranu strmých skal využívá k hnízdění i vzácný sokol stěhovavý.</p>",
+        "en": "<p>During the last ice age, the highest peaks of Šumava were covered by small local glaciers. As they flowed downward, the enormous weight of ice carved deep cirques into the mountainsides and pushed vast amounts of clay, gravel and boulders ahead of them, forming moraines. When the glaciers finally melted, they left behind a dramatically reshaped landscape. The moraines dammed the lower parts of the basins, giving rise to a glacial cirque. On the Czech side of Šumava, visitors can admire Lake Laka, Plešné jezero, Prášilské jezero, Černé jezero and Čertovo jezero. In the Bavarian Forest, the Lake of Mt. Rachel and lakes of Great and Little Arber can be found. Towering above many of these lakes are steep rocky cirques that rise several hundred metres. The waters of the glacial lakes are naturally acidic and very low in nutrients. Their catchment areas are extremely small, making the lakes highly sensitive to any changes in water chemistry. This sensitivity became tragically clear in the 20th century, when acid rain from industrial pollution caused severe acidification of both the lakes and the surrounding soils. Toxic forms of aluminium were washed into the water, wiping out nearly all aquatic life. As sulphur emissions gradually declined in recent decades, life has begun to return. Despite continuing nitrogen deposition, lake acidity is slowly decreasing. Today, the lakes once again host abundant plankton — water fleas, cyclopoids and other tiny crustaceans — as well as caddisflies, mayflies, stoneflies, dragonflies and many other aquatic insects. Two remarkable glacial relicts survive only in these lakes: the lake quillwort in Černé jezero and the spiny quillwort in Plešné jezero. Harsh conditions also prevail in the cirques above the lakes, but their steep, unstable slopes can offer surprising opportunities. Disturbed soil patches provide niches for species such as the Hungarian gentian, and old or dying trees shelter rare organisms including lung lichens and the wood-decaying fungus <em>Fomitopsis rosea</em>. The towering rock walls also offer protection for one of the rarest birds in the region — the peregrine falcon, which occasionally nests on the inaccessible cliffs above the lakes.</p>",
+        "de": "<p>Während der letzten Eiszeit waren die Gipfel des Böhmerwaldes mit lokalen Gletschern bedeckt. Als diese sich nach unten bewegten, bildeten die schweren Eis- und Schneemassen riesige Kessel (Kare) und schoben tonnenweise Erde und Felsen (Moränen) vor sich her. Als die Gletscher schmolzen, hinterließen sie eine veränderte Landschaft. Die Moränen versperrten die unteren Teile der ausgehobenen Becken, in denen sich Gletscherseen bildeten. Über ihnen erheben sich oft mehrere hundert Meter hohe Felswände – die sogenannten Kare. Heute können wir auf der tschechischen Seite des Böhmerwaldes den Laka-See, den Plešné-See, den Prášilské-See, den Černé-See und den Čertovo-See bewundern und im Bayerischen Wald den Rachelsee sowie den Großen und den Kleinen Abersee. Das Wasser dieser Seen ist von Natur aus sauer und nährstoffarm. Außerdem ist das Einzugsgebiet dieser Seen sehr klein, sodass die Wasserchemie in Gletscherseen empfindlich auf Veränderungen reagiert. Dies wurde im letzten Jahrhundert deutlich, als saurer Regen, der aus Industrieemissionen stammte, das Wasser und die umliegenden Waldböden so sauer machte, dass eine giftige Form von Aluminium aus den Böden in das Wasser des Sees gespült wurde, was zum Aussterben fast aller Lebewesen führte. Mit der allmählichen Verringerung der Schwefelimmissionen kehrt langsam das Leben in die Seen zurück und ihr Säuregehalt nimmt ab – trotz der anhaltenden Stickstoffimmissionen. In den Gewässern finden wir heute zahlreiches Plankton, darunter Wasserflöhe und Hüpferlinge, aber auch Krebstiere, Köcherfliegen, Eintagsfliegen, Steinfliegen, Libellen und andere Wasserinsekten. Zu den ganz besonderen Gletscherrelikten gehören zwei Arten von Bärlappen: das See-Brachsenkraut im Černé-See und das Stachelporige Brachsenkraut im Plešné-See. Extreme Bedingungen herrschen auch in den Karen der Gletscherseen. Ihre steilen Wände haben allerdings auch ihre Vorteile. Die Böden in den Hängen, die von Zeit zu Zeit gestört werden, ermöglichen beispielsweise das Überleben des Ungarischen Enzians. Auf alten und absterbenden Bäumen wachsen die seltene Echte Lungenflechte und der Rosenrote Baumschwamm, ein holzbewohnender Pilz. Die steilen Klippen werden auch vom seltenen Wanderfalken als Nistplatz genutzt.</p>"
+      }
+    },
+    {
+      "scannedId": "09",
+      "title": {
+        "cs": "Horské louky",
+        "en": "Mountain meadows",
+        "de": "Bergwiesen"
+      },
+      "content": {
+        "cs": "<p>Horské louky a pastviny jsou pestrobarevné ostrůvky v moři zelených lesů. Zvyšují nejen estetickou hodnotu krajiny, ale především biodiverzitu. O jejich vznik se zasloužili lidé, kteří na Šumavě po staletí žili. Zhruba dvě třetiny druhů rostlin se soustředí právě na nelesní plochy v okolí současných i zaniklých sídel. Na Šumavě rozlišujeme podle zastoupení rostlinných druhů několik typů luk. Ve vyšších polohách najdeme horská vřesoviště, kde dominují keříčkovité rostliny, především vřes, borůvka, brusinka a vlochyně bahenní. K nápadným a vzácným druhům tady patří byliny prha arnika a hořec panonský. Na místech bývalých pastvin a na málo úživných půdách se vyskytují krátkostébelné smilkové trávníky, které občas zdobí orchidej běloprstka bělavá a na několika místech i endemická bylina hořeček mnohotvarý český. Vzácně se vyskytují v nižších polohách Šumavy ovsíkové louky s orchidejemi vstavačem osmahlým nebo pětiprstkou žežulníkem. V okolí sídel nacházíme trojštětové louky. Rostou na nich nižší druhy trav jako kostřava červená, psineček obecný, trojštět žlutavý spolu s třezalkou skvrnitou, silenkou dvoudomou i další endemickou bylinou zvonečníkem černým. Bezkolencové, střídavě vlhké louky s kosatcem sibiřským jsou typické pro lokality, kde v průběhu roku výrazně kolísá hladina podzemní vody. V údolí potoků, menších řek a na prameništích najdeme nejčastěji vlhké pcháčové louky s nápadnými bylinami starčkem potočním a prstnatcem májovým. Na bavorské straně jsou dodnes zachované historické pastviny tzv. <em>Schachten</em>, s prastarými solitérními javory a kamennými snosy. Horské louky a pastviny jsou domovem mnoha druhů živočichů, především hmyzu. V teplém a slunečném počasí můžeme pozorovat pruhované pestřenky a čmeláky, hbité brouky svižníky a střevlíky, skákající kobylky a sarančata, pestrobarevné motýly a vřetenušky. Kolem se ozývají pěvci bramborníček hnědý, strnad obecný a z neposečených luk hlavně večer a v noci chřástal polní.  </p>",
+        "en": "<p>Mountain meadows form colourful islands within the vast green expanses of Šumava’s forests. They not only enhance the beauty of the landscape but also greatly increase its biodiversity. Most of them were created by people who lived in Šumava for centuries, and today nearly two-thirds of all plant species in the region are found in these non-forest areas surrounding both current and vanished settlements. Several distinct meadow types occur in Šumava, each shaped by local climate, soil and historical land use. At higher elevations, mountain heathlands prevail, dominated by low shrubs such as heather, bilberry, cowberry and bog bilberry. Among the notable species growing here are mountain arnica and the rare Hungarian gentian. On sites of former grazing land and on nutrient-poor soils, short-stemmed mat-grass swards develop. These sparse grasslands are occasionally brightened by the orchid <em>Pseudorchis albida</em> and, in a few locations, by the endemic Bohemian polymorphous gentian. At lower elevations, oat-grass meadows are rare but exceptionally rich, hosting orchids such as the burnt orchid and fragrant orchid. Near settlements, Trisetum mountain meadows appear, where lower grass species — red fescue, common bent and yellow oat-grass — grow alongside spotted St John’s wort, red campion and the black rampion, another local endemic. In areas where the water table fluctuates widely throughout the year, alternately wet and dry Molinia meadows form, often featuring Siberian iris. In the valleys of streams, smaller rivers and springs, thistle-rich wet meadows dominate, characterised by striking species such as <em>Tephroseris crispa</em> and broad-leaved marsh orchids. On the Bavarian side of the border, the traditional high-mountain clearings known as Schachten have been preserved. These cultural landscapes are dotted with ancient solitary maples and the stone cairns built during historical land-clearing. Mountain meadows are home to a remarkable diversity of wildlife, especially insects. On warm, sunny days, they come alive with striped hoverflies, bumblebees, agile tiger beetles, ground beetles, grasshoppers, locusts, colourful butterflies and burnet moths. Birdsong is ever-present: whinchats and yellowhammers call from the shrubs, and in unmown meadows, especially at dusk and during the night, the distinctive voice of the corncrake can often be heard.</p>",
+        "de": "<p>Bergwiesen sind bunte Inseln in einem Meer aus grünen Wäldern. Sie erhöhen nicht nur den ästhetischen Wert der Landschaft, sondern vor allem die Artenvielfalt. Sie wurden von den Menschen geschaffen, die seit Jahrhunderten im Böhmerwald leben. Etwa zwei Drittel der Pflanzenarten konzentrieren sich auf die nicht bewaldeten Gebiete in der Nähe heutiger und verschwundener Siedlungen. Im Böhmerwald lassen sich mehrere Wiesentypen nach dem Vorkommen von Pflanzenarten unterscheiden. In höheren Lagen finden sich Gebirgsheiden, die von strauchartigen Pflanzen wie Besenheide, Heidelbeere, Preiselbeere und Rauschbeere dominiert werden. Zu den bemerkenswerten und seltenen Arten gehören hier die Echte Arnika und der Ungarische Enzian. Auf ehemaligen Weiden und Magerböden gibt es kurzstielige Borstgrasrasen, die gelegentlich mit der Orchidee Weiße Höswurz und an einigen Stellen mit der endemischen Pflanze Böhmischer Fransenenzian geschmückt sind. In den tieferen Lagen des Böhmerwaldes kommen seltene magere Glatthaferwiesen mit Orchideen wie dem Brand-Knabenkraut oder der Mücken-Händelwurz vor. In der Nähe der Siedlungen finden sich Goldhaferwiesen. Dort wachsen niedere Grasarten wie Gewöhnlicher Rot-Schwingel, Rotes Straußgras und Gewöhnlicher Wiesen-Goldhafer zusammen mit Geflecktem Johanniskraut, Roter Lichtnelke und einer weiteren endemischen Pflanze, der Schwarzen Teufelskralle. Wechselfeuchte Pfeifengraswiesen mit der Sibirischen Schwertlilie sind typisch für Standorte, an denen der Grundwasserspiegel im Jahresverlauf stark schwankt. In den Tälern von Bächen und kleineren Flüssen sowie an Quellgebieten finden sich meist feuchte Kratzdistel-Wiesen, in denen auffällige Kräuter wie das Krause Greiskraut und das Breitblättrige Knabenkraut wachsen. Auf der bayerischen Seite haben sich noch historische Weiden, sogenannte Schachten, mit uralten Solitär-Ahornen und Findlingssteinmauern erhalten. Bergwiesen beherbergen viele Tierarten, vor allem Insekten. Bei warmem und sonnigem Wetter können wir gestreifte Schwebfliegen und Hummeln, flinke Sandlaufkäfer und Laufkäfer, springende Lang- und Kurzfühlerschrecken sowie bunte Schmetterlinge und Widderchen beobachten. In der Umgebung singen Braunkehlchen und Goldammer, während auf den ungemähten Wiesen vor allem abends und nachts der Wachtelkönig umherstreift. </p>"
+      }
+    },
+    {
+      "scannedId": "10",
+      "title": {
+        "cs": "Údolní vrchoviště",
+        "en": "Valley raised bog",
+        "de": "Tal-Hochmoor"
+      },
+      "content": {
+        "cs": "<p>V nivách šumavských řek, zejména Vltavy a Křemelné, lze nalézt údolní rašeliniště, kterým se říká luhy. Vznikají dlouhodobým a postupným zarůstáním stojatých vod, například mrtvých ramen řeky. Stejně jako u horských vrchovišť i zde jsou jedním z hlavních tvůrců biotopu mechy rašeliníky. Díky nim je povrch údolního rašeliniště zvlněn tzv. bulty (kopečky) a šlenky (prohlubně). Nenajdeme zde však rašelinná jezírka typická pro horská vrchoviště. Povrch bývá porostlý keříčkovitou vegetací, vlochyní bahenní, kyhankou sivolistou, vzácně se zde vyskytuje rojovník bahenní a bříza trpasličí. Pro stromové patro je typická přítomnost borovice blatky, která se na některých místech kříží s borovicí klečí a vytváří borovici rašelinnou. Vyskytovat se zde může i smrk a bříza pýřitá. Celkový vzhled tak připomíná borovou tajgu. Zajímavými bylinnými zástupci jsou vachta trojlistá nebo blatnice bahenní, ze šáchorovitých je možné zmínit silně ohroženou ostřici bažinnou. Díky specifickým přírodním podmínkám je i složení fauny údolních vrchovišť velice pozoruhodné. Při troše štěstí zde můžeme pozorovat tetřívka obecného, zmiji obecnou, ještěrku živorodou a myšivku horskou. Bezobratlé reprezentují například motýli perleťovec severní, žluťásek borůvkový a osenice rašelinná. Z brouků se zde vyskytuje kriticky ohrožený střevlík Menétriesův. </p>",
+        "en": "<p>Valley raised bogs develop in the floodplains of Šumava’s rivers, particularly along the Vltava and Křemelná. They originate through the long-term, gradual overgrowth of standing water, such as abandoned river meanders and oxbows. As in upland bogs, peat mosses play a central role in shaping the habitat. Their growth creates a hummock-and-hollow surface, with raised, drier mounds alternating with moisture-filled depressions. Unlike upland bogs, however, valley raised bogs rarely contain open peat pools. The ground layer is usually dominated by low, shrubby vegetation — bog bilberry and bog rosemary — with marsh tea and dwarf birch appearing only occasionally. The tree layer is characterised by the presence of Pinus rotundata pines, which in some places hybridise with mountain pine, forming a distinct peat-bog form of this species. Spruce and downy birch may also occur locally, giving the area an overall appearance reminiscent of the northern pine taiga. The herb layer features species such as common bogbean and pod grass, while one of the rarest representatives of the sedge family, the highly endangered bog sedge, also survives here. The unique conditions of valley raised bogs support a distinctive fauna. With a bit of luck, visitors may encounter the black grouse, the European viper, the viviparous lizard or the elusive northern birch mouse. Invertebrates are equally remarkable: butterflies such as the cranberry fritillary, the moorland clouded yellow and the rosy marsh moth are typical inhabitants. Among beetles, the critically endangered ground beetle <em>Carabus menetriesi</em> is one of the most notable species confined to these wetlands.</p>",
+        "de": "<p>Entlang der Böhmerwaldflüsse, vor allem der Moldau und der Křemelná, findet man Talhochmoore, die sogenannten Auen. Sie entstehen durch die langfristige und allmähliche Überwucherung von stehenden Gewässern wie Altwassern. Wie bei den Berghochmooren ist auch hier das Torfmoos einer der wichtigsten Lebensraumgestalter. Dank ihm ist die Oberfläche des Talhochmoors wellenförmig und es gibt sogenannte Bülten (Hügel) und Schlenken (Vertiefungen). Allerdings finden sich hier keine für das Berghochmoor typischen Mooraugen. Die Oberfläche ist in der Regel mit Sträuchern der Rauschbeere und der Rosmarinheide bewachsen, seltener auch mit Sumpfporst und Zwerg-Birke. Die Baumschicht zeichnet sich durch das Vorhandensein von Spirken aus, die sich an einigen Stellen mit der Bergkiefer kreuzen und so Latschen bilden. Auch Fichten und Moor-Birken können hier vorkommen. Das Gesamtbild erinnert an eine Kieferntaiga. Interessante Vertreter der Kräuter sind der Fieberklee und die Sumpf-Blumenbinse. Von den Sauergrasgewächsen ist die stark bedrohte Schlamm-Segge erwähnenswert. Dank der besonderen natürlichen Bedingungen ist auch die Zusammensetzung der Fauna in den Talhochmooren sehr bemerkenswert. Mit etwas Glück können hier das seltene Birkhuhn, die Kreuzotter, die Waldeidechse und die Waldbirkenmaus beobachtet werden. Zu den wirbellosen Tieren zählen Schmetterlinge wie der Hochmoor-Perlmutterfalter, der Hochmoorgelbling und die Hochmoor-Bodeneule. Unter den Käfern ist hier der vom Aussterben bedrohte Hochmoorlaufkäfer zu finden.</p>"
+      }
+    },
+    {
+      "scannedId": "07",
+      "title": {
+        "cs": "Reliktní bor",
+        "en": "Pine forest remnants",
+        "de": "Relikt-Kiefernwald"
+      },
+      "content": {
+        "cs": "<p>Reliktní bory jsou pozůstatky původních borových lesů, které se zachovaly po tisíce let na specifických stanovištích s extrémními podmínkami. Borové lesy vznikaly po poslední době ledové, kdy se oteplilo, a do oblasti střední Evropy začala pronikat vegetace. Borovice lesní byla jednou z prvních dřevin, které osídlily nově vznikající stanoviště. Později začala ustupovat jiným, teplomilným dřevinám a na Šumavě i smrku. Díky své nenáročnosti a odolnosti se ale dokázala, vedle podmáčených stanovišť, udržet na exponovaných, suchých a skalnatých lokalitách, kde jiné dřeviny selhávaly. Vzhledem k špatné přístupnosti zůstaly reliktní bory místy i bez vlivu člověka. Často pokroucené, větrem a sněhem deformované borovice ve stromovém patře doplňují břízy, jeřáby a jalovce. Bylinné patro reliktních borů je vzhledem k suchu, teplu a chudým půdám potlačené ve prospěch mechového patra. Zde najdeme naopak vysoké zastoupení zemních lišejníků, především různé druhy dutohlávek a pukléřku islandskou. Z mechů je nejčastější dvouhrotec. K typickým bezobratlým živočichům reliktních borů patří brouci klikoroh borový, tesařík borový a kozlíček dazule, který je charakteristický svými až 10 cm dlouhými tykadly. Přesto není snadné kozlíčka zpozorovat, jeho zbarvení se totiž dokonale shoduje s povrchem borovic. Z obratlovců tu žije ještěrka obecná, zmije obecná i slepýš křehký. Podzemní hrady si ve skalnatých borech s oblibou buduje jezevec lesní. Tvoří je celý labyrint chodeb a nor s několika vchody. </p>",
+        "en": "<p>Pine forest remnants are the surviving fragments of ancient pine woodlands that have persisted for thousands of years in sites with exceptionally harsh conditions. These forests began to form after the last ice age, when the climate warmed and vegetation gradually spread across Central Europe. Scots pine was among the first tree species to colonise the newly exposed terrain. Over time, however, it retreated as more competitive, warmth-loving species — and in Šumava especially spruce — expanded. What allowed pine to endure were the extreme habitats that other trees could not tolerate: exposed, dry, rocky slopes, and in some places also waterlogged ground. Thanks to their inaccessibility, many of these pine stands remained untouched by human activity and still retain their natural character. The trees themselves often reflect the severity of their environment — many are twisted, stunted or deformed by persistent wind and heavy snow. These pines are interspersed with birches, junipers and occasionally rowans. The herb layer is subdued, limited by drought, heat and nutrient-poor soils. Instead, the ground is dominated by a thick carpet of mosses and lichens. Cup lichens and Iceland moss are common, while dicranum moss forms much of the moss layer. Despite the seemingly harsh conditions, these pine forest remnants support a distinctive fauna. Typical invertebrates include the large pine weevil, the longhorn beetle <em>Spondylis buprestoides</em> and the impressive timberman beetle, whose antennae can reach up to 10 centimetres in length. The timberman beetle blends so perfectly with the colour of the pine bark that it often goes unnoticed. Among vertebrates, the European green lizard, the European viper and the slow worm are characteristic inhabitants. Rocky pine woodlands also offer ideal conditions for the European badger, which builds extensive underground networks of tunnels and chambers — a labyrinth of interconnected dens with several entrances.</p>",
+        "de": "<p>Bei den Relikt-Kiefernwäldern handelt es sich um Überbleibsel der ursprünglichen Kiefernwälder. Sie haben sich seit Tausenden von Jahren in bestimmten Lebensräumen mit extremen Bedingungen erhalten. Sie entstanden nach der letzten Eiszeit, als es wärmer wurde und die Vegetation in Mitteleuropa zu wachsen begann. Die Waldkiefer gehörte zu den ersten Bäumen, die die neu geschaffenen Lebensräume besiedelten. Später musste sie jedoch anderen wärmeliebenden Baumarten und im Böhmerwald auch der Fichte weichen. Dank ihrer Anspruchslosigkeit und Widerstandsfähigkeit konnte sie jedoch nicht nur an staunassen Standorten, sondern auch an exponierten, trockenen und felsigen Standorten überleben, an denen andere Gehölze scheiterten. Aufgrund ihrer schlechten Zugänglichkeit sind die Relikt-Kiefernwälder an einigen Standorten bis heute ohne menschlichen Einfluss geblieben. Zu den oft verdrehten, durch Wind und Schnee verformten Kiefern gesellen sich Birken, Vogelbeeren und Wacholder. Die Krautschicht der alten Kiefernwälder wird aufgrund von Trockenheit, Hitze und schlechten Böden von der Moosschicht verdrängt. Andererseits sind Bodenflechten stark vertreten, vor allem verschiedene Arten von Cladonia-Flechten und das Islandsmoos. Unter den Moosen kommt das Gabelzahnmoos am häufigsten vor. Zu den typischen wirbellosen Tieren der Relikt-Kiefernwälder gehören der Fichtenrüsselkäfer, der Waldbock und der Zimmermannsbock, der sich durch seine bis zu 10 cm langen Fühler auszeichnet. Dennoch ist es nicht leicht, den Zimmermannsbock zu erkennen, da seine Färbung perfekt zur Oberfläche der Kiefern passt. Zu den hier lebenden Wirbeltieren gehören die Waldeidechse, die Kreuzotter und die Blindschleiche. Der Dachs baut gerne unterirdische Höhlen in felsigen Kiefernwäldern. Ein Dachsbau besteht aus einem ganzen Labyrinth von Gängen und Höhlen mit mehreren Eingängen.</p>"
+      }
+    },
+    {
+      "scannedId": "06",
+      "title": {
+        "cs": "Horské vrchoviště",
+        "en": "Mountain raised bog",
+        "de": "Berg-Hochmoor"
+      },
+      "content": {
+        "cs": "<p>Horská vrchoviště jsou ukázkou přírody z konce dob ledových, kdy krajina ve střední Evropě připomínala severskou tundru. Převládala zde nízká keříčkovitá vegetace s roztroušenými skupinkami pokroucených dřevin, zejména břízou a borovicí. I přes postupné oteplování a zvlhčování klimatu, které znamenaly nástup lesní vegetace, se na místech s nepříznivými podmínkami podařilo některým severským společenstvům přetrvat dodnes. Druhy, které zde z tohoto období přetrvávají, jsou označovány jako glaciální relikty. Název vrchoviště vychází z toho, že na nich dochází k výraznému ukládání rašeliny, a tak pozvolna, ale neustále narůstají do výšky. Mají tak charakteristický, nad úroveň okolí vyklenutý tvar a jejich povrch může být členěn na vyvýšené bulty a zvodněné sníženiny šlenky nebo jezírka. Díky silné vrstvě rašeliny jsou sycená jen vodou z atmosférických srážek a představují prostředí kyselé a extrémně chudé na živiny. Na tvorbě rašelinného ložiska se podílejí především mechy rašeliníky, které nepřetržitě přirůstají, ale v chladném a zamokřeném prostředí s malým obsahem kyslíku se jejich odumřelé zbytky dobře nerozkládají. Tak se zvyšuje mocnost rašeliny přibližně rychlostí 1 mm za rok. Na jejím povrchu roste specifická rašelinná vegetace: suchopýry, ostřice, keříčkovité rostliny a také i masožravé rosnatky. Ty dokáží z lapeného hmyzu získat dusík a přilepšit si tak v živinami chudém prostředí. Druhově nejrozmanitější skupinou živočichů je na rašeliništi hmyz: (mravenci, brouci, vážky a motýli) a pavouci. Druhy, které žijí pouze na rašeliništi, se označují jako tyrfobiontní.</p>",
+        "en": "<p>A mountain raised bog is a living reminder of the landscape that dominated Central Europe at the end of the last Ice Age, when the region resembled the northern tundra. At that time, low, shrubby vegetation with scattered, twisted birches and pines prevailed. Although the climate gradually warmed and forests expanded, some of these cold-adapted plant communities managed to survive in places where the harsh conditions persist to this day. Species that have endured from that period are known as <em>glacial relicts</em>. The term <em>raised bog</em> reflects the distinctive shape of these peatlands: peat accumulation slowly lifts the bog surface above the surrounding terrain, giving it a gently domed profile. This elevated surface is typically patterned into hummocks — slightly raised, drier spots — and hollows or small pools filled with rainwater. Because of the thick layer of peat, mountain raised bogs rely exclusively on precipitation for their water supply. As a result, they form extremely acidic, nutrient-poor ecosystems. Peat mosses are the primary engineers of these habitats. They grow continuously, but their dead tissues decompose only slowly in the cold, waterlogged, oxygen-poor environment. Over centuries, this process builds up peat at an average rate of about one millimetre per year. The vegetation of these bogs is specialised and adapted to the nutrient scarcity. Cotton-grasses, sedges and low-growing shrubs are common. Among the most remarkable plants are carnivorous sundews, which capture insects and extract nitrogen from them — a valuable adaptation in an otherwise nutrient-limited habitat. In terms of fauna, insects and spiders dominate the community. Ants, beetles, dragonflies and butterflies represent the most species-rich groups. Species that occur exclusively on peatlands are known as <em>tyrphobionts</em>, organisms highly specialised for the bog environment and unable to survive elsewhere.</p>",
+        "de": "<p>Die Berghochmoore sind ein Überbleibsel der Natur aus der Zeit am Ende der letzten Eiszeit, als die Landschaft Mitteleuropas der nordischen Tundra ähnelte. Damals herrschte dort vor allem eine niedrige Strauchvegetation mit verstreut stehenden, gewundenen Bäumen, vor allem Birken und Kiefern. Trotz der allmählichen Erwärmung und des feuchteren Klimas, die das Aufkommen der Waldvegetation zur Folge hatten, konnten sich einige nordische Gemeinschaften an Orten mit ungünstigen Bedingungen bis heute halten. Arten, die sich aus dieser Zeit erhalten haben, werden als Eiszeitrelikte bezeichnet. Der Begriff „Berghochmoor” beruht auf der Tatsache, dass sich auf ihnen in erheblichem Maße Torf ablagert, sodass sie langsam, aber stetig an Höhe gewinnen. Sie haben eine charakteristische gewölbte Form über dem Niveau ihrer Umgebung und ihre Oberfläche kann in erhöhte Bulten und verwässerte Schlenken unterteilt sein. Dank der dicken Torfschicht sind sie ausschließlich mit Wasser aus atmosphärischen Niederschlägen gesättigt und stellen ein saures und extrem nährstoffarmes Milieu dar. Torfmoose tragen am meisten zur Bildung von Torfablagerungen bei, da sie ständig wachsen, während ihre abgestorbenen Reste sich in der kalten, staunassen Umgebung mit geringem Sauerstoffgehalt nur schlecht zersetzen können. Die Mächtigkeit des Torfs nimmt also mit einer Rate von etwa einem Millimeter pro Jahr zu. Auf ihrer Oberfläche wächst eine spezifische Torfvegetation aus Wollgräsern, Seggen, strauchartigen Pflanzen und fleischfressenden Sonnentauen. Diese können Stickstoff aus gefangenen Insekten gewinnen und so ihre Ernährung in dieser nährstoffarmen Umgebung verbessern. Die artenreichste Tiergruppe in Mooren sind die Insekten: (Ameisen, Käfer, Libellen, Schmetterlinge) sowie Spinnen. Arten, die ausschließlich in Mooren leben, werden als tyrophobionte Arten bezeichnet.</p>"
+      }
+    }
+  ],
+  "map": [
+    {
+      "scannedId": "03",
+      "image": {
+        "cs": "/assets/map/horskesmrciny.png",
+        "en": "/assets/map/horskesmrciny.png",
+        "de": "/assets/map/horskesmrciny.png"
+      }
+    },
+    {
+      "scannedId": "09",
+      "image": {
+        "cs": "/assets/map/horskelouky.png",
+        "en": "/assets/map/horskelouky.png",
+        "de": "/assets/map/horskelouky.png"
+      }
+    },
+    {
+      "scannedId": "06",
+      "image": {
+        "cs": "/assets/map/horskevrchoviste.png",
+        "en": "/assets/map/horskevrchoviste.png",
+        "de": "/assets/map/horskevrchoviste.png"
+      }
+    },
+    {
+      "scannedId": "08",
+      "image": {
+        "cs": "/assets/map/horskesmisenelesy.png",
+        "en": "/assets/map/horskesmisenelesy.png",
+        "de": "/assets/map/horskesmisenelesy.png"
+      }
+    },
+    {
+      "scannedId": "04",
+      "image": {
+        "cs": "/assets/map/kamennamore.png",
+        "en": "/assets/map/kamennamore.png",
+        "de": "/assets/map/kamennamore.png"
+      }
+    },
+    {
+      "scannedId": "05",
+      "image": {
+        "cs": "/assets/map/ledovcovajezera.png",
+        "en": "/assets/map/ledovcovajezera.png",
+        "de": "/assets/map/ledovcovajezera.png"
+      }
+    },
+    {
+      "scannedId": "01",
+      "image": {
+        "cs": "/assets/map/raselinnesmrciny.png",
+        "en": "/assets/map/raselinnesmrciny.png",
+        "de": "/assets/map/raselinnesmrciny.png"
+      }
+    },
+    {
+      "scannedId": "07",
+      "image": {
+        "cs": "/assets/map/reliktnibory.png",
+        "en": "/assets/map/reliktnibory.png",
+        "de": "/assets/map/reliktnibory.png"
+      }
+    },
+    {
+      "scannedId": "10",
+      "image": {
+        "cs": "/assets/map/udolniraseliniste.png",
+        "en": "/assets/map/udolniraseliniste.png",
+        "de": "/assets/map/udolniraseliniste.png"
+      }
+    },
+    {
+      "scannedId": "02",
+      "image": {
+        "cs": "/assets/map/vodnitoky.png",
+        "en": "/assets/map/vodnitoky.png",
+        "de": "/assets/map/vodnitoky.png"
+      }
+    }
+  ],
+  "galleries": [
+    {
+      "scannedId": "03",
+      "images": [
+        {
+          "src": "/assets/gallery/Horská smrčina/Boubín.JPG",
+          "captions": {
+            "cs": "Boubín",
+            "en": "Boubín",
+            "de": "Kubany"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/vlk_obecný.jpg",
+          "captions": {
+            "cs": "vlk obecný <em>Canis lupus</em>",
+            "en": "wolf <em>Canis lupus</em>",
+            "de": "Wolf <em>Canis lupus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/troudnatec_pásovaný.JPG",
+          "captions": {
+            "cs": "troudnatec pásovaný <em>Fomitopsis pinicola</em>",
+            "en": "Red Belt Fungus <em>Fomitopsis pinicola</em>",
+            "de": "Rotrandiger Baumschwamm <em>Fomitopsis pinicola</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/trnoštítec_horský.JPG",
+          "captions": {
+            "cs": "trnoštítec horský <em>Tragosoma depsarium</em>",
+            "en": "<em>Tragosoma depsarium</em>",
+            "de": "Zottenbock <em>Tragosoma depsarium</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/tlející_dřevo.jpg",
+          "captions": {
+            "cs": "tlející dřevo",
+            "en": "dead wood",
+            "de": "Totholz"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/tetřev_hlušec.jpg",
+          "captions": {
+            "cs": "tetřev hlušec <em>Tetrao urogallus</em>",
+            "en": "Western Capercaillie <em>Tetrao urogallus</em>",
+            "de": "Auerhuhn <em>Tetrao urogallus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/šťavel_kyselý.jpg",
+          "captions": {
+            "cs": "šťavel kyselý <em>Oxalis acetosella</em>",
+            "en": "Wood-sorrel <em>Oxalis acetosella</em>",
+            "de": "Wald-Sauerklee <em>Oxalis acetosella</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/Sykora-parukarka-20682-JB.jpg",
+          "captions": {
+            "cs": "sýkora parukářka <em>Lophophanes cristatus</em>",
+            "en": "European Crested Tit <em>Lophophanes cristatus</em>",
+            "de": "Haubenmeise <em>Lophophanes cristatus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/Trojmezná.JPG",
+          "captions": {
+            "cs": "Trojmezná",
+            "en": "Trojmezná",
+            "de": "Bayerischer Plöckenstein"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/sojka_obecná.jpg",
+          "captions": {
+            "cs": "sojka obecná <em>Garrulus glandarius</em>",
+            "en": "Eurasian Jay <em>Garrulus glandarius</em>",
+            "de": "Eichelhäher <em>Garrulus glandarius</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/skokan_hnědý.jpg",
+          "captions": {
+            "cs": "skokan hnědý <em>Rana temporaria</em>",
+            "en": "European Common Frog <em>Rana temporaria</em>",
+            "de": "Grasfrosch <em>Rana temporaria</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/rys_ostrovid.jpg",
+          "captions": {
+            "cs": "rys ostrovid <em>Lynx lynx</em>",
+            "en": "Eurasian Lynx <em>Lynx lynx</em>",
+            "de": "Eurasischer Luchs <em>Lynx lynx</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/pestrý_svět_lišejníků.jpg",
+          "captions": {
+            "cs": "pestrý svět lišejníků",
+            "en": "The colorful world of lichens",
+            "de": "Die bunte Welt der Flechten"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/pestrokrovečník_mravenčí.jpg",
+          "captions": {
+            "cs": "pestrokrovečník mravenčí <em>Thanasimus formicarius</em>",
+            "en": "European Red-bellied Clerid <em>Thanasimus formicarius</em>",
+            "de": "Ameisenbuntkäfer <em>Thanasimus formicarius</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/lýkožrout_smrkový.jpg",
+          "captions": {
+            "cs": "lýkožrout smrkový <em>Ips typographus</em>",
+            "en": "Spruce Engraver Beetle <em>Ips typographus</em>",
+            "de": "Buchdrucker <em>Ips typographus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/liska_obecná.jpg",
+          "captions": {
+            "cs": "liška obecná <em>Vulpes vulpes</em>",
+            "en": "Red Fox <em>Vulpes vulpes</em>",
+            "de": "Rotfuchs <em>Vulpes vulpes</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/kvetoucí smrk.JPG",
+          "captions": {
+            "cs": "kvetoucí smrk ztepilý <em>Picea abies</em>",
+            "en": "flowering Norway Spruce <em>Picea abies</em>",
+            "de": "blühende Rot-Fichte <em>Picea abies</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/kuna_lesní.jpg",
+          "captions": {
+            "cs": "kuna lesní <em>Martes martes</em>",
+            "en": "European Pine Marten <em>Martes martes</em>",
+            "de": "Baummarder <em>Martes martes</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/kulíšek_nejmenší.jpg",
+          "captions": {
+            "cs": "kulíšek nejmenší <em>Glaucidium passerinum</em>",
+            "en": "Eurasian Pygmy Owl <em>Glaucidium passerinum</em>",
+            "de": "Sperlingskauz <em>Glaucidium passerinum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/králíček_obecný.JPG",
+          "captions": {
+            "cs": "králíček obecný <em>Regulus regulus</em>",
+            "en": "Goldcrest <em>Regulus regulus</em>",
+            "de": "Wintergoldhähnchen <em>Regulus regulus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/kornatec_velký_2_.JPG",
+          "captions": {
+            "cs": "kornatec velký <em>Peltis grossa</em>",
+            "en": "<em>Peltis grossa</em>",
+            "de": "Rauer Flachkäfer <em>Peltis grossa</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/Jeřábek lesní_sht_fin1.jpg",
+          "captions": {
+            "cs": "jeřábek lesní <em>Tetrastes bonasia</em>",
+            "en": "Hazel Grouse <em>Tetrastes bonasia</em>",
+            "de": "Haselhuhn <em>Tetrastes bonasia</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/jeřáb_ptačí.JPG",
+          "captions": {
+            "cs": "jeřáb ptačí <em>Sorbus aucuparia</em>",
+            "en": "Rowan <em>Sorbus aucuparia</em>",
+            "de": "Vogelbeere <em>Sorbus aucuparia</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/jelen_evropský.jpg",
+          "captions": {
+            "cs": "jelen evropský <em>Cervus elaphus</em>",
+            "en": "Red Deer <em>Cervus elaphus</em>",
+            "de": "Rothirsch <em>Cervus elaphus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/helmovka_hladká.jpg",
+          "captions": {
+            "cs": "helmovka hladká <em>Mycena laevigata</em>",
+            "en": "<em>Mycena laevigata</em>",
+            "de": "Schlüpfriger Helmling <em>Mycena laevigata</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/datel_černý.jpg",
+          "captions": {
+            "cs": "datel černý <em>Dryocopus martius</em>",
+            "en": "Black Woodpecker <em>Dryocopus martius</em>",
+            "de": "Schwarzspecht <em>Dryocopus martius</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/brusnice_borůvka_Vaccinium_myrtillus.JPG",
+          "captions": {
+            "cs": "brusnice borůvka <em>Vaccinium myrtillus</em>",
+            "en": "European blueberry <em>Vaccinium myrtillus</em>",
+            "de": "Heidelbeere <em>Vaccinium myrtillus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/bika lesní 2.JPG",
+          "captions": {
+            "cs": "bika lesní <em>Luzula sylvatica</em>",
+            "en": "Great Wood-rush <em>Luzula sylvatica</em>",
+            "de": "Gewöhnliche Wald-Hainsimse <em>Luzula sylvatica</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horská smrčina/Smrčina.jpg",
+          "captions": {
+            "cs": "Smrčina",
+            "en": "Smrčina",
+            "de": "Hochficht"
+          }
+        }
+      ]
+    },
+    {
+      "scannedId": "09",
+      "images": [
+        {
+          "src": "/assets/gallery/Horské louky/Prášilsko.jpg",
+          "captions": {
+            "cs": "Prášilsko",
+            "en": "Prášily surroundings",
+            "de": "Umgebung von Prášily"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/zvonek_okrouhlolistý.JPG",
+          "captions": {
+            "cs": "zvonek okrouhlolistý <em>Campanula rotundifolia</em>",
+            "en": "American Harebell <em>Campanula rotundifolia</em>",
+            "de": "Rundblättrige Glockenblume <em>Campanula rotundifolia</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/zmije_obecná.jpg",
+          "captions": {
+            "cs": "zmije obecná <em>Vipera berus</em>",
+            "en": "Adder <em>Vipera berus</em>",
+            "de": "Kreuzotter <em>Vipera berus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/zajíc_polní.jpg",
+          "captions": {
+            "cs": "zajíc polní <em>Lepus europaeus</em>",
+            "en": "Brown Hare <em>Lepus europaeus</em>",
+            "de": "Feldhase <em>Lepus europaeus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/tesařík_pižmový_Zuzana Růžičková.jpg",
+          "captions": {
+            "cs": "tesařík pižmový <em>Aromia moschata</em>",
+            "en": "Musk Beetle <em>Aromia moschata</em>",
+            "de": "Moschusbock <em>Aromia moschata</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/šafrán.jpg",
+          "captions": {
+            "cs": "šafrán jarní <em>Crocus vernus</em>",
+            "en": "Crocus <em>Crocus vernus</em>",
+            "de": "Weißer Krokus <em>Crocus vernus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/suchopýr_úzkolistý.jpg",
+          "captions": {
+            "cs": "suchopýr úzkolistý <em>Eriophorum angustifolium</em>",
+            "en": "Common Cottongrass <em>Eriophorum angustifolium</em>",
+            "de": "Schmalblättriges Wollgras <em>Eriophorum angustifolium</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/srnec_obecný.jpg",
+          "captions": {
+            "cs": "srnec obecný <em>Capreolus capreolus</em>",
+            "en": "European Roe Deer <em>Capreolus capreolus</em>",
+            "de": "Reh <em>Capreolus capreolus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/prstnatec_Fuchsův.JPG",
+          "captions": {
+            "cs": "prstnatec Fuchsův <em>Dactylorhiza fuchsii</em>",
+            "en": "Common Spotted orchid <em>Dactylorhiza fuchsii</em>",
+            "de": "Fuchs' Knabenkraut <em>Dactylorhiza fuchsii</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/prstnatec_bezový.jpg",
+          "captions": {
+            "cs": "prstnatec bezový <em>Dactylorhiza sambucina</em>",
+            "en": "Elder-flowered orchid <em>Dactylorhiza sambucina</em>",
+            "de": "Holunder-Knabenkraut <em>Dactylorhiza sambucina</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/prstnatec májový.jpg",
+          "captions": {
+            "cs": "prstnatec májový <em>Dactylorhiza majalis</em>",
+            "en": "Dactylorhiza majalis orchid <em>Dactylorhiza majalis</em>",
+            "de": "Breitblättriges Knabenkraut <em>Dactylorhiza majalis</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/prha.arnika.jpg",
+          "captions": {
+            "cs": "prha arnika <em>Arnica montana</em>",
+            "en": "Mountain Arnica <em>Arnica montana</em>",
+            "de": "Berg-Wohlverleih <em>Arnica montana</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/plšík_lískový.jpg",
+          "captions": {
+            "cs": "plšík lískový <em>Muscardinus avellanarius</em>",
+            "en": "Hazel Dormouse <em>Muscardinus avellanarius</em>",
+            "de": "Haselmaus <em>Muscardinus avellanarius</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/Pevuska-modra-24250-JB.jpg",
+          "captions": {
+            "cs": "pěvuška modrá <em>Prunella modularis</em>",
+            "en": "Dunnock <em>Prunella modularis</em>",
+            "de": "Heckenbraunelle <em>Prunella modularis</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/pestrý_svět_hmyzu.jpg",
+          "captions": {
+            "cs": "pestrý svět hmyzu",
+            "en": "The colorful world of insects",
+            "de": "Die bunte Welt der Insekten"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/perleťovec_prostřední_Zuzana Růžičková.jpg",
+          "captions": {
+            "cs": "perleťovec prostřední <em>Fabriciana adippe</em>",
+            "en": "High Brown Fritillary <em>Fabriciana adippe</em>",
+            "de": "Feuriger Perlmutterfalter <em>Fabriciana adippe</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/otakárek_fenyklový_Zuzana Růžičková.jpg",
+          "captions": {
+            "cs": "otakárek fenyklový <em>Papilio machaon</em>",
+            "en": "Old World Swallowtail <em>Papilio machaon</em>",
+            "de": "Schwalbenschwanz <em>Papilio machaon</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/Ostruhacek-ostuzinovy-155956-nahradni-JB.jpg",
+          "captions": {
+            "cs": "ostruháček ostružinový <em>Callophrys rubi</em>",
+            "en": "Green Hairstreak <em>Callophrys rubi</em>",
+            "de": "Brombeerzipfelfalter <em>Callophrys rubi</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/lišaj_svízelový.jpg",
+          "captions": {
+            "cs": "lišaj svízelový <em>Hyles gallii</em>",
+            "en": "Bedstraw Hawk-moth <em>Hyles gallii</em>",
+            "de": "Labkrautschwärmer <em>Hyles gallii</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/kosatec_sibiřský.jpg",
+          "captions": {
+            "cs": "kosatec sibiřský <em>Iris sibirica</em>",
+            "en": "Siberian Iris <em>Iris sibirica</em>",
+            "de": "Sibirische Schwertlilie <em>Iris sibirica</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/kakost lesní.jpg",
+          "captions": {
+            "cs": "kakost lesní <em>Geranium sylvaticum</em>",
+            "en": "Wood Crane's-bill <em>Geranium sylvaticum</em>",
+            "de": "Wald-Storchschnabel <em>Geranium sylvaticum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/chlupáček_oranžový.jpg",
+          "captions": {
+            "cs": "chlupáček oranžový <em>Pilosella aurantiaca</em>",
+            "en": "Fox-and-cubs <em>Pilosella aurantiaca</em>",
+            "de": "Orangerotes Habichtskraut <em>Pilosella aurantiaca</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/jelen_evropský.jpg",
+          "captions": {
+            "cs": "jelen evropský <em>Cervus elaphus</em>",
+            "en": "Red Deer <em>Cervus elaphus</em>",
+            "de": "Rothirsch <em>Cervus elaphus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/Chřástal_polní.jpg",
+          "captions": {
+            "cs": "chřástal polní <em>Crex crex</em>",
+            "en": "Corn Crake <em>Crex crex</em>",
+            "de": "Wachtelkönig <em>Crex crex</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/hořeček_mnohotvarý_český.jpg",
+          "captions": {
+            "cs": "hořeček mnohotvarý český <em>Gentianella praecox subs. bohemica</em>",
+            "en": "<em>Gentianella praecox subs. bohemica</em>",
+            "de": "Böhmischer Fransenenzian <em>Gentianella praecox subs. bohemica</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/hořec_panonský.JPG",
+          "captions": {
+            "cs": "hořec panonský <em>Gentiana pannonica</em>",
+            "en": "<em>Gentiana pannonica</em>",
+            "de": "Ungarischer Enzian <em>Gentiana pannonica</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/děhel_lesní.jpg",
+          "captions": {
+            "cs": "děhel lesní <em>Angelica sylvestris</em>",
+            "en": "Wild Angelica <em>Angelica sylvestris</em>",
+            "de": "Wald-Engelwurz <em>Angelica sylvestris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské louky/bělopásek_topolový_Zuzana Růžičková.jpg",
+          "captions": {
+            "cs": "bělopásek topolový <em>Limenitis populi</em>",
+            "en": "Poplar Admiral <em>Limenitis populi</em>",
+            "de": "Großer Eisvogel <em>Limenitis populi</em>"
+          }
+        }
+      ]
+    },
+    {
+      "scannedId": "06",
+      "images": [
+        {
+          "src": "/assets/gallery/Horské vrchoviště/Hranicni_slat.jpg",
+          "captions": {
+            "cs": "Hraniční slať",
+            "en": "",
+            "de": "Stangenfilz"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/žluťásek_borůvkový.jpg",
+          "captions": {
+            "cs": "žluťásek borůvkový <em>Colias palaeno</em>",
+            "en": "Moorland Clouded Yellow <em>Colias palaeno</em>",
+            "de": "Hochmoorgelbling <em>Colias palaeno</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/zmije obecná.jpg",
+          "captions": {
+            "cs": "zmije obecná <em>Vipera berus</em>",
+            "en": "Adder <em>Vipera berus</em>",
+            "de": "Kreuzotter <em>Vipera berus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/vlochyně_bahenní_květ.jpg",
+          "captions": {
+            "cs": "vlochyně bahenní (květ) <em>Vaccinium uliginosum</em>",
+            "en": "Northern Bilberry (flower) <em>Vaccinium uliginosum</em>",
+            "de": "Rauschbeere (Blüte) <em>Vaccinium uliginosum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/vlochyně_bahenní_plod.jpg",
+          "captions": {
+            "cs": "vlochyně bahenní (plod) <em>Vaccinium uliginosum</em>",
+            "en": "Northern Bilberry (fruit) <em>Vaccinium uliginosum</em>",
+            "de": "Rauschbeere (Frucht) <em>Vaccinium uliginosum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/šídlo_pestré.jpg",
+          "captions": {
+            "cs": "šídlo pestré <em>Aeshna mixta</em>",
+            "en": "Migrant Hawker <em>Aeshna mixta</em>",
+            "de": "Herbst-Mosaikjungfer <em>Aeshna mixta</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/šídlatka_páskovaná.jpg",
+          "captions": {
+            "cs": "šídlatka páskovaná <em>Lestes sponsa</em>",
+            "en": "Emerald Damselfly <em>Lestes sponsa</em>",
+            "de": "Gemeine Binsenjungfer <em>Lestes sponsa</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/svlékání_vážky.jpg",
+          "captions": {
+            "cs": "svlékání vážky <em>Odonata</em>",
+            "en": "dragonfly moulting <em>Odonata</em>",
+            "de": "Schlupf einer Libelle <em>Odonata</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/suchopýr_úzkolistý.jpg",
+          "captions": {
+            "cs": "suchopýr úzkolistý <em>Eriophorum angustifolium</em>",
+            "en": "Common Cottongrass <em>Eriophorum angustifolium</em>",
+            "de": "Schmalblättriges Wollgras <em>Eriophorum angustifolium</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/suchopýr_pochvatý.jpg",
+          "captions": {
+            "cs": "suchopýr pochvatý <em>Eriophorum vaginatum</em>",
+            "en": "Hare’s-tail Cottongrass <em>Eriophorum vaginatum</em>",
+            "de": "Scheiden-Wollgras <em>Eriophorum vaginatum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/rosnatka_anglická.jpg",
+          "captions": {
+            "cs": "rosnatka anglická <em>Drosera anglica</em>",
+            "en": "English Sundew <em>Drosera anglica</em>",
+            "de": "Langblättriger Sonnentau <em>Drosera anglica</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/rosnatka_okrouhlolistá.jpg",
+          "captions": {
+            "cs": "rosnatka okrouhlolistá <em>Drosera rotundifolia</em>",
+            "en": "Round-leaved Sundew <em>Drosera rotundifolia</em>",
+            "de": "Rundblättriger Sonnentau <em>Drosera rotundifolia</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/Rokytecká_ slať_Zuzana Růžičková.jpg",
+          "captions": {
+            "cs": "Rokytecká slať",
+            "en": "Rokytecká slať",
+            "de": "Weitfällerfilz"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/rašeliník.jpg",
+          "captions": {
+            "cs": "rašeliník <em>Sphagnum sp.</em>",
+            "en": "Sphagnum <em>Sphagnum sp.</em>",
+            "de": "Torfmoose <em>Sphagnum sp.</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/ostřice_bažinná.jpg",
+          "captions": {
+            "cs": "ostřice bažinná <em>Carex limosa</em>",
+            "en": "Bog-sedge <em>Carex limosa</em>",
+            "de": "Schlamm-Segge <em>Carex limosa</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/myšivka_horská.jpg",
+          "captions": {
+            "cs": "myšivka horská <em>Sicista betulina</em>",
+            "en": "Northern Birch Mouse <em>Sicista betulina</em>",
+            "de": "Waldbirkenmaus <em>Sicista betulina</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/lovčík_vodní.jpg",
+          "captions": {
+            "cs": "lovčík vodní <em>Dolomedes fimbriatus</em>",
+            "en": "Raft Spider <em>Dolomedes fimbriatus</em>",
+            "de": "Gerandete Jagdspinne <em>Dolomedes fimbriatus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/Latschenfilz.jpg",
+          "captions": {
+            "cs": "Latschenfilz",
+            "en": "Latschenfilz",
+            "de": "Latschenfilz"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/kyhanka_sivolistá.jpg",
+          "captions": {
+            "cs": "kyhanka sivolistá <em>Andromeda polifolia</em>",
+            "en": "Bog-rosemary <em>Andromeda polifolia</em>",
+            "de": "Rosmarinheide <em>Andromeda polifolia</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/klikva_bahenní.jpg",
+          "captions": {
+            "cs": "klikva bahenní <em>Vaccinium oxycoccos</em>",
+            "en": "Small Cranberry <em>Vaccinium oxycoccos</em>",
+            "de": "Gewöhnliche Moosbeere <em>Vaccinium oxycoccos</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/jeřáb_popelavý.jpg",
+          "captions": {
+            "cs": "jeřáb popelavý <em>Grus grus</em>",
+            "en": "Common Crane <em>Grus grus</em>",
+            "de": "Kranich <em>Grus grus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/Chalupská_slať.jpg",
+          "captions": {
+            "cs": "Chalupská slať",
+            "en": "",
+            "de": "Großer Königsfilz"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/hnědásek_rozrazilový.jpg",
+          "captions": {
+            "cs": "hnědásek rozrazilový <em>Melitaea diamina</em>",
+            "en": "False Heath Fritillary <em>Melitaea diamina</em>",
+            "de": "Baldrian-Scheckenfalter <em>Melitaea diamina</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/brusnice_brusinka.jpg",
+          "captions": {
+            "cs": "brusnice brusinka <em>Vaccinium vitis-idaea</em>",
+            "en": "mountain cranberry <em>Vaccinium vitis-idaea</em>",
+            "de": "Preiselbeere <em>Vaccinium vitis-idaea</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/borovice_rašelinná.jpg",
+          "captions": {
+            "cs": "borovice rašelinná <em>Pinus pseudopumilio</em>",
+            "en": "<em>Pinus pseudopumilio</em>",
+            "de": "Latsche <em>Pinus pseudopumilio</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/blatnice_bahenní.jpg",
+          "captions": {
+            "cs": "blatnice bahenní <em>Scheuchzeria palustris</em>",
+            "en": "Rannoch-rush <em>Scheuchzeria palustris</em>",
+            "de": "Sumpf-Blumenbinse <em>Scheuchzeria palustris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horské vrchoviště/Rokytecka_slat.jpg",
+          "captions": {
+            "cs": "Rokytecká slať",
+            "en": "Rokytecká slať",
+            "de": "Weitfällerfilz"
+          }
+        }
+      ]
+    },
+    {
+      "scannedId": "08",
+      "images": [
+        {
+          "src": "/assets/gallery/Horský smíšený les/Medvědí brdo.jpg",
+          "captions": {
+            "cs": "Medvědí brdo",
+            "en": "",
+            "de": ""
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/žebrovice_různolistá.JPG",
+          "captions": {
+            "cs": "žebrovice různolistá <em>Blechnum spicant</em>",
+            "en": "Hard-fern <em>Blechnum spicant</em>",
+            "de": "Gewöhnlicher Rippenfarn <em>Blechnum spicant</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/vraní_oko_čtyřlisté.JPG",
+          "captions": {
+            "cs": "vraní oko čtyřlisté <em>Paris quadrifolia</em>",
+            "en": "Herb-paris <em>Paris quadrifolia</em>",
+            "de": "Vierblättrige Einbeere <em>Paris quadrifolia</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/veverka_obecná.jpg",
+          "captions": {
+            "cs": "veverka obecná <em>Sciurus vulgaris</em>",
+            "en": "Red Squirrel <em>Sciurus vulgaris</em>",
+            "de": "Eichhörnchen <em>Sciurus vulgaris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/troudnatec_kopytovitý.JPG",
+          "captions": {
+            "cs": "troudnatec kopytovitý <em>Fomes fomentarius</em>",
+            "en": "Touchwood Fungus <em>Fomes fomentarius</em>",
+            "de": "Zunderschwamm <em>Fomes fomentarius</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/tesařík_javorový.jpg",
+          "captions": {
+            "cs": "tesařík javorový <em>Ropalopus ungaricus</em>",
+            "en": "<em>Ropalopus ungaricus</em>",
+            "de": "Ungarischer Ahornbock <em>Ropalopus ungaricus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/šupinovka_slizká.jpg",
+          "captions": {
+            "cs": "šupinovka slizká <em>Pholiota adiposa</em>",
+            "en": "Poliota adiposa <em>Pholiota adiposa</em>",
+            "de": "Schleimiger Schüppling <em>Pholiota adiposa</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/střevlík_zlatolesklý.jpg",
+          "captions": {
+            "cs": "střevlík zlatolesklý <em>Carabus auronitens</em>",
+            "en": "Golden ground beetle <em>Carabus auronitens</em>",
+            "de": "Goldglänzender Laufkäfer <em>Carabus auronitens</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/strakapoud_velký.JPG",
+          "captions": {
+            "cs": "strakapoud velký <em>Dendrocopos major</em>",
+            "en": "Great Spotted Woodpecker <em>Dendrocopos major</em>",
+            "de": "Buntspecht <em>Dendrocopos major</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/slizečka_porcelánová.jpg",
+          "captions": {
+            "cs": "slizečka porcelánová <em>Oudemansiella mucida</em>",
+            "en": "Porcelain Fungus <em>Oudemansiella mucida</em>",
+            "de": "Beringter Schleimrübling <em>Oudemansiella mucida</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/skokan hnědý (1).jpg",
+          "captions": {
+            "cs": "skokan hnědý <em>Rana temporaria</em>",
+            "en": "European Common Frog <em>Rana temporaria</em>",
+            "de": "Grasfrosch <em>Rana temporaria</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/sírovec_žlutooranžový.JPG",
+          "captions": {
+            "cs": "sírovec žlutooranžový <em>Laetiporus sulphureus</em>",
+            "en": "Chicken of the Woods <em>Laetiporus sulphureus</em>",
+            "de": "Schwefelporling <em>Laetiporus sulphureus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/samorostlík_klasnatý_1.jpg",
+          "captions": {
+            "cs": "samorostlík klasnatý <em>Actaea spicata</em>",
+            "en": "Baneberry <em>Actaea spicata</em>",
+            "de": "Schwarzfrüchtiges Christophskraut <em>Actaea spicata</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/sasanka_hajní.jpg",
+          "captions": {
+            "cs": "sasanka hajní <em>Anemone nemorosa</em>",
+            "en": "Wood Anemone <em>Anemone nemorosa</em>",
+            "de": "Busch-Windröschen <em>Anemone nemorosa</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/roháček_jedlový_1_.JPG",
+          "captions": {
+            "cs": "roháček jedlový <em>Ceruchus chrysomelinus</em>",
+            "en": "<em>Ceruchus chrysomelinus</em>",
+            "de": "Rindenschröter <em>Ceruchus chrysomelinus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/puštík_bělavý.jpg",
+          "captions": {
+            "cs": "puštík bělavý <em>Strix uralensis</em>",
+            "en": "Ural Owl <em>Strix uralensis</em>",
+            "de": "Habichtskauz <em>Strix uralensis</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/přástevník medvědí (1).jpg",
+          "captions": {
+            "cs": "přástevník medvědí <em>Arctia caja</em>",
+            "en": "Garden Tiger <em>Arctia caja</em>",
+            "de": "Brauner Bär <em>Arctia caja</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/prase.diviké.jpg",
+          "captions": {
+            "cs": "prase divoké <em>Sus scrofa</em>",
+            "en": "Eurasian Wild Boar <em>Sus scrofa</em>",
+            "de": "Wildschwein <em>Sus scrofa</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/podbílek_šupinatý.JPG",
+          "captions": {
+            "cs": "podbílek šupinatý <em>Lathraea squamaria</em>",
+            "en": "Toothwort <em>Lathraea squamaria</em>",
+            "de": "Gewöhnliche Schuppenwurz <em>Lathraea squamaria</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/plicník_tmavý.JPG",
+          "captions": {
+            "cs": "plicník tmavý <em>Pulmonaria obscura</em>",
+            "en": "Suffolk Lungwort <em>Pulmonaria obscura</em>",
+            "de": "Dunkles Lungenkraut <em>Pulmonaria obscura</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/martináč_bukový.jpg",
+          "captions": {
+            "cs": "martináč bukový <em>Aglaia tau</em>",
+            "en": "Tau Emperor <em>Aglaia tau</em>",
+            "de": "Nagelfleck <em>Aglaia tau</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/límcovka_měděnková.jpg",
+          "captions": {
+            "cs": "límcovka měděnková <em>Stropharia aeruginosa</em>",
+            "en": "<em>Stropharia aeruginosa</em>",
+            "de": "Grünspanträuschling <em>Stropharia aeruginosa</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/kyčelnice_devítilistá_12.jpg",
+          "captions": {
+            "cs": "kyčelnice devítilistá <em>Dentaria enneaphyllos</em>",
+            "en": "Drooping Bittercress <em>Dentaria enneaphyllos</em>",
+            "de": "Quirlblättrige Zahnwurz <em>Dentaria enneaphyllos</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/kyčelnice_cibulkonosná_1.jpg",
+          "captions": {
+            "cs": "kyčelnice cibulkonosná <em>Dentaria bulbifera</em>",
+            "en": "coralroot bittercress <em>Dentaria bulbifera</em>",
+            "de": "Zwiebel-Zahnwurz <em>Dentaria bulbifera</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/krahujec-obecny-8979.jpg",
+          "captions": {
+            "cs": "krahujec obecný <em>Accipiter nisus</em>",
+            "en": "Eurasian Sparrowhawk <em>Accipiter nisus</em>",
+            "de": "Sperber <em>Accipiter nisus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/korálovec_jedlový.jpg",
+          "captions": {
+            "cs": "korálovec jedlový <em>Hericium flagellum</em>",
+            "en": "<em>Hericium flagellum</em>",
+            "de": "Tannen-Stachelbart <em>Hericium flagellum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/kopytník_evropský.JPG",
+          "captions": {
+            "cs": "kopytník evropský <em>Asarum europaeum</em>",
+            "en": "Asarabacca <em>Asarum europaeum</em>",
+            "de": "Haselwurz <em>Asarum europaeum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/jeřábek_lesní.jpg",
+          "captions": {
+            "cs": "jeřábek lesní <em>Tetrastes bonasia</em>",
+            "en": "Hazel Grouse <em>Tetrastes bonasia</em>",
+            "de": "Haselhuhn <em>Tetrastes bonasia</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/devětsil_bilý.JPG",
+          "captions": {
+            "cs": "devětsil bílý <em>Petasites albus</em>",
+            "en": "White Butterbur <em>Petasites albus</em>",
+            "de": "Weiße Pestwurz <em>Petasites albus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/buk_lesní.JPG",
+          "captions": {
+            "cs": "buk lesní <em>Fagus sylvatica</em>",
+            "en": "European Beech <em>Fagus sylvatica</em>",
+            "de": "Rotbuche <em>Fagus sylvatica</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/bika_lesní_Luzula sylvatica.JPG",
+          "captions": {
+            "cs": "bika lesní <em>Luzula sylvatica</em>",
+            "en": "Great Wood-rush <em>Luzula sylvatica</em>",
+            "de": "Gewöhnliche Wald-Hainsimse <em>Luzula sylvatica</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Horský smíšený les/pod Plešným jezerem.jpg",
+          "captions": {
+            "cs": "pod Plešným jezerem",
+            "en": "below Plešné Lake",
+            "de": "unterhalb des Plöckensteinsees"
+          }
+        }
+      ]
+    },
+    {
+      "scannedId": "04",
+      "images": [
+        {
+          "src": "/assets/gallery/Kamenné moře/Steinfleckberg.jpg",
+          "captions": {
+            "cs": "Steinfleckberg",
+            "en": "Steinfleckberg",
+            "de": "Steinfleckberg"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/zmije_obecná.jpg",
+          "captions": {
+            "cs": "zmije obecná <em>Vipera berus</em>",
+            "en": "Adder <em>Vipera berus</em>",
+            "de": "Kreuzotter <em>Vipera berus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/terčovka_zakřivená.jpg",
+          "captions": {
+            "cs": "terčovka zakřivená <em>Arctoparmelia incurva</em>",
+            "en": "Sorediate ring lichen <em>Arctoparmelia incurva</em>",
+            "de": "Eingerollte Polarschüsselflechte <em>Arctoparmelia incurva</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/pod Plešným jezerem.jpg",
+          "captions": {
+            "cs": "pod Plešným jezerem",
+            "en": "below Plešné Lake",
+            "de": "unterhalb des Plöckensteinsees"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/terčovka_suknovitá.jpg",
+          "captions": {
+            "cs": "terčovka suknovitá <em>Melanelia panniformis</em>",
+            "en": "Melanelia Lichen <em>Melanelia panniformis</em>",
+            "de": "Lederflechte <em>Melanelia panniformis</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/štěrbovka_skalní.jpg",
+          "captions": {
+            "cs": "štěrbovka skalní <em>Andreaea rupestris</em>",
+            "en": "Andreaea Moss <em>Andreaea rupestris</em>",
+            "de": "Stein-Klaffmoos <em>Andreaea rupestris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/šicha_černá.jpg",
+          "captions": {
+            "cs": "šicha černá <em>Empetrum nigrum</em>",
+            "en": "Black Crowberry <em>Empetrum nigrum</em>",
+            "de": "Schwarze Krähenbeere <em>Empetrum nigrum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/Povydří.jpg",
+          "captions": {
+            "cs": "Povydří",
+            "en": "Povydří",
+            "de": "Povydří"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/pupkovka_srstnatá.jpg",
+          "captions": {
+            "cs": "pupkovka srstnatá <em>Umbilicaria hirsuta</em>",
+            "en": "Granular rock tripe <em>Umbilicaria hirsuta</em>",
+            "de": "Zottige Nabelflechte <em>Umbilicaria hirsuta</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/prášenka_žlutá.jpg",
+          "captions": {
+            "cs": "prášenka žlutá <em>Chrysothrix chlorina</em>",
+            "en": "Brimstone coloured leparia <em>Chrysothrix chlorina</em>",
+            "de": "Fels-Schwefelflechte <em>Chrysothrix chlorina</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/Povydří_2.jpg",
+          "captions": {
+            "cs": "Povydří",
+            "en": "Povydří",
+            "de": "Povydří"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/plch_zahradní.jpg",
+          "captions": {
+            "cs": "plch zahradní <em>Eliomys quercinus</em>",
+            "en": "Garden Dormouse <em>Eliomys quercinus</em>",
+            "de": "Gartenschläfer <em>Eliomys quercinus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/ObriHrad.jpg",
+          "captions": {
+            "cs": "Obří Hrad",
+            "en": "Obří Hrad",
+            "de": "Obří Hrad"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/Netopyr-severni-11180-MA.jpg",
+          "captions": {
+            "cs": "netopýr severní <em>Cnephaeus nilssonii</em>",
+            "en": "Northern Bat <em>Cnephaeus nilssonii</em>",
+            "de": "Nordfledermaus <em>Cnephaeus nilssonii</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/mapovník_misničkovitý.jpg",
+          "captions": {
+            "cs": "mapovník misničkovitý <em>Rhizocarpon lecanorinum</em>",
+            "en": "Crescent map lichen <em>Rhizocarpon lecanorinum</em>",
+            "de": "Berandete Landkartenflechte <em>Rhizocarpon lecanorinum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/pod_Plechym.jpg",
+          "captions": {
+            "cs": "pod Plechým",
+            "en": "below Plechý",
+            "de": "unterhalb des Plöckensteins"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/mapovník zeměpisný 2.jpg",
+          "captions": {
+            "cs": "mapovník zeměpisný <em>Rhizocarpon geographicum</em>",
+            "en": "World Map Lichen <em>Rhizocarpon geographicum</em>",
+            "de": "Landkartenflechte <em>Rhizocarpon geographicum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/Luzny.jpg",
+          "captions": {
+            "cs": "Luzný",
+            "en": "Luzný",
+            "de": "Lusen"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/džbánkovka_drsná.jpg",
+          "captions": {
+            "cs": "džbánovka drsná <em>Diploschistes scruposus</em>",
+            "en": "Crater Lichen <em>Diploschistes scruposus</em>",
+            "de": "Raue Krugflechte <em>Diploschistes scruposus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/dutohlávka_horská.jpg",
+          "captions": {
+            "cs": "dutohlávka horská <em>Cladonia stellaris</em>",
+            "en": "Star Reindeer Lichen <em>Cladonia stellaris</em>",
+            "de": "Stern-Rentierflechte <em>Cladonia stellaris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Kamenné moře/Luzný_1.jpg",
+          "captions": {
+            "cs": "Luzný",
+            "en": "Luzný",
+            "de": "Lusen"
+          }
+        }
+      ]
+    },
+    {
+      "scannedId": "05",
+      "images": [
+        {
+          "src": "/assets/gallery/Ledovcové jezero/jezero_Laka.JPG",
+          "captions": {
+            "cs": "jezero Laka",
+            "en": "Laka Lake",
+            "de": "Lackensee"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/Plešné_jezero.JPG",
+          "captions": {
+            "cs": "Plešné jezero",
+            "en": "",
+            "de": "Plöckensteinersee"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/šídlatka_ostnovýtrusná.JPG",
+          "captions": {
+            "cs": "šídlatka ostnovýtrusá <em>Isoëtes echinospora</em>",
+            "en": "<em>Isoëtes echinospora</em>",
+            "de": "Igelsporiges Brachsenkraut <em>Isoëtes echinospora</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/šídlatka_jezerní.JPG",
+          "captions": {
+            "cs": "šídlatka jezerní <em>Isoëtes lacustris</em>",
+            "en": "Lake Quillwort <em>Isoëtes lacustris</em>",
+            "de": "See-Brachsenkraut <em>Isoëtes lacustris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/buchanka_hlubinná_Cyclops_abyssorum.jpg",
+          "captions": {
+            "cs": "buchanka hlubinná <em>Cyclops abyssorum</em>",
+            "en": "<em>Cyclops abyssorum</em>",
+            "de": "Hüpferling <em>Cyclops abyssorum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/velkoočka_slatinná_Polyphemus_pediculus.jpg",
+          "captions": {
+            "cs": "velkoočka slatinná <em>Polyphemus pediculus</em>",
+            "en": "<em>Polyphemus pediculus</em>",
+            "de": "Wasserfloh <em>Polyphemus pediculus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/lahvenka_velká.jpg",
+          "captions": {
+            "cs": "lahvenka velká <em>Ophrydium versatile</em>",
+            "en": "<em>Ophrydium versatile</em>",
+            "de": "Grünes Gallertkugeltierchen <em>Ophrydium versatile</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/lahvenka_velká_kolonie.jpg",
+          "captions": {
+            "cs": "lahvenka velká (kolonie) <em>Ophrydium versatile</em>",
+            "en": "Ophrydium versatile colony <em>Ophrydium versatile</em>",
+            "de": "Kolonie des Grünen Gallertkugeltierchen <em>Ophrydium versatile</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/zevar_úzkolistý_černé_jezero.jpg",
+          "captions": {
+            "cs": "zevar úzkolistý <em>Sparganium angustifolium</em>",
+            "en": "Floating Bur-reed <em>Sparganium angustifolium</em>",
+            "de": "Schmalblättriger Igelkolben <em>Sparganium angustifolium</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/kar Černého jezera.jpg",
+          "captions": {
+            "cs": "kar Černého jezera",
+            "en": "cirque of Černé Lake",
+            "de": "Kar des Schwarzen Sees"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/hořec_panonský_ID 2601N.jpg",
+          "captions": {
+            "cs": "hořec panonský <em>Gentiana pannonica</em>",
+            "en": "Pannonian Gentian <em>Gentiana pannonica</em>",
+            "de": "Ungarischer Enzian <em>Gentiana pannonica</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/důlkatec_plicní.jpg",
+          "captions": {
+            "cs": "důlkatec plicní <em>Lobaria pulmonaria</em>",
+            "en": "Lung Lichen <em>Lobaria pulmonaria</em>",
+            "de": "Echte Lungenflechte <em>Lobaria pulmonaria</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/troudnatec_růžový.JPG",
+          "captions": {
+            "cs": "troudnatec růžový <em>Fomitopsis rosea</em>",
+            "en": "Polypore <em>Fomitopsis rosea</em>",
+            "de": "Rosenroter Baumschwamm <em>Fomitopsis rosea</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/0R0A1158 -sokol_stehovavy.jpg",
+          "captions": {
+            "cs": "sokol stěhovavý <em>Falco peregrinus</em>",
+            "en": "Peregrine Falcon <em>Falco peregrinus</em>",
+            "de": "Wanderfalke <em>Falco peregrinus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/Prášilské_jezero.jpg",
+          "captions": {
+            "cs": "Prášilské jezero",
+            "en": "",
+            "de": "Stubenbacher See"
+          }
+        },
+        {
+          "src": "/assets/gallery/Ledovcové jezero/Čertovo_jezero.jpg",
+          "captions": {
+            "cs": "Čertovo jezero",
+            "en": "Čertovo lake",
+            "de": "Teufelssee"
+          }
+        }
+      ]
+    },
+    {
+      "scannedId": "01",
+      "images": [
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/okolí Horské Kvildy2.jpg",
+          "captions": {
+            "cs": "okolí Horské Kvildy",
+            "en": "the surroundings of the Horská Kvilda",
+            "de": "Umgebung des Innergefild"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/zelenopláštník_březový.jpg",
+          "captions": {
+            "cs": "zelenopláštník březový <em>Geometra papilionaria</em>",
+            "en": "Large Emerald <em>Geometra papilionaria</em>",
+            "de": "Grünes Blatt <em>Geometra papilionaria</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/tobolky_ploníku.jpg",
+          "captions": {
+            "cs": "tobolky ploníku <em>Polytrichum commune</em>",
+            "en": "Common Haircap capsules <em>Polytrichum commune</em>",
+            "de": "Sporenkapseln des Frauenhaarmooses <em>Polytrichum commune</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/skokan_hnědý.jpg",
+          "captions": {
+            "cs": "skokan hnědý <em>Rana temporaria</em>",
+            "en": "European Common Frog <em>Rana temporaria</em>",
+            "de": "Grasfrosch <em>Rana temporaria</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/rašelinná_smrčina.jpg",
+          "captions": {
+            "cs": "rašelinná smrčina",
+            "en": "spruce fenwood",
+            "de": "Fichtenmoorwald"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/sedmikvítek_evropský.jpg",
+          "captions": {
+            "cs": "sedmikvítek evropský <em>Trientalis europaea</em>",
+            "en": "Chickweed-wintergreen <em>Trientalis europaea</em>",
+            "de": "Europäischer Siebenstern <em>Trientalis europaea</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/ryzec_honosný.jpg",
+          "captions": {
+            "cs": "ryzec honosný <em>Lactarius repraesentaneus</em>",
+            "en": "purple-staining bearded milkcap <em>Lactarius repraesentaneus</em>",
+            "de": "Zottiger Violett-Milchling <em>Lactarius repraesentaneus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/ryzec_hnědočervený.jpg",
+          "captions": {
+            "cs": "ryzec hnědočervený <em>Lactarius badiosanguineus</em>",
+            "en": "Milk-cap Lactarius badiosanguineus <em>Lactarius badiosanguineus</em>",
+            "de": "Braunroter Milchling <em>Lactarius badiosanguineus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/rašelinná_březina.jpg",
+          "captions": {
+            "cs": "rašelinná březina",
+            "en": "birch fenwood",
+            "de": "Moorbirkenwald"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/rosnatka_okrouhlolistá.jpg",
+          "captions": {
+            "cs": "rosnatka okrouhlolistá <em>Drosera rotundifolia</em>",
+            "en": "Round-leaved Sundew <em>Drosera rotundifolia</em>",
+            "de": "Rundblättriger Sonnentau <em>Drosera rotundifolia</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/ropucha_obecná (1).jpg",
+          "captions": {
+            "cs": "ropucha obecná <em>Bufo bufo</em>",
+            "en": "Common European Toad <em>Bufo bufo</em>",
+            "de": "Erdkröte <em>Bufo bufo</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/rašeliník s tobolkami.jpg",
+          "captions": {
+            "cs": "rašeliník s tobolkami <em>Sphagnum capsuleae</em>",
+            "en": "Bog-moss with the capsules <em>Sphagnum capsuleae</em>",
+            "de": "Torfmoos mit Kapseln <em>Sphagnum capsuleae</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/zakrslé_smrky.jpg",
+          "captions": {
+            "cs": "zakrslé smrky",
+            "en": "dwarf spruce",
+            "de": "Zwergfichten"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/ploník_obecný.jpg",
+          "captions": {
+            "cs": "ploník obecný <em>Polytrichum commune</em>",
+            "en": "Common Haircap <em>Polytrichum commune</em>",
+            "de": "Goldenes Frauenhaarmoos <em>Polytrichum commune</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/ostřice_ježatá_Carex echinata.jpg",
+          "captions": {
+            "cs": "ostřice ježatá <em>Carex echinata</em>",
+            "en": "Star Sedge <em>Carex echinata</em>",
+            "de": "Igel-Segge <em>Carex echinata</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/okolí pramene Vltavy.jpg",
+          "captions": {
+            "cs": "okolí pramene Vltavy",
+            "en": "Vltava River Springs",
+            "de": "Moldau Quelle"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/kyjanka_purpurová.jpg",
+          "captions": {
+            "cs": "kyjanka purpurová <em>Alloclavaria purpurea</em>",
+            "en": "Coral fungus <em>Alloclavaria purpurea</em>",
+            "de": "Purpurfarbige Keule <em>Alloclavaria purpurea</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/klikva bahenní_Zuzana Růžičková.jpg",
+          "captions": {
+            "cs": "klikva bahenní <em>Vaccinium oxycoccos</em>",
+            "en": "Small Cranberry <em>Vaccinium oxycoccos</em>",
+            "de": "Gewöhnliche Moosbeere <em>Vaccinium oxycoccos</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/hlízenka_vodní.jpg",
+          "captions": {
+            "cs": "hlízenka vodní <em>Myriosclerotinia caricis-ampullaceae</em>",
+            "en": "<em>Fungus Myriosclerotinia caricis-ampullaceae</em>",
+            "de": "Nordisches Sklerotienbecherchen <em>Myriosclerotinia caricis-ampullaceae</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/Mechov_Srní.jpg",
+          "captions": {
+            "cs": "Mechov u Srní",
+            "en": "Mechov by Srní",
+            "de": "Mosau"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/dřípatka_horská.jpg",
+          "captions": {
+            "cs": "dřípatka horská <em>Soldanella montana</em>",
+            "en": "Mountain Snowbells <em>Soldanella montana</em>",
+            "de": "Berg-Alpenglöckchen <em>Soldanella montana</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/brusnice_brusinka.jpg",
+          "captions": {
+            "cs": "brusnice brusinka <em>Vaccinium vitis-idaea</em>",
+            "en": "Cowberry <em>Vaccinium vitis-idaea</em>",
+            "de": "Preiselbeere <em>Vaccinium vitis-idaea</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/brusnice_borůvka_plod.jpg",
+          "captions": {
+            "cs": "brusnice borůvka <em>Vaccinium myrtillus</em>",
+            "en": "Bilberry <em>Vaccinium myrtillus</em>",
+            "de": "Heidelbeere <em>Vaccinium myrtillus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Rašelinné smrčiny/rašelinná_smrčina_2.jpg",
+          "captions": {
+            "cs": "rašelinná smrčina",
+            "en": "spruce fenwood",
+            "de": "Fichtenmoorwald"
+          }
+        }
+      ]
+    },
+    {
+      "scannedId": "07",
+      "images": [
+        {
+          "src": "/assets/gallery/Reliktní hory/Rejštejn.jpg",
+          "captions": {
+            "cs": "Rejštejn",
+            "en": "Rejštejn",
+            "de": "Unterreichenstein"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/výr_velký.jpg",
+          "captions": {
+            "cs": "výr velký <em>Bubo bubo</em>",
+            "en": "Eurasian Eagle-owl <em>Bubo bubo</em>",
+            "de": "Uhu <em>Bubo bubo</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/vřes_obecný.jpg",
+          "captions": {
+            "cs": "vřes obecný <em>Calluna vulgaris</em>",
+            "en": "Heather <em>Calluna vulgaris</em>",
+            "de": "Besenheide <em>Calluna vulgaris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/pukléřka_islandská.jpg",
+          "captions": {
+            "cs": "pukléřka islandská <em>Cetraria islandica</em>",
+            "en": "True Iceland lichen <em>Cetraria islandica</em>",
+            "de": "Islandmoos <em>Cetraria islandica</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/postolka_obecna.jpg",
+          "captions": {
+            "cs": "poštolka obecná <em>Falco tinnunculus</em>",
+            "en": "Common Kestrel <em>Falco tinnunculus</em>",
+            "de": "Turmfalke <em>Falco tinnunculus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/plch zahradní (1).jpg",
+          "captions": {
+            "cs": "plch zahradní <em>Eliomys quercinus</em>",
+            "en": "Garden Dormouse <em>Eliomys quercinus</em>",
+            "de": "Gartenschläfer <em>Eliomys quercinus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/netopyr-usaty-18464-MA.jpg",
+          "captions": {
+            "cs": "netopýr ušatý <em>Plecotus auritus</em>",
+            "en": "Brown Big-eared Bat <em>Plecotus auritus</em>",
+            "de": "Braunes Langohr <em>Plecotus auritus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/Annín.jpg",
+          "captions": {
+            "cs": "Annín",
+            "en": "Annín",
+            "de": "Annathal"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/krkavec-velky-13403-LM.jpg",
+          "captions": {
+            "cs": "krkavec velký <em>Corvus corax</em>",
+            "en": "Northern Raven <em>Corvus corax</em>",
+            "de": "Kolkrabe <em>Corvus corax</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/klikoroh_borovy.jpg",
+          "captions": {
+            "cs": "klikoroh borový <em>Hylobius abietis</em>",
+            "en": "Large Pine Weevil <em>Hylobius abietis</em>",
+            "de": "Grosser Brauner Rüsselkäfer <em>Hylobius abietis</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/jezevec_lesní.jpg",
+          "captions": {
+            "cs": "jezevec lesní <em>Meles meles</em>",
+            "en": "European Badger <em>Meles meles</em>",
+            "de": "Europäischer Dachs <em>Meles meles</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/hřib_borový.jpg",
+          "captions": {
+            "cs": "hřib borový <em>Boletus pinophilus</em>",
+            "en": "<em>Boletus pinophilus</em>",
+            "de": "Kiefern-Steinpilz <em>Boletus pinophilus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/dvouhrotec_čeřitý.jpg",
+          "captions": {
+            "cs": "dvouhrotec čeřitý <em>Dicranum polysetum</em>",
+            "en": "Dicranum Moos <em>Dicranum polysetum</em>",
+            "de": "Gewelltblättriges Gabelzahnmoos <em>Dicranum polysetum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/dutohlávka_znetvořená.jpg",
+          "captions": {
+            "cs": "dutohlávka znetvořená <em>Cladonia deformis</em>",
+            "en": "Clumsy Indented Cup-lichen <em>Cladonia deformis</em>",
+            "de": "Ungestalte Scharlachflechte <em>Cladonia deformis</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/dutohlávka_vyzáblá.jpg",
+          "captions": {
+            "cs": "dutohlávka vyzáblá <em>Cladonia macilenta</em>",
+            "en": "Scarlet pin lichen <em>Cladonia macilenta</em>",
+            "de": "Schlanke Scharlachflechte <em>Cladonia macilenta</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/dutohlávka_štíhlá.jpg",
+          "captions": {
+            "cs": "dutohlávka štíhlá <em>Cladonia gracilis</em>",
+            "en": "Slender Cup lichen <em>Cladonia gracilis</em>",
+            "de": "Schlanke Bechrflechte <em>Cladonia gracilis</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/dutohlávka_sobí.jpg",
+          "captions": {
+            "cs": "dutohlávka sobí <em>Cladonia rangiferina</em>",
+            "en": "Gray reindeer lichen <em>Cladonia rangiferina</em>",
+            "de": "Echte Rentierflechte <em>Cladonia rangiferina</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/dutohlávka_rozsochatá.jpg",
+          "captions": {
+            "cs": "dutohlávka rozsochatá <em>Cladonia furcata</em>",
+            "en": "Many-forked cladonia <em>Cladonia furcata</em>",
+            "de": "Gabel-Säulenflechte <em>Cladonia furcata</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/černýš_luční.jpg",
+          "captions": {
+            "cs": "černýš luční <em>Melampyrum pratense</em>",
+            "en": "Common Cow-wheat <em>Melampyrum pratense</em>",
+            "de": "Wiesen-Wachtelweizen <em>Melampyrum pratense</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/bourovec-borovy-14773-JB.jpg",
+          "captions": {
+            "cs": "bourovec borový <em>Dendrolimus pini</em>",
+            "en": "Pine-tree Lappet <em>Dendrolimus pini</em>",
+            "de": "Kiefernspinner <em>Dendrolimus pini</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/borovice lesní 2.jpg",
+          "captions": {
+            "cs": "borovice lesní <em>Pinus sylvestris</em>",
+            "en": "Scots Pine <em>Pinus sylvestris</em>",
+            "de": "Wald-Kiefer <em>Pinus sylvestris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/borovice lesní.jpg",
+          "captions": {
+            "cs": "borovice lesní <em>Pinus sylvestris</em>",
+            "en": "Scots Pine <em>Pinus sylvestris</em>",
+            "de": "Wald-Kiefer <em>Pinus sylvestris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/veverka_obecná.jpg",
+          "captions": {
+            "cs": "veverka obecná <em>Sciurus vulgaris</em>",
+            "en": "Eurasian Red Squirrel <em>Sciurus vulgaris</em>",
+            "de": "Eurasisches Eichhörnchen <em>Sciurus vulgaris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Reliktní hory/údolí Otavy.jpg",
+          "captions": {
+            "cs": "údolí Otavy",
+            "en": "Otava Valley",
+            "de": "Tal der Otava"
+          }
+        }
+      ]
+    },
+    {
+      "scannedId": "10",
+      "images": [
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/Vltavský_luh.jpg",
+          "captions": {
+            "cs": "Vltavský luh",
+            "en": "",
+            "de": "Moldau Au"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/žluťásek_borůvkový.jpg",
+          "captions": {
+            "cs": "žluťásek borůvkový <em>Colias palaeno</em>",
+            "en": "Moorland Clouded Yellow <em>Colias palaeno</em>",
+            "de": "Hochmoorgelbling <em>Colias palaeno</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/zmije_obecná.jpg",
+          "captions": {
+            "cs": "zmije obecná <em>Vipera berus</em>",
+            "en": "Adder <em>Vipera berus</em>",
+            "de": "Kreuzotter <em>Vipera berus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/vřes_obecný.jpg",
+          "captions": {
+            "cs": "vřes obecný <em>Calluna vulgaris</em>",
+            "en": "Heather <em>Calluna vulgaris</em>",
+            "de": "Besenheide <em>Calluna vulgaris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/vlochyně_bahenní.jpg",
+          "captions": {
+            "cs": "vlochyně bahenní <em>Vaccinium uliginosum</em>",
+            "en": "Northern Bilberry <em>Vaccinium uliginosum</em>",
+            "de": "Rauschbeere <em>Vaccinium uliginosum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/Užovka_obojkova.jpg",
+          "captions": {
+            "cs": "užovka obojková <em>Natrix natrix</em>",
+            "en": "Grass Snake <em>Natrix natrix</em>",
+            "de": "Ringelnatter <em>Natrix natrix</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/tetřívek_obecný.jpg",
+          "captions": {
+            "cs": "tetřívek obecný <em>Lyrurus tetrix</em>",
+            "en": "Black Grouse <em>Lyrurus tetrix</em>",
+            "de": "Birkhuhn <em>Lyrurus tetrix</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/svižník_polní.jpg",
+          "captions": {
+            "cs": "svižník polní <em>Cicindela campestris</em>",
+            "en": "Green Tiger Beetle <em>Cicindela campestris</em>",
+            "de": "Feld-Sandlaufkäfer <em>Cicindela campestris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/suchopýr pochvatý.jpg",
+          "captions": {
+            "cs": "suchopýr pochvatý <em>Eriophorum vaginatum</em>",
+            "en": "Hare’s-tail Cottongrass <em>Eriophorum vaginatum</em>",
+            "de": "Scheiden-Wollgras <em>Eriophorum vaginatum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/suchopýr_pochvatý.jpg",
+          "captions": {
+            "cs": "suchopýr pochvatý <em>Eriophorum vaginatum</em>",
+            "en": "Hare’s-tail Cottongrass <em>Eriophorum vaginatum</em>",
+            "de": "Scheiden-Wollgras <em>Eriophorum vaginatum</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/ostřice zobánkatá.jpg",
+          "captions": {
+            "cs": "ostřice zobánkatá <em>Carex rostrata</em>",
+            "en": "Bottle Sedge <em>Carex rostrata</em>",
+            "de": "Schnabel-Segge <em>Carex rostrata</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/osenice velká.jpg",
+          "captions": {
+            "cs": "osenice velká <em>Eurois occulta</em>",
+            "en": "Great Brocade <em>Eurois occulta</em>",
+            "de": "Graue Heidelbeer-Erdeule <em>Eurois occulta</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/Myšivka-horska.jpg",
+          "captions": {
+            "cs": "myšivka horská <em>Sicista betulina</em>",
+            "en": "Northern Birch Mouse <em>Sicista betulina</em>",
+            "de": "Waldbirkenmaus <em>Sicista betulina</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/mochna_bahenní.jpg",
+          "captions": {
+            "cs": "mochna bahenní <em>Comarum palustre</em>",
+            "en": "Marsh Cinquefoil <em>Comarum palustre</em>",
+            "de": "Sumpf-Blutauge <em>Comarum palustre</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/modrásek ušlechtilý_Zuzana Růžičková.jpg",
+          "captions": {
+            "cs": "modrásek ušlechtilý <em>Polyommatus amandus</em>",
+            "en": "Amandas Blue <em>Polyommatus amandus</em>",
+            "de": "Prächtiger Bläuling <em>Polyommatus amandus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/klikva_bahenní_květ.jpg",
+          "captions": {
+            "cs": "klikva bahenní (květ) <em>Vaccinium oxycoccos</em>",
+            "en": "Small Cranberry (flower) <em>Vaccinium oxycoccos</em>",
+            "de": "Gewöhnliche Moosbeere (Blüte) <em>Vaccinium oxycoccos</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/klikva bahenní plod_Zuzana Růžičková.jpg",
+          "captions": {
+            "cs": "klikva bahenní (plod) <em>Vaccinium oxycoccos</em>",
+            "en": "Small Cranberry (fruit) <em>Vaccinium oxycoccos</em>",
+            "de": "Gewöhnliche Moosbeere (Frucht) <em>Vaccinium oxycoccos</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/ještěrka_živorodá_rašeliniště_Zuzana Růžičková.jpg",
+          "captions": {
+            "cs": "ještěrka živorodá <em>Zootoca vivipara</em>",
+            "en": "Common Lizard <em>Zootoca vivipara</em>",
+            "de": "Waldeidechse <em>Zootoca vivipara</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/borovice_blatka_Malý luh (101).jpg",
+          "captions": {
+            "cs": "borovice blatka <em>Pinus rotundata</em>",
+            "en": "Bog Pine <em>Pinus rotundata</em>",
+            "de": "Spirke <em>Pinus rotundata</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Údolní vrchoviště/Mrtvý_luh.jpg",
+          "captions": {
+            "cs": "Mrtvý luh",
+            "en": "",
+            "de": "Tote Au"
+          }
+        }
+      ]
+    },
+    {
+      "scannedId": "02",
+      "images": [
+        {
+          "src": "/assets/gallery/Vodní toky/meandry Vltavy.jpg",
+          "captions": {
+            "cs": "meandry Vltavy",
+            "en": "meanders of the Vltava River",
+            "de": "Meander der Moldau"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/vydra_říční.jpg",
+          "captions": {
+            "cs": "vydra říční <em>Lutra lutra</em>",
+            "en": "Eurasian River Otter <em>Lutra lutra</em>",
+            "de": "Eurasischer Fischotter <em>Lutra lutra</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/vranka_obecná.jpg",
+          "captions": {
+            "cs": "vranka obecná <em>Cottus gobio</em>",
+            "en": "European Bullhead <em>Cottus gobio</em>",
+            "de": "Groppe <em>Cottus gobio</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/střevle_potoční.JPG",
+          "captions": {
+            "cs": "střevle potoční <em>Phoxinus phoxinus</em>",
+            "en": "Common Minnow <em>Phoxinus phoxinus</em>",
+            "de": "Elritze <em>Phoxinus phoxinus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/skorec_vodní_1.jpg",
+          "captions": {
+            "cs": "skorec vodní <em>Cinclus cinclus</em>",
+            "en": "White-throated Dipper <em>Cinclus cinclus</em>",
+            "de": "Wasseramsel <em>Cinclus cinclus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/Rak_říční.jpg",
+          "captions": {
+            "cs": "rak říční <em>Astacus astacus</em>",
+            "en": "European Crayfish <em>Astacus astacus</em>",
+            "de": "Edelkrebs <em>Astacus astacus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/pstruh_obecný_potoční.JPG",
+          "captions": {
+            "cs": "pstruh obecný potoční <em>Salmo trutta fario</em>",
+            "en": "Brown Trout <em>Salmo trutta fario</em>",
+            "de": "Bachforelle <em>Salmo trutta fario</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/perlorodka_říční.JPG",
+          "captions": {
+            "cs": "perlorodka říční <em>Margaritifera margaritifera</em>",
+            "en": "Freshwater Pearly Mussel <em>Margaritifera margaritifera</em>",
+            "de": "Flussperlmuschel <em>Margaritifera margaritifera</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/motýlice_obecná.jpg",
+          "captions": {
+            "cs": "motýlice obecná <em>Calopteryx virgo</em>",
+            "en": "Beautiful Demoiselle <em>Calopteryx virgo</em>",
+            "de": "Blauflügel-Prachtlibelle <em>Calopteryx virgo</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/mihule_potoční.JPG",
+          "captions": {
+            "cs": "mihule potoční <em>Lampetra planeri</em>",
+            "en": "European Brook Lamprey <em>Lampetra planeri</em>",
+            "de": "Bachneunauge <em>Lampetra planeri</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/lipan podhorní.JPG",
+          "captions": {
+            "cs": "lipan podhorní <em>Thymallus thymallus</em>",
+            "en": "Grayling <em>Thymallus thymallus</em>",
+            "de": "Europäische Äsche <em>Thymallus thymallus</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/ledňáček_říční.jpg",
+          "captions": {
+            "cs": "ledňáček říční <em>Alcedo atthis</em>",
+            "en": "Common Kingfisher <em>Alcedo atthis</em>",
+            "de": "Eisvogel <em>Alcedo atthis</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/lakušník_vzplývavý_1.JPG",
+          "captions": {
+            "cs": "lakušník vzplývavý <em>Batrachium fluitans</em>",
+            "en": "River Water-crowfoot <em>Batrachium fluitans</em>",
+            "de": "Flutender Wasserhahnenfuß <em>Batrachium fluitans</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/konipas_horský.jpg",
+          "captions": {
+            "cs": "konipas horský <em>Motacilla cinerea</em>",
+            "en": "Grey Wagtail <em>Motacilla cinerea</em>",
+            "de": "Gebirgsstelze <em>Motacilla cinerea</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/Jepice-obecná-16154-JB.jpg",
+          "captions": {
+            "cs": "jepice obecná <em>Ephemera vulgata</em>",
+            "en": "Mayfly <em>Ephemera vulgata</em>",
+            "de": "Gemeine Eintagsfliege <em>Ephemera vulgata</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/Chrostik-chlupaty-5364-PK.jpg",
+          "captions": {
+            "cs": "chrostík chlupatý <em>Chaetopteryx villosa</em>",
+            "en": "Caddisfly <em>Chaetopteryx villosa</em>",
+            "de": "Köcherfliege <em>Chaetopteryx villosa</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/hvezdos_hackaty.JPG",
+          "captions": {
+            "cs": "hvězdoš háčkatý <em>Callitriche hamulata</em>",
+            "en": "Intermediate Water-starwort <em>Callitriche hamulata</em>",
+            "de": "Haken-Wasserstern <em>Callitriche hamulata</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/ďáblík_bahenní.jpg",
+          "captions": {
+            "cs": "ďáblík bahenní <em>Calla palustris</em>",
+            "en": "Bog Arum <em>Calla palustris</em>",
+            "de": "Schlangenwurz <em>Calla palustris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/čolek_horský.jpg",
+          "captions": {
+            "cs": "čolek horský <em>Ichthyosaura alpestris</em>",
+            "en": "Alpine Newt <em>Ichthyosaura alpestris</em>",
+            "de": "Bergmolch <em>Ichthyosaura alpestris</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/Cap_cerny_fin1.jpg",
+          "captions": {
+            "cs": "čáp černý <em>Ciconia nigra</em>",
+            "en": "Black Stork <em>Ciconia nigra</em>",
+            "de": "Schwarzstorch <em>Ciconia nigra</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/bobr_evropský.jpg",
+          "captions": {
+            "cs": "bobr evropský <em>Castor fiber</em>",
+            "en": "Eurasian Beaver <em>Castor fiber</em>",
+            "de": "Eurasischer Biber <em>Castor fiber</em>"
+          }
+        },
+        {
+          "src": "/assets/gallery/Vodní toky/meandry Teplé Vltavy.jpg",
+          "captions": {
+            "cs": "meandry Teplé Vltavy",
+            "en": "meanders of the Teplá Vltava River",
+            "de": "Meander der Warmen Moldau"
+          }
+        }
+      ]
+    }
+  ]
+}
