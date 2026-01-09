@@ -23,9 +23,14 @@ if (!is_dir($targetDir)) {
     mkdir($targetDir, 0777, true);
 }
 
-// Vytvořit složku podle roku, měsíce a dne (např. 2026/01/09/)
-$yearMonthDay = date('Y/m/d');
-$uploadDir = $targetDir . $yearMonthDay . '/';
+// Získat aktuální cestu z parametru (kam se má nahrát)
+$currentPath = isset($_POST['path']) ? $_POST['path'] : '';
+$currentPath = trim($currentPath, '/');
+
+// Bezpečnostní kontrola - zabránit directory traversal
+$currentPath = str_replace(['..', '\\'], ['', '/'], $currentPath);
+
+$uploadDir = $targetDir . ($currentPath ? $currentPath . '/' : '');
 if (!is_dir($uploadDir)) {
     mkdir($uploadDir, 0777, true);
 }
@@ -106,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['assetfile'])) {
         if (move_uploaded_file($fileTmpName, $targetFile)) {
             $uploadedFiles[] = [
                 'filename' => $cleanFileName,
-                'path' => '/assets/' . $yearMonthDay . '/' . $cleanFileName,
+                'path' => '/assets/' . ($currentPath ? $currentPath . '/' : '') . $cleanFileName,
                 'original' => $originalFileName
             ];
         } else {

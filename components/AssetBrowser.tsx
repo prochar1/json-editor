@@ -9,6 +9,7 @@ import {
   MdInsertDriveFile,
   MdFolder,
   MdArrowBack,
+  MdCreateNewFolder,
 } from "react-icons/md";
 
 interface AssetFile {
@@ -36,6 +37,8 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
   const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [uploadMessage, setUploadMessage] = useState<string | null>(null);
+  const [showCreateFolder, setShowCreateFolder] = useState(false);
+  const [newFolderName, setNewFolderName] = useState("");
 
   const isLocalhost =
     typeof window !== "undefined" && window.location.hostname === "localhost";
@@ -71,6 +74,8 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
 
     // Přidat všechny vybrané soubory
     for (let i = 0; i < files.length; i++) {
+      // Přidat aktuální cestu
+      formData.append("path", currentPath);
       formData.append("assetfile[]", files[i]);
     }
 
@@ -95,7 +100,7 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
         setTimeout(() => setUploadMessage(null), 4000);
       }
     } catch (err) {
-      setUploadMessage("Chyba spojení s PHP skriptem.");
+      setUploadMessage("Chyba spojení.");
       setTimeout(() => setUploadMessage(null), 4000);
     } finally {
       setUploading(false);
@@ -131,6 +136,42 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
     const pathParts = currentPath.split("/").filter(Boolean);
     pathParts.pop();
     setCurrentPath(pathParts.join("/"));
+  }
+
+  async function handleCreateFolder() {
+    if (!newFolderName.trim()) {
+      setUploadMessage("Zadejte název složky.");
+      setTimeout(() => setUploadMessage(null), 3000);
+      return;
+    }
+
+    try {
+      const res = await fetch(`${apiBase}/php/create_folder.php`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: newFolderName,
+          path: currentPath,
+        }),
+      });
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setUploadMessage("Složka byla vytvořena.");
+        setTimeout(() => setUploadMessage(null), 3000);
+        setNewFolderName("");
+        setShowCreateFolder(false);
+        loadAssets();
+      } else {
+        setUploadMessage("Chyba: " + (data.error || "Neznámá chyba"));
+        setTimeout(() => setUploadMessage(null), 4000);
+      }
+    } catch (err) {
+      setUploadMessage("Chyba spojení.");
+      setTimeout(() => setUploadMessage(null), 4000);
+    }
   }
 
   function getBreadcrumbs() {
@@ -196,10 +237,17 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
                 <MdArrowBack size={20} />
               </button>
             )}
+            <button
+              onClick={() => setShowCreateFolder(!showCreateFolder)}
+              className="flex items-center gap-2 px-3 py-2 bg-green-500 dark:bg-green-600 text-white rounded-md hover:bg-green-600 dark:hover:bg-green-700 transition-all"
+              title="Vytvořit složku"
+            >
+              <MdCreateNewFolder size={20} />
+            </button>
             <label className="flex items-center gap-2 px-4 py-2 bg-blue-500 dark:bg-blue-600 text-white rounded-md hover:bg-blue-600 dark:hover:bg-blue-700 cursor-pointer transition-all">
               <MdUploadFile size={20} />
               <span className="text-sm font-semibold">
-                {uploading ? "Nahrávám..." : "Nahrát nový soubor"}
+                {uploading ? "Nahrávám..." : "Nahrát soubor"}
               </span>
               <input
                 type="file"
@@ -210,6 +258,33 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
               />
             </label>
           </div>
+          {showCreateFolder && (
+            <div className="mt-3 flex items-center gap-2">
+              <input
+                type="text"
+                value={newFolderName}
+                onChange={(e) => setNewFolderName(e.target.value)}
+                placeholder="Název nové složky..."
+                className="flex-1 px-3 py-2 text-sm rounded-md border border-gray-200 dark:border-gray-800 bg-white dark:bg-slate-900 text-gray-900 dark:text-gray-100"
+                onKeyPress={(e) => e.key === "Enter" && handleCreateFolder()}
+              />
+              <button
+                onClick={handleCreateFolder}
+                className="px-4 py-2 text-sm bg-green-500 dark:bg-green-600 text-white rounded-md hover:bg-green-600 dark:hover:bg-green-700 transition-all"
+              >
+                Vytvořit
+              </button>
+              <button
+                onClick={() => {
+                  setShowCreateFolder(false);
+                  setNewFolderName("");
+                }}
+                className="px-4 py-2 text-sm bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition-all"
+              >
+                Zrušit
+              </button>
+            </div>
+          )}
           {uploadMessage && (
             <div className="mt-2 text-sm text-blue-600 dark:text-blue-400">
               {uploadMessage}
