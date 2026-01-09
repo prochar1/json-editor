@@ -19,6 +19,9 @@
 /public/assets
 /public/data
 
+# temp files for chunked uploads
+/public/assets/.upload_chunks
+
 # misc
 .DS_Store
 *.pem

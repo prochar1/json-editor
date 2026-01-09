@@ -50,8 +50,11 @@ foreach ($items as $item) {
     // Přeskočit thumbnaily (začínají na _thumb_)
     if (strpos($item, '_thumb_') === 0) {
         continue;
-    }
-    
+    }    
+    // Přeskočit složku pro dočasné chunky
+    if ($item === '.upload_chunks') {
+        continue;
+    }    
     $itemPath = $fullPath . $item;
     $relativePath = $currentPath ? $currentPath . '/' . $item : $item;
     

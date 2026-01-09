@@ -39,6 +39,7 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
   const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [uploadMessage, setUploadMessage] = useState<string | null>(null);
+  const [uploadProgress, setUploadProgress] = useState<number>(0);
   const [showCreateFolder, setShowCreateFolder] = useState(false);
   const [newFolderName, setNewFolderName] = useState("");
 
@@ -71,43 +72,100 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
 
     setUploading(true);
     setUploadMessage(null);
-
-    const formData = new FormData();
-
-    // Přidat všechny vybrané soubory
-    for (let i = 0; i < files.length; i++) {
-      // Přidat aktuální cestu
-      formData.append("path", currentPath);
-      formData.append("assetfile[]", files[i]);
-    }
+    setUploadProgress(0);
 
     try {
-      const res = await fetch(`${apiBase}/php/upload_asset.php`, {
-        method: "POST",
-        body: formData,
-      });
-      const data = await res.json();
+      let successCount = 0;
+      let errorCount = 0;
 
-      if (res.ok && data.success) {
-        const count = data.files.length;
-        setUploadMessage(
-          `Nahráno ${count} ${count === 1 ? "soubor" : count < 5 ? "soubory" : "souborů"}.`
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        setUploadMessage(`Nahrávám ${i + 1}/${files.length}: ${file.name}...`);
+
+        const result = await uploadFileInChunks(
+          file,
+          currentPath,
+          (progress) => {
+            setUploadProgress(progress);
+          }
         );
-        if (data.errors && data.errors.length > 0) {
-          setUploadMessage((prev) => prev + " Některé soubory selhaly.");
+
+        if (result.success) {
+          successCount++;
+        } else {
+          errorCount++;
+        }
+      }
+
+      if (successCount > 0) {
+        setUploadMessage(
+          `Nahráno ${successCount} ${successCount === 1 ? "soubor" : successCount < 5 ? "soubory" : "souborů"}.`
+        );
+        if (errorCount > 0) {
+          setUploadMessage((prev) => prev + ` ${errorCount} selhalo.`);
         }
         loadAssets();
       } else {
-        setUploadMessage("Chyba: " + (data.error || "Neznámá chyba"));
-        setTimeout(() => setUploadMessage(null), 4000);
+        setUploadMessage("Chyba: Žádné soubory nebyly nahrány.");
       }
     } catch (err) {
       setUploadMessage("Chyba spojení.");
-      setTimeout(() => setUploadMessage(null), 4000);
     } finally {
       setUploading(false);
+      setUploadProgress(0);
       e.target.value = "";
+      setTimeout(() => setUploadMessage(null), 4000);
     }
+  }
+
+  async function uploadFileInChunks(
+    file: File,
+    path: string,
+    onProgress: (progress: number) => void
+  ): Promise<{ success: boolean; error?: string }> {
+    const chunkSize = 5 * 1024 * 1024; // 5MB chunky
+    const totalChunks = Math.ceil(file.size / chunkSize);
+    const fileId = `${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+
+    for (let chunkIndex = 0; chunkIndex < totalChunks; chunkIndex++) {
+      const start = chunkIndex * chunkSize;
+      const end = Math.min(start + chunkSize, file.size);
+      const chunk = file.slice(start, end);
+
+      const formData = new FormData();
+      formData.append("chunk", chunk);
+      formData.append("chunkIndex", chunkIndex.toString());
+      formData.append("totalChunks", totalChunks.toString());
+      formData.append("fileName", file.name);
+      formData.append("fileId", fileId);
+      formData.append("path", path);
+
+      try {
+        const res = await fetch(`${apiBase}/php/upload_chunk.php`, {
+          method: "POST",
+          body: formData,
+        });
+
+        const data = await res.json();
+
+        if (!res.ok || !data.success) {
+          return { success: false, error: data.error || "Chyba při nahrávání" };
+        }
+
+        // Aktualizovat progress
+        const progress = ((chunkIndex + 1) / totalChunks) * 100;
+        onProgress(progress);
+
+        // Pokud je upload kompletní, vrátit úspěch
+        if (data.complete) {
+          return { success: true };
+        }
+      } catch (err) {
+        return { success: false, error: "Chyba spojení" };
+      }
+    }
+
+    return { success: true };
   }
 
   function getFileIcon(type: string) {
@@ -319,8 +377,18 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
             </div>
           )}
           {uploadMessage && (
-            <div className="mt-2 text-sm text-blue-600 dark:text-blue-400">
-              {uploadMessage}
+            <div className="mt-2 space-y-2">
+              <div className="text-sm text-blue-600 dark:text-blue-400">
+                {uploadMessage}
+              </div>
+              {uploading && uploadProgress > 0 && (
+                <div className="w-full bg-gray-200 dark:bg-gray-800 rounded-full h-2">
+                  <div
+                    className="bg-blue-600 dark:bg-blue-500 h-2 rounded-full transition-all duration-300"
+                    style={{ width: `${uploadProgress}%` }}
+                  ></div>
+                </div>
+              )}
             </div>
           )}
         </div>
