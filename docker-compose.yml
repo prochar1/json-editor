@@ -1,14 +1,5 @@
 version: "3.8"
 services:
-  nextjs:
-    build:
-      context: .
-      dockerfile: Dockerfile-next
-    ports:
-      - "3000:80"
-    depends_on:
-      - php
-
   php:
     build:
       context: .
@@ -16,4 +7,6 @@ services:
     ports:
       - "8080:80"
     volumes:
+      - ./public/php:/var/www/html/php
       - ./public/data:/var/www/html/data
+      - ./public/assets:/var/www/html/assets

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { MdOutlineTextFields } from "react-icons/md";
+import { MdOutlineTextFields, MdAttachFile } from "react-icons/md";
+import AssetBrowser from "./AssetBrowser";
 
 // Helper to deeply clone and update JSON
 function updateJson(obj: any, path: (string | number)[], value: any) {
@@ -305,6 +306,7 @@ function JsonEditorForm({
     // Primitive value - inline editing
     // WYSIWYG overlay state
     const [showWysiwyg, setShowWysiwyg] = useState(false);
+    const [showAssetBrowser, setShowAssetBrowser] = useState(false);
     const WysiwygEditor = React.useMemo(
       () => require("./WysiwygEditor").default,
       []
@@ -329,6 +331,14 @@ function JsonEditorForm({
             className="flex-1 px-2 py-1 rounded-md border border-gray-200 dark:border-gray-800/50 text-xs bg-white dark:bg-slate-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:focus:ring-violet-500 focus:border-transparent transition-all"
             placeholder="Zadejte hodnotu..."
           />
+          <button
+            type="button"
+            className="px-2 py-1 text-xs rounded-md bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 hover:bg-orange-200 dark:hover:bg-orange-900/50 transition-all"
+            title="Vložit cestu k souboru"
+            onClick={() => setShowAssetBrowser(true)}
+          >
+            <MdAttachFile size={18} />
+          </button>
           <button
             type="button"
             className="px-2 py-1 text-xs rounded-md bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 hover:bg-violet-200 dark:hover:bg-violet-900/50 transition-all"
@@ -373,6 +383,13 @@ function JsonEditorForm({
             </div>
           </div>
         )}
+        {/* Asset Browser */}
+        {showAssetBrowser && (
+          <AssetBrowser
+            onSelect={(assetPath) => onChange(path, assetPath)}
+            onClose={() => setShowAssetBrowser(false)}
+          />
+        )}
       </div>
     );
   }
@@ -382,6 +399,7 @@ export default function JsonEditor() {
   const [json, setJson] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [saveMessage, setSaveMessage] = useState<string | null>(null);
 
   useEffect(() => {
     setLoading(true);
@@ -422,18 +440,27 @@ export default function JsonEditor() {
     const formData = new FormData();
     formData.append("jsonfile", blob, "data.json");
     try {
-      const res = await fetch("/php/upload_json.php", {
+      const isLocalhost =
+        typeof window !== "undefined" &&
+        window.location.hostname === "localhost";
+      const uploadUrl = isLocalhost
+        ? "http://localhost:8080/php/upload_json.php"
+        : "/php/upload_json.php";
+      const res = await fetch(uploadUrl, {
         method: "POST",
         body: formData,
       });
       const text = await res.text();
       if (res.ok) {
-        alert("Soubor byl úspěšně nahrán!\n" + text);
+        setSaveMessage("Soubor byl úspěšně uložen.");
+        setTimeout(() => setSaveMessage(null), 3000);
       } else {
-        alert("Chyba při nahrávání: " + text);
+        setSaveMessage("Chyba při nahrávání: " + text);
+        setTimeout(() => setSaveMessage(null), 4000);
       }
     } catch (err) {
-      alert("Chyba spojení s PHP skriptem.");
+      setSaveMessage("Chyba spojení s PHP skriptem.");
+      setTimeout(() => setSaveMessage(null), 4000);
     }
   }
 
@@ -451,6 +478,11 @@ export default function JsonEditor() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-slate-950 p-6">
       <div className="max-w-7xl mx-auto">
+        {saveMessage && (
+          <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-emerald-500 text-white px-6 py-2 rounded-lg shadow-lg text-sm font-semibold animate-fade-in">
+            {saveMessage}
+          </div>
+        )}
         <div className="mb-4 flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1">
