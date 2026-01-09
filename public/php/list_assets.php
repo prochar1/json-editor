@@ -47,6 +47,11 @@ $items = scandir($fullPath);
 foreach ($items as $item) {
     if ($item === '.' || $item === '..') continue;
     
+    // Přeskočit thumbnaily (začínají na _thumb_)
+    if (strpos($item, '_thumb_') === 0) {
+        continue;
+    }
+    
     $itemPath = $fullPath . $item;
     $relativePath = $currentPath ? $currentPath . '/' . $item : $item;
     
@@ -57,12 +62,25 @@ foreach ($items as $item) {
             'type' => 'folder'
         ];
     } elseif (is_file($itemPath)) {
+        $mimeType = mime_content_type($itemPath);
+        $thumbnailPath = null;
+        
+        // Zkontrolovat, zda existuje náhled vedle souboru
+        if (strpos($mimeType, 'image/') === 0) {
+            $thumbnailFile = dirname($itemPath) . '/_thumb_' . $item;
+            if (file_exists($thumbnailFile)) {
+                $thumbnailRelativePath = $currentPath ? $currentPath . '/_thumb_' . $item : '_thumb_' . $item;
+                $thumbnailPath = '/assets/' . $thumbnailRelativePath;
+            }
+        }
+        
         $files[] = [
             'name' => $item,
             'path' => '/assets/' . $relativePath,
             'size' => filesize($itemPath),
             'modified' => filemtime($itemPath),
-            'type' => mime_content_type($itemPath)
+            'type' => $mimeType,
+            'thumbnail' => $thumbnailPath
         ];
     }
 }

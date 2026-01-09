@@ -10,6 +10,7 @@ import {
   MdFolder,
   MdArrowBack,
   MdCreateNewFolder,
+  MdDelete,
 } from "react-icons/md";
 
 interface AssetFile {
@@ -18,6 +19,7 @@ interface AssetFile {
   size: number;
   modified: number;
   type: string;
+  thumbnail?: string;
 }
 
 interface AssetFolder {
@@ -186,6 +188,37 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
     return breadcrumbs;
   }
 
+  async function handleDeleteAsset(assetPath: string, assetName: string) {
+    if (!confirm(`Opravdu chcete smazat soubor "${assetName}"?`)) {
+      return;
+    }
+
+    try {
+      const res = await fetch(`${apiBase}/php/delete_asset.php`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          path: assetPath,
+        }),
+      });
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setUploadMessage("Soubor byl smazán.");
+        setTimeout(() => setUploadMessage(null), 3000);
+        loadAssets();
+      } else {
+        setUploadMessage("Chyba: " + (data.error || "Neznámá chyba"));
+        setTimeout(() => setUploadMessage(null), 4000);
+      }
+    } catch (err) {
+      setUploadMessage("Chyba spojení s PHP skriptem.");
+      setTimeout(() => setUploadMessage(null), 4000);
+    }
+  }
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
       <div className="bg-white dark:bg-slate-900 rounded-lg shadow-2xl w-full max-w-4xl max-h-[80vh] flex flex-col">
@@ -326,28 +359,52 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
               ))}
               {/* Soubory */}
               {assets.map((asset) => (
-                <button
+                <div
                   key={asset.path}
-                  onClick={() => {
-                    onSelect(asset.path);
-                    onClose();
-                  }}
-                  className="flex items-center gap-3 p-3 rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors text-left group"
+                  className="flex items-center gap-3 p-3 rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors group"
                 >
-                  <div className="flex-shrink-0">{getFileIcon(asset.type)}</div>
-                  <div className="flex-1 min-w-0">
-                    <div className="font-medium text-sm text-gray-900 dark:text-gray-100 truncate">
-                      {asset.name}
+                  <button
+                    onClick={() => {
+                      onSelect(asset.path);
+                      onClose();
+                    }}
+                    className="flex items-center gap-3 flex-1 text-left"
+                  >
+                    <div className="flex-shrink-0">
+                      {asset.thumbnail ? (
+                        <img
+                          src={asset.thumbnail}
+                          alt={asset.name}
+                          className="w-12 h-12 object-cover rounded border border-gray-200 dark:border-gray-700"
+                        />
+                      ) : (
+                        getFileIcon(asset.type)
+                      )}
                     </div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">
-                      {formatFileSize(asset.size)} •{" "}
-                      {formatDate(asset.modified)}
+                    <div className="flex-1 min-w-0">
+                      <div className="font-medium text-sm text-gray-900 dark:text-gray-100 truncate">
+                        {asset.name}
+                      </div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400">
+                        {formatFileSize(asset.size)} •{" "}
+                        {formatDate(asset.modified)}
+                      </div>
                     </div>
-                  </div>
-                  <div className="text-xs text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
-                    Vložit
-                  </div>
-                </button>
+                    <div className="text-xs text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                      Vložit
+                    </div>
+                  </button>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleDeleteAsset(asset.path, asset.name);
+                    }}
+                    className="p-2 rounded-md text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 opacity-0 group-hover:opacity-100 transition-all"
+                    title="Smazat soubor"
+                  >
+                    <MdDelete size={20} />
+                  </button>
+                </div>
               ))}
             </div>
           )}

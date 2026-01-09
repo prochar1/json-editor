@@ -35,6 +35,71 @@ if (!is_dir($uploadDir)) {
     mkdir($uploadDir, 0777, true);
 }
 
+// Funkce pro vytvoření náhledu
+function createThumbnail($sourcePath, $thumbnailPath, $maxWidth = 200, $maxHeight = 200) {
+    $imageInfo = getimagesize($sourcePath);
+    if (!$imageInfo) return false;
+    
+    $sourceWidth = $imageInfo[0];
+    $sourceHeight = $imageInfo[1];
+    $mimeType = $imageInfo['mime'];
+    
+    // Načíst obrázek podle typu
+    switch ($mimeType) {
+        case 'image/jpeg':
+            $sourceImage = imagecreatefromjpeg($sourcePath);
+            break;
+        case 'image/png':
+            $sourceImage = imagecreatefrompng($sourcePath);
+            break;
+        case 'image/gif':
+            $sourceImage = imagecreatefromgif($sourcePath);
+            break;
+        case 'image/webp':
+            $sourceImage = imagecreatefromwebp($sourcePath);
+            break;
+        default:
+            return false;
+    }
+    
+    if (!$sourceImage) return false;
+    
+    // Vypočítat nové rozměry se zachováním poměru stran
+    $ratio = min($maxWidth / $sourceWidth, $maxHeight / $sourceHeight);
+    $newWidth = (int)($sourceWidth * $ratio);
+    $newHeight = (int)($sourceHeight * $ratio);
+    
+    // Vytvořit náhled
+    $thumbnail = imagecreatetruecolor($newWidth, $newHeight);
+    
+    // Zachovat průhlednost pro PNG a GIF
+    if ($mimeType === 'image/png' || $mimeType === 'image/gif') {
+        imagealphablending($thumbnail, false);
+        imagesavealpha($thumbnail, true);
+        $transparent = imagecolorallocatealpha($thumbnail, 0, 0, 0, 127);
+        imagefill($thumbnail, 0, 0, $transparent);
+    }
+    
+    imagecopyresampled($thumbnail, $sourceImage, 0, 0, 0, 0, $newWidth, $newHeight, $sourceWidth, $sourceHeight);
+    
+    // Uložit náhled jako JPEG (nebo PNG pro průhlednost)
+    $thumbnailDir = dirname($thumbnailPath);
+    if (!is_dir($thumbnailDir)) {
+        mkdir($thumbnailDir, 0777, true);
+    }
+    
+    if ($mimeType === 'image/png') {
+        imagepng($thumbnail, $thumbnailPath, 8);
+    } else {
+        imagejpeg($thumbnail, $thumbnailPath, 85);
+    }
+    
+    imagedestroy($sourceImage);
+    imagedestroy($thumbnail);
+    
+    return true;
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['assetfile'])) {
     $files = $_FILES['assetfile'];
     $uploadedFiles = [];
@@ -109,9 +174,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['assetfile'])) {
         }
         
         if (move_uploaded_file($fileTmpName, $targetFile)) {
+            $thumbnailPath = null;
+            
+            // Vytvořit náhled pro obrázky
+            $imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+            if (in_array($fileExtension, $imageExtensions)) {
+                // Uložit thumbnail vedle originálního souboru s prefixem thumb_
+                $thumbnailFileName = '_thumb_' . $cleanFileName;
+                $thumbnailFullPath = $uploadDir . $thumbnailFileName;
+                
+                if (createThumbnail($targetFile, $thumbnailFullPath)) {
+                    $thumbnailPath = '/assets/' . ($currentPath ? $currentPath . '/' : '') . $thumbnailFileName;
+                }
+            }
+            
             $uploadedFiles[] = [
                 'filename' => $cleanFileName,
                 'path' => '/assets/' . ($currentPath ? $currentPath . '/' : '') . $cleanFileName,
+                'thumbnail' => $thumbnailPath,
                 'original' => $originalFileName
             ];
         } else {
