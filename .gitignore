@@ -17,6 +17,7 @@
 
 # assets
 /public/assets
+/public/data
 
 # misc
 .DS_Store
