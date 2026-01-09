@@ -386,7 +386,7 @@ export default function JsonEditor() {
   useEffect(() => {
     setLoading(true);
     setError(null);
-    fetch("/data.json")
+    fetch("/data/data.json")
       .then(async (res) => {
         const contentType = res.headers.get("content-type");
         if (!res.ok) {
@@ -414,9 +414,27 @@ export default function JsonEditor() {
   }, []);
 
   // Add handleSubmit function
-  function handleSubmit() {
-    // You can implement saving logic here, e.g., send json to server
-    alert("Data byla uložena:\n" + JSON.stringify(json, null, 2));
+  async function handleSubmit() {
+    // Upload JSON to PHP backend
+    const blob = new Blob([JSON.stringify(json, null, 2)], {
+      type: "application/json",
+    });
+    const formData = new FormData();
+    formData.append("jsonfile", blob, "data.json");
+    try {
+      const res = await fetch("/php/upload_json.php", {
+        method: "POST",
+        body: formData,
+      });
+      const text = await res.text();
+      if (res.ok) {
+        alert("Soubor byl úspěšně nahrán!\n" + text);
+      } else {
+        alert("Chyba při nahrávání: " + text);
+      }
+    } catch (err) {
+      alert("Chyba spojení s PHP skriptem.");
+    }
   }
 
   // Add handleChange function

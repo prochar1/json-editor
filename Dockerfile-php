@@ -1,0 +1,6 @@
+# Dockerfile-php
+FROM php:8.2-apache
+COPY public/php/ /var/www/html/php/
+COPY public/data/ /var/www/html/data/
+RUN chown -R www-data:www-data /var/www/html/data
+EXPOSE 80
