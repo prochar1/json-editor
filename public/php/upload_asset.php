@@ -23,73 +23,106 @@ if (!is_dir($targetDir)) {
     mkdir($targetDir, 0777, true);
 }
 
+// Vytvořit složku podle roku, měsíce a dne (např. 2026/01/09/)
+$yearMonthDay = date('Y/m/d');
+$uploadDir = $targetDir . $yearMonthDay . '/';
+if (!is_dir($uploadDir)) {
+    mkdir($uploadDir, 0777, true);
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['assetfile'])) {
-    $file = $_FILES['assetfile'];
-    $originalFileName = basename($file['name']);
+    $files = $_FILES['assetfile'];
+    $uploadedFiles = [];
+    $errors = [];
     
-    // Získat příponu
-    $fileExtension = strtolower(pathinfo($originalFileName, PATHINFO_EXTENSION));
-    $fileNameWithoutExt = pathinfo($originalFileName, PATHINFO_FILENAME);
+    // Zpracovat jeden nebo více souborů
+    $fileCount = is_array($files['name']) ? count($files['name']) : 1;
     
-    // Odstranit diakritiku
-    $fileNameWithoutExt = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $fileNameWithoutExt);
-    
-    // Nahradit mezery pomlčkami
-    $fileNameWithoutExt = str_replace(' ', '-', $fileNameWithoutExt);
-    
-    // Odstranit všechny znaky kromě písmen, číslic, pomlček a podtržítek
-    $fileNameWithoutExt = preg_replace('/[^a-zA-Z0-9\-_]/', '', $fileNameWithoutExt);
-    
-    // Převést na malá písmena
-    $fileNameWithoutExt = strtolower($fileNameWithoutExt);
-    
-    // Odstranit duplicitní pomlčky
-    $fileNameWithoutExt = preg_replace('/-+/', '-', $fileNameWithoutExt);
-    
-    // Odstranit pomlčky na začátku a konci
-    $fileNameWithoutExt = trim($fileNameWithoutExt, '-_');
-    
-    // Pokud je název prázdný, použít timestamp
-    if (empty($fileNameWithoutExt)) {
-        $fileNameWithoutExt = 'file-' . time();
+    for ($i = 0; $i < $fileCount; $i++) {
+        // Získat data souboru (podporuje single i multiple upload)
+        $fileName = is_array($files['name']) ? $files['name'][$i] : $files['name'];
+        $fileTmpName = is_array($files['tmp_name']) ? $files['tmp_name'][$i] : $files['tmp_name'];
+        $fileSize = is_array($files['size']) ? $files['size'][$i] : $files['size'];
+        $fileError = is_array($files['error']) ? $files['error'][$i] : $files['error'];
+        
+        if ($fileError !== UPLOAD_ERR_OK) {
+            $errors[] = "Chyba při nahrávání souboru $fileName";
+            continue;
+        }
+        
+        $originalFileName = basename($fileName);
+        
+        // Získat příponu
+        $fileExtension = strtolower(pathinfo($originalFileName, PATHINFO_EXTENSION));
+        $fileNameWithoutExt = pathinfo($originalFileName, PATHINFO_FILENAME);
+        
+        // Bezpečnostní kontrola - povolené přípony
+        $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'pdf', 'mp4', 'webm', 'mp3', 'wav', 'zip'];
+        
+        if (!in_array($fileExtension, $allowedExtensions)) {
+            $errors[] = "Nepodporovaný typ souboru: $originalFileName";
+            continue;
+        }
+        
+        // Kontrola velikosti (max 100MB)
+        if ($fileSize > 100 * 1024 * 1024) {
+            $errors[] = "Soubor $originalFileName je příliš velký (max 100MB)";
+            continue;
+        }
+        
+        // Odstranit diakritiku
+        $fileNameWithoutExt = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $fileNameWithoutExt);
+        
+        // Nahradit mezery pomlčkami
+        $fileNameWithoutExt = str_replace(' ', '-', $fileNameWithoutExt);
+        
+        // Odstranit všechny znaky kromě písmen, číslic, pomlček a podtržítek
+        $fileNameWithoutExt = preg_replace('/[^a-zA-Z0-9\-_]/', '', $fileNameWithoutExt);
+        
+        // Převést na malá písmena
+        $fileNameWithoutExt = strtolower($fileNameWithoutExt);
+        
+        // Odstranit duplicitní pomlčky
+        $fileNameWithoutExt = preg_replace('/-+/', '-', $fileNameWithoutExt);
+        
+        // Odstranit pomlčky na začátku a konci
+        $fileNameWithoutExt = trim($fileNameWithoutExt, '-_');
+        
+        // Pokud je název prázdný, použít timestamp
+        if (empty($fileNameWithoutExt)) {
+            $fileNameWithoutExt = 'file-' . time();
+        }
+        
+        // Sestavit finální název souboru
+        $cleanFileName = $fileNameWithoutExt . '.' . $fileExtension;
+        $targetFile = $uploadDir . $cleanFileName;
+        
+        // Pokud soubor existuje, přidat timestamp
+        if (file_exists($targetFile)) {
+            $cleanFileName = $fileNameWithoutExt . '-' . time() . '-' . $i . '.' . $fileExtension;
+            $targetFile = $uploadDir . $cleanFileName;
+        }
+        
+        if (move_uploaded_file($fileTmpName, $targetFile)) {
+            $uploadedFiles[] = [
+                'filename' => $cleanFileName,
+                'path' => '/assets/' . $yearMonthDay . '/' . $cleanFileName,
+                'original' => $originalFileName
+            ];
+        } else {
+            $errors[] = "Chyba při ukládání souboru $originalFileName";
+        }
     }
     
-    // Sestavit finální název souboru
-    $fileName = $fileNameWithoutExt . '.' . $fileExtension;
-    $targetFile = $targetDir . $fileName;
-    
-    // Pokud soubor existuje, přidat timestamp
-    if (file_exists($targetFile)) {
-        $fileName = $fileNameWithoutExt . '-' . time() . '.' . $fileExtension;
-        $targetFile = $targetDir . $fileName;
-    }
-
-    // Bezpečnostní kontrola - povolené přípony
-    $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'pdf', 'mp4', 'webm', 'mp3', 'wav', 'zip'];
-    $fileExtension = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
-    
-    if (!in_array($fileExtension, $allowedExtensions)) {
-        http_response_code(400);
-        echo json_encode(['error' => 'Nepodporovaný typ souboru.']);
-        exit;
-    }
-
-    // Kontrola velikosti (max 100MB)
-    if ($file['size'] > 100 * 1024 * 1024) {
-        http_response_code(400);
-        echo json_encode(['error' => 'Soubor je příliš velký (max 100MB).']);
-        exit;
-    }
-
-    if (move_uploaded_file($file['tmp_name'], $targetFile)) {
+    if (count($uploadedFiles) > 0) {
         echo json_encode([
             'success' => true,
-            'filename' => $fileName,
-            'path' => '/assets/' . $fileName
+            'files' => $uploadedFiles,
+            'errors' => $errors
         ]);
     } else {
         http_response_code(500);
-        echo json_encode(['error' => 'Chyba při nahrávání souboru.']);
+        echo json_encode(['error' => 'Žádný soubor nebyl nahrán', 'errors' => $errors]);
     }
 } else {
     http_response_code(400);

@@ -25,28 +25,61 @@ if (!is_dir($targetDir)) {
     mkdir($targetDir, 0777, true);
 }
 
+// Získat aktuální cestu z parametru (relativní k assets/)
+$currentPath = isset($_GET['path']) ? $_GET['path'] : '';
+$currentPath = trim($currentPath, '/');
+
+// Bezpečnostní kontrola - zabránit directory traversal
+$currentPath = str_replace(['..', '\\'], ['', '/'], $currentPath);
+
+$fullPath = $targetDir . ($currentPath ? $currentPath . '/' : '');
+
+if (!is_dir($fullPath)) {
+    http_response_code(404);
+    echo json_encode(['error' => 'Složka neexistuje']);
+    exit;
+}
+
+$folders = [];
 $files = [];
-$items = scandir($targetDir);
+$items = scandir($fullPath);
 
 foreach ($items as $item) {
     if ($item === '.' || $item === '..') continue;
     
-    $filePath = $targetDir . $item;
-    if (is_file($filePath)) {
+    $itemPath = $fullPath . $item;
+    $relativePath = $currentPath ? $currentPath . '/' . $item : $item;
+    
+    if (is_dir($itemPath)) {
+        $folders[] = [
+            'name' => $item,
+            'path' => $relativePath,
+            'type' => 'folder'
+        ];
+    } elseif (is_file($itemPath)) {
         $files[] = [
             'name' => $item,
-            'path' => '/assets/' . $item,
-            'size' => filesize($filePath),
-            'modified' => filemtime($filePath),
-            'type' => mime_content_type($filePath)
+            'path' => '/assets/' . $relativePath,
+            'size' => filesize($itemPath),
+            'modified' => filemtime($itemPath),
+            'type' => mime_content_type($itemPath)
         ];
     }
 }
+
+// Seřadit složky podle názvu
+usort($folders, function($a, $b) {
+    return strcmp($b['name'], $a['name']); // Nejnovější první
+});
 
 // Seřadit podle data úpravy (nejnovější první)
 usort($files, function($a, $b) {
     return $b['modified'] - $a['modified'];
 });
 
-echo json_encode(['files' => $files]);
+echo json_encode([
+    'currentPath' => $currentPath,
+    'folders' => $folders,
+    'files' => $files
+]);
 ?>

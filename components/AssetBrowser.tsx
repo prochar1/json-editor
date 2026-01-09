@@ -7,6 +7,8 @@ import {
   MdVideoLibrary,
   MdAudiotrack,
   MdInsertDriveFile,
+  MdFolder,
+  MdArrowBack,
 } from "react-icons/md";
 
 interface AssetFile {
@@ -17,6 +19,11 @@ interface AssetFile {
   type: string;
 }
 
+interface AssetFolder {
+  name: string;
+  path: string;
+}
+
 interface AssetBrowserProps {
   onSelect: (path: string) => void;
   onClose: () => void;
@@ -24,6 +31,8 @@ interface AssetBrowserProps {
 
 export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
   const [assets, setAssets] = useState<AssetFile[]>([]);
+  const [folders, setFolders] = useState<AssetFolder[]>([]);
+  const [currentPath, setCurrentPath] = useState("");
   const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [uploadMessage, setUploadMessage] = useState<string | null>(null);
@@ -34,13 +43,15 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
 
   useEffect(() => {
     loadAssets();
-  }, []);
+  }, [currentPath]);
 
   async function loadAssets() {
     setLoading(true);
     try {
-      const res = await fetch(`${apiBase}/php/list_assets.php`);
+      const url = `${apiBase}/php/list_assets.php${currentPath ? `?path=${encodeURIComponent(currentPath)}` : ""}`;
+      const res = await fetch(url);
       const data = await res.json();
+      setFolders(data.folders || []);
       setAssets(data.files || []);
     } catch (err) {
       console.error("Chyba při načítání assets:", err);
@@ -50,14 +61,18 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
   }
 
   async function handleUpload(e: React.ChangeEvent<HTMLInputElement>) {
-    const file = e.target.files?.[0];
-    if (!file) return;
+    const files = e.target.files;
+    if (!files || files.length === 0) return;
 
     setUploading(true);
     setUploadMessage(null);
 
     const formData = new FormData();
-    formData.append("assetfile", file);
+
+    // Přidat všechny vybrané soubory
+    for (let i = 0; i < files.length; i++) {
+      formData.append("assetfile[]", files[i]);
+    }
 
     try {
       const res = await fetch(`${apiBase}/php/upload_asset.php`, {
@@ -67,8 +82,13 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
       const data = await res.json();
 
       if (res.ok && data.success) {
-        setUploadMessage("Soubor byl úspěšně nahrán.");
-        setTimeout(() => setUploadMessage(null), 3000);
+        const count = data.files.length;
+        setUploadMessage(
+          `Nahráno ${count} ${count === 1 ? "soubor" : count < 5 ? "soubory" : "souborů"}.`
+        );
+        if (data.errors && data.errors.length > 0) {
+          setUploadMessage((prev) => prev + " Některé soubory selhaly.");
+        }
         loadAssets();
       } else {
         setUploadMessage("Chyba: " + (data.error || "Neznámá chyba"));
@@ -103,6 +123,28 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
     return new Date(timestamp * 1000).toLocaleString("cs-CZ");
   }
 
+  function navigateToFolder(folderPath: string) {
+    setCurrentPath(folderPath);
+  }
+
+  function navigateBack() {
+    const pathParts = currentPath.split("/").filter(Boolean);
+    pathParts.pop();
+    setCurrentPath(pathParts.join("/"));
+  }
+
+  function getBreadcrumbs() {
+    if (!currentPath) return [];
+    const parts = currentPath.split("/").filter(Boolean);
+    const breadcrumbs = [];
+    let path = "";
+    for (const part of parts) {
+      path += (path ? "/" : "") + part;
+      breadcrumbs.push({ name: part, path });
+    }
+    return breadcrumbs;
+  }
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
       <div className="bg-white dark:bg-slate-900 rounded-lg shadow-2xl w-full max-w-4xl max-h-[80vh] flex flex-col">
@@ -122,18 +164,52 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
 
         {/* Upload section */}
         <div className="p-4 border-b border-gray-200 dark:border-gray-800">
-          <label className="flex items-center gap-2 px-4 py-2 bg-blue-500 dark:bg-blue-600 text-white rounded-md hover:bg-blue-600 dark:hover:bg-blue-700 cursor-pointer transition-all w-fit">
-            <MdUploadFile size={20} />
-            <span className="text-sm font-semibold">
-              {uploading ? "Nahrávám..." : "Nahrát nový soubor"}
-            </span>
-            <input
-              type="file"
-              onChange={handleUpload}
-              className="hidden"
-              disabled={uploading}
-            />
-          </label>
+          {/* Breadcrumbs */}
+          {currentPath && (
+            <div className="mb-3 flex items-center gap-2 text-sm">
+              <button
+                onClick={() => setCurrentPath("")}
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                Kořenová složka
+              </button>
+              {getBreadcrumbs().map((crumb, idx) => (
+                <React.Fragment key={idx}>
+                  <span className="text-gray-400">/</span>
+                  <button
+                    onClick={() => setCurrentPath(crumb.path)}
+                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    {crumb.name}
+                  </button>
+                </React.Fragment>
+              ))}
+            </div>
+          )}
+          <div className="flex items-center gap-2">
+            {currentPath && (
+              <button
+                onClick={navigateBack}
+                className="flex items-center gap-2 px-3 py-2 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition-all"
+                title="Zpět"
+              >
+                <MdArrowBack size={20} />
+              </button>
+            )}
+            <label className="flex items-center gap-2 px-4 py-2 bg-blue-500 dark:bg-blue-600 text-white rounded-md hover:bg-blue-600 dark:hover:bg-blue-700 cursor-pointer transition-all">
+              <MdUploadFile size={20} />
+              <span className="text-sm font-semibold">
+                {uploading ? "Nahrávám..." : "Nahrát nový soubor"}
+              </span>
+              <input
+                type="file"
+                onChange={handleUpload}
+                className="hidden"
+                disabled={uploading}
+                multiple
+              />
+            </label>
+          </div>
           {uploadMessage && (
             <div className="mt-2 text-sm text-blue-600 dark:text-blue-400">
               {uploadMessage}
@@ -147,12 +223,33 @@ export default function AssetBrowser({ onSelect, onClose }: AssetBrowserProps) {
             <div className="flex items-center justify-center py-12">
               <div className="inline-block animate-spin rounded-full h-8 w-8 border-2 border-blue-500 border-t-transparent"></div>
             </div>
-          ) : assets.length === 0 ? (
+          ) : folders.length === 0 && assets.length === 0 ? (
             <div className="text-center py-12 text-gray-500 dark:text-gray-400">
-              Žádné soubory nejsou nahrané.
+              Žádné soubory ani složky.
             </div>
           ) : (
             <div className="grid grid-cols-1 gap-2">
+              {/* Složky */}
+              {folders.map((folder) => (
+                <button
+                  key={folder.path}
+                  onClick={() => navigateToFolder(folder.path)}
+                  className="flex items-center gap-3 p-3 rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors text-left group"
+                >
+                  <div className="flex-shrink-0">
+                    <MdFolder className="text-yellow-500" size={24} />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="font-medium text-sm text-gray-900 dark:text-gray-100 truncate">
+                      {folder.name}
+                    </div>
+                  </div>
+                  <div className="text-xs text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                    Otevřít
+                  </div>
+                </button>
+              ))}
+              {/* Soubory */}
               {assets.map((asset) => (
                 <button
                   key={asset.path}
