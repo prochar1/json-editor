@@ -7,6 +7,20 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-    --font-sans: "font", sans-serif;
-    --font-mono: "monospace", monospace;
+  --font-sans: "font", sans-serif;
+  --font-mono: "monospace", monospace;
+}
+
+/* Vynucení zobrazení odrážek pouze v editoru (Tiptap)
+   Pokud je editor uvnitř .prose, zajistí správné zobrazení seznamů. */
+.prose ul {
+  list-style: disc !important;
+  margin-left: 1.5em;
+}
+.prose ol {
+  list-style: decimal !important;
+  margin-left: 1.5em;
+}
+.prose li {
+  display: list-item !important;
 }

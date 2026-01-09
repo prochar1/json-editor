@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { MdOutlineTextFields } from "react-icons/md";
 
 // Helper to deeply clone and update JSON
 function updateJson(obj: any, path: (string | number)[], value: any) {
@@ -302,8 +303,15 @@ function JsonEditorForm({
     }
   } else {
     // Primitive value - inline editing
+    // WYSIWYG overlay state
+    const [showWysiwyg, setShowWysiwyg] = useState(false);
+    const WysiwygEditor = React.useMemo(
+      () => require("./WysiwygEditor").default,
+      []
+    );
+
     return (
-      <div className="flex items-center gap-2 group mb-1">
+      <div className="flex items-center gap-2 group mb-1 relative">
         {/* Empty space for alignment with arrow */}
         <span className="inline-flex items-center justify-center w-4 flex-shrink-0"></span>
         <div className="flex items-center gap-2 flex-1">
@@ -321,6 +329,14 @@ function JsonEditorForm({
             className="flex-1 px-2 py-1 rounded-md border border-gray-200 dark:border-gray-800/50 text-xs bg-white dark:bg-slate-900 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-violet-500 dark:focus:ring-violet-500 focus:border-transparent transition-all"
             placeholder="Zadejte hodnotu..."
           />
+          <button
+            type="button"
+            className="px-2 py-1 text-xs rounded-md bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 hover:bg-violet-200 dark:hover:bg-violet-900/50 transition-all"
+            title="Otevřít WYSIWYG editor"
+            onClick={() => setShowWysiwyg(true)}
+          >
+            <MdOutlineTextFields size={18} />
+          </button>
         </div>
         {path.length > 0 && (
           <button
@@ -331,6 +347,31 @@ function JsonEditorForm({
           >
             ✕
           </button>
+        )}
+        {/* Overlay pro WYSIWYG editor */}
+        {showWysiwyg && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+            <div className="bg-white dark:bg-slate-900 rounded-lg shadow-xl p-6 w-full max-w-2xl relative">
+              <h2 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
+                HTML editor
+              </h2>
+              <WysiwygEditor
+                value={data || ""}
+                onChange={(val: string) => onChange(path, val)}
+                theme="snow"
+                className="mb-4"
+              />
+              <div className="flex justify-end gap-2 mt-2">
+                <button
+                  type="button"
+                  className="px-4 py-1.5 rounded-md bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all"
+                  onClick={() => setShowWysiwyg(false)}
+                >
+                  Zavřít
+                </button>
+              </div>
+            </div>
+          </div>
         )}
       </div>
     );
